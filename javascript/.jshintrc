@@ -1,0 +1,11 @@
+{
+  "browser": true,
+  "jquery": true,
+  "node": true,
+  "globals": {
+    "angular": true
+  },
+  "quotmark": "single",
+  "indent": 2,
+  "strict": true
+}
