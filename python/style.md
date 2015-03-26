@@ -1,3 +1,3 @@
 ## Styles
 
-Use flake8.
+Use `flake8` and `iosort`
