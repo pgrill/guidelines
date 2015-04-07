@@ -1,3 +1,5 @@
+# Guidelines & more
+
 Sophilabs Guidelines for common languages/frameworks/environments or apps.
 
 ## Table of Contents
