@@ -26,3 +26,8 @@ images: lowercase-with-dashes.*
 ```
 
 **[⬆ back to top](#table-of-contents)**
+
+## Books
+ - Django Two Scoops
+
+**[⬆ back to top](#table-of-contents)**
