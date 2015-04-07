@@ -39,7 +39,7 @@ Sophilabs Guidelines for common languages/frameworks/environments or apps.
 
 (The MIT License)
 
-Copyright (c) 2015 Sophilas
+Copyright (c) 2015 Sophilabs
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
