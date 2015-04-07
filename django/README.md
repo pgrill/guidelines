@@ -1,6 +1,6 @@
 # Django
 
-**[⬅ back to index](./../)**
+**[⬅ back to index](./)**
 
 ## Table of Contents
 1. -

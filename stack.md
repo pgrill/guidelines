@@ -1,0 +1,3 @@
+# Stack
+
+**[⬅ back to index](./)**
