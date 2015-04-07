@@ -1,14 +1,12 @@
 # GUIDELINES
 
-**Sophilabs Guidelines for common languages/frameworks/environments or apps.
+Sophilabs Guidelines for common languages/frameworks/environments or apps.
 
-* [Python](./python/style.md)
-* [Django](./django/style.md)
+* [Python](./python)
+* [Django](./django)
+* [NodeJS](./nodejs)
+* [SCSS](./scss)
+* [Javascript](./javascript)
 
-## Javascript
-
-- JS style guide.
-- Hapijs (TODO)
-- Express (TODO)
-- Flightplane (TODO)
-- JWT (TODO)
+# Misc
+* [Books](./books.md)
