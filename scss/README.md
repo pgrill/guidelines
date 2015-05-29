@@ -14,52 +14,52 @@
 - Name classes with dashes and have an space between the name and the bracket.
 
     ```scss
-    .class-with-dahses {
-        //styles
+.class-with-dahses {
+    //styles
 }
     ```
 
 - Order
 
     ```scss
-    .class-with-dahses {
-        // Variable definition
-        $foo: #636363;
-        $bar: 3.3em;
+.class-with-dahses {
+    // Variable definition
+    $foo: #636363;
+    $bar: 3.3em;
 
-        // Includes and extends
-        @extend .foo;
-        @include bar(10%);
+    // Includes and extends
+    @extend .foo;
+    @include bar(10%);
 
-        // Regular properties [a-z]  
-        background-color: $foo;
-        display: block;
-        height: $bar;
-        width: $bar;
-        z-index: 6;
+    // Regular properties [a-z]  
+    background-color: $foo;
+    display: block;
+    height: $bar;
+    width: $bar;
+    z-index: 6;
 
-        // media queries
-        @media #{$mobile}{
-        }
-        @media #{$tablet}{
-        }
-
-        // pseudo classes
-        &:hover {
-        }
-        &:first-child {
-        }
-
-        // pseudo elements
-        &::after {
-        }
-        &::before {
-        }
-
-        // selectors
-        & > ... {
-        }
+    // media queries
+    @media #{$mobile}{
     }
+    @media #{$tablet}{
+    }
+
+    // pseudo classes
+    &:hover {
+    }
+    &:first-child {
+    }
+
+    // pseudo elements
+    &::after {
+    }
+    &::before {
+    }
+
+    // selectors
+    & > ... {
+    }
+}
     ```
 
 **[⬆ back to top](#table-of-contents)**
