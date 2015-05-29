@@ -4,4 +4,6 @@
 
 ## Styles
 
-Use `flake8` and `iosort`
+- Use `flake8` and `iosort`
+
+**[⬅ back to index](./)**

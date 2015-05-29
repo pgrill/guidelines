@@ -1,7 +1,17 @@
 # SASS
 
-Don't use #ids
+## Table of Contents
+1. -
+1. -
+1. -
+1. -
 
+
+## Rules
+
+- Don't use #ids
+
+- Order
 ```sass
 .class-with-dahses {
     @extends ...
@@ -26,5 +36,9 @@ Don't use #ids
 }
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Inspiration
-* Css-Tricks: https://css-tricks.com/sass-style-guide/
+- [Css-Tricks](https://css-tricks.com/sass-style-guide/)
+
+**[⬆ back to top](#table-of-contents)**
