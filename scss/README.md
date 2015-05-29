@@ -9,32 +9,58 @@
 
 ## Rules
 
-- Don't use #ids
+- Don't use `#ids`
+
+- Name classes with dashes and have an space between the name and the bracket.
+
+    ```scss
+    .class-with-dahses {
+        //styles
+}
+    ```
 
 - Order
-```sass
-.class-with-dahses {
-    @extends ...
-    @include ...
 
-    // regular styles [a-z]
+    ```scss
+    .class-with-dahses {
+        // Variable definition
+        $foo: #636363;
+        $bar: 3.3em;
 
-    // pseudo classes
-    &:hover {
+        // Includes and extends
+        @extend .foo;
+        @include bar(10%);
+
+        // Regular properties [a-z]  
+        background-color: $foo;
+        display: block;
+        height: $bar;
+        width: $bar;
+        z-index: 6;
+
+        // media queries
+        @media #{$mobile}{
+        }
+        @media #{$tablet}{
+        }
+
+        // pseudo classes
+        &:hover {
+        }
+        &:first-child {
+        }
+
+        // pseudo elements
+        &::after {
+        }
+        &::before {
+        }
+
+        // selectors
+        & > ... {
+        }
     }
-    &:first-child {
-    }
-
-    // pseudo elements
-    &::after {
-    }
-
-    // selectors
-    & > ... {
-    }
-
-}
-```
+    ```
 
 **[⬆ back to top](#table-of-contents)**
 
