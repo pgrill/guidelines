@@ -25,26 +25,26 @@ scss partials: _lowercase-with-dashes.scss
 
 ## Templates
 - Name blocks with lowercase and underscores.
-```
+```html
 {% block lowercase_with_underscores %}
 ```
 
 - In endblocks, add the name of the block they close.
-```
+```htmldjango
 {% block foo_bar %}
-	...
+    ...
 {% endblock foo_bar %}
 ```
 
 - Indent everything within template tags.
-```
+```djangohtml
 {% block foo_bar %}
-	<html-tag></html-tag>
-	{% if foo %}
-		<html-tag></html-tag>
-	{% else %}
-		<html-tag></html-tag>
-	{% endif %}	...
+    <html-tag></html-tag>
+        {% if foo %}
+            <html-tag></html-tag>
+        {% else %}
+            <html-tag></html-tag>
+        {% endif %}    ...
 {% endblock foo_bar %}
 ```
 
