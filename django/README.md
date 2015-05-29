@@ -40,15 +40,16 @@ scss partials: _lowercase-with-dashes.scss
 ```
 
 - Indent everything within template tags.
+
 ```djangohtml
-{% block foo_bar %}
-    <html-tag></html-tag>
-    {% if foo %}
+    {% block foo_bar %}
         <html-tag></html-tag>
-    {% else %}
-        <html-tag></html-tag>
-    {% endif %}    ...
-{% endblock foo_bar %}
+        {% if foo %}
+            <html-tag></html-tag>
+        {% else %}
+            <html-tag></html-tag>
+        {% endif %}
+    {% endblock foo_bar %}
 ```
 
 **[⬆ back to top](#table-of-contents)**
