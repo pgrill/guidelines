@@ -20,10 +20,9 @@ py: lowercase_with_underscores.py
 html: lowercase_with_underscores.html
 javascript: lowercase-with-dashes.js
 images: lowercase-with-dashes.*
-css/scss: lowercase-with-dashes.*
-
-# With the exception of partials, which start with underscore
-scss partials: _lowercase-with-dashes.scss
+css: lowercase-with-dashes.*
+scss: lowercase-with-dashes.*
+scss (partials): _lowercase-with-dashes.*
 ```
 
 **[⬆ back to top](#table-of-contents)**
@@ -39,6 +38,7 @@ scss partials: _lowercase-with-dashes.scss
 - If the block/endblock is inline you should avoid the name on the endblock.
 
 - In endblocks, add the name of the block they close.
+
 ```html
 {% block foo_bar %}
     ...
@@ -46,6 +46,7 @@ scss partials: _lowercase-with-dashes.scss
 ```
 
 - Indent everything within template tags.
+
 ```html
 {% block foo_bar %}
     <html-tag></html-tag>
