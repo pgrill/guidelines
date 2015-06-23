@@ -12,6 +12,7 @@
 - Don't use #ids
 
 - Order
+
 ```sass
 .class-with-dahses {
     @extends ...
@@ -40,5 +41,8 @@
 
 ## Inspiration
 - [Css-Tricks](https://css-tricks.com/sass-style-guide/)
+- [SCSS Linter](https://github.com/brigade/scss-lint)
+- [SCSS Depth](https://smacss.com/book/applicability)
+- [](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
 **[⬆ back to top](#table-of-contents)**
