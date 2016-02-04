@@ -1,3 +1,0 @@
-# Stack
-
-**[⬅ back to index](./)**
