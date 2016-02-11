@@ -1,17 +1,7 @@
-Guidelines & more
-=================
 
-Sophilabs Guidelines for common languages/frameworks/environments or
-apps.
-
-Table of Contents
------------------
-
-1. `Languages <#languages>`__
-2. `Frameworks <#frameworks>`__
-
+=========
 Languages
----------
+=========
 
 -  `CSharp <./csharp>`__
 -  `Javascript <./javascript>`__
@@ -19,28 +9,20 @@ Languages
 -  `Python <./python>`__
 -  `SCSS <./scss>`__
 
-**`⬆ back to top <#table-of-contents>`__**
-
+==========
 Frameworks
-----------
+==========
 
 -  `Django <./django>`__
 
-**`⬆ back to top <#table-of-contents>`__**
 
-Misc
-====
+=====
+Books
+=====
 
--  `Books <./books.md>`__
--  `Stack <./stack.md>`__
-
-**`⬆ back to top <#table-of-contents>`__**
-
-Contributors
-------------
-
--  `View
-   Contributors <https://github.com/sophilabs/guidelines/graphs/contributors>`__
+=====
+Stack
+=====
 
 License
 -------
@@ -68,4 +50,3 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-**`⬆ back to top <#table-of-contents>`__**
