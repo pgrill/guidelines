@@ -1,5 +1,5 @@
 
-=========
+
 Languages
 =========
 
@@ -9,14 +9,12 @@ Languages
 -  `Python <./python>`__
 -  `SCSS <./scss>`__
 
-==========
 Frameworks
 ==========
 
 -  `Django <./django>`__
 
 
-=====
 Books
 =====
 
