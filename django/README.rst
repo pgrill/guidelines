@@ -1,7 +1,6 @@
 Django
 ======
 
-**`⬅ back to index <./>`__**
 
 Table of Contents
 -----------------
@@ -29,8 +28,6 @@ Files
     css: lowercase-with-dashes.*
     scss: lowercase-with-dashes.*
     scss (partials): _lowercase-with-dashes.*
-
-**`⬆ back to top <#table-of-contents>`__**
 
 Templates
 ---------
@@ -66,7 +63,6 @@ Templates
         {% endif %}
     {% endblock foo_bar %}
 
-**`⬆ back to top <#table-of-contents>`__**
 
 Signals
 -------
@@ -88,11 +84,7 @@ Signals
         def ready(self):
             import app.signals.handlers  # noqa
 
-**`⬆ back to top <#table-of-contents>`__**
-
 Books
 -----
 
 -  `Django Two Scoops <http://twoscoopspress.org/>`__
-
-**`⬆ back to top <#table-of-contents>`__**

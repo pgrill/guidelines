@@ -4,21 +4,21 @@ SASS
 Table of Contents
 -----------------
 
-1. 
+1.
 
-   -  
+   -
 
-2. 
+2.
 
-   -  
+   -
 
-3. 
+3.
 
-   -  
+   -
 
-4. 
+4.
 
-   -  
+   -
 
 Rules
 -----
@@ -45,7 +45,7 @@ $bar: 3.3em;
     @extend .foo;
     @include bar(10%);
 
-    // Regular properties [a-z]  
+    // Regular properties [a-z]
     background-color: $foo;
     display: block;
     height: $bar;
@@ -76,8 +76,6 @@ $bar: 3.3em;
 
 } \`\`\`
 
-**`⬆ back to top <#table-of-contents>`__**
-
 Inspiration
 -----------
 
@@ -86,4 +84,3 @@ Inspiration
 -  `SCSS Depth <https://smacss.com/book/applicability>`__
 -  ` <http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/>`__
 
-**`⬆ back to top <#table-of-contents>`__**
