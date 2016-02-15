@@ -15,3 +15,5 @@ Icons
 
 -  `Google Material Design
    Icons <https://www.google.com/design/icons/>`__
+
+-**`⬆ back to top <#table-of-contents>`__**

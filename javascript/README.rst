@@ -4,6 +4,8 @@ javascript
 Read `AirBnb Javascript's style
 guide <https://github.com/airbnb/javascript>`__
 
+-**`⬅ back to index <./>`__**
+
 JS style guide.
 ---------------
 
@@ -13,6 +15,8 @@ JS style guide.
 .. code:: js
 
     var $foo =  $('.bar');
+
+-**`⬅ back to index <./>`__**
 
 Inspiration
 -----------
@@ -27,3 +31,5 @@ TODO
 -  Express (TODO)
 -  Flightplane (TODO)
 -  JWT (TODO)
+
+-**`⬆ back to top <#table-of-contents>`__**
