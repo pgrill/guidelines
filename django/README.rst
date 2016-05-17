@@ -11,8 +11,7 @@ Table of Contents
 4. `Signals <#Signals>`__
 5. `Books <#Books>`__
 
-`⬅ back to index <./..>`__
-`⬅ back to index <../>`__
+`⬅ back to index <./>`__
 
 Read
 ----
