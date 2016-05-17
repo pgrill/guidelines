@@ -4,4 +4,4 @@ python:
 before_install:
     - pip install restructuredtext_lint
 script:
-    - find . -name *.rst  -type f -exec rst-lint {} +
+    - find . -name \*.rst -exec rst-lint {} +
