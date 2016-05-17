@@ -11,8 +11,6 @@ Table of Contents
 4. `Signals <#Signals>`__
 5. `Books <#Books>`__
 
-`⬅ back to index <./>`__
-
 Read
 ----
 
@@ -65,8 +63,6 @@ Templates
         {% endif %}
     {% endblock foo_bar %}
 
--**`⬅ back to index <./>`__**
-
 
 Signals
 -------
@@ -88,9 +84,8 @@ Signals
         def ready(self):
             import app.signals.handlers  # noqa
 
+
 Books
 -----
 
 -  `Django Two Scoops <http://twoscoopspress.org/>`__
-
--**`⬆ back to top <#table-of-contents>`__**
