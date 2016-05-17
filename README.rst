@@ -5,6 +5,9 @@ Table of Contents
 #. `Workflow`_
 #. `Product Design`_
 
+.. toctree::
+  :maxdepth: 2
+
 Overview
 ========
 
@@ -219,4 +222,4 @@ Books
 License
 =======
 
-**`⬆ back to top <#>`__**
+`⬆ back to top <#>`__
