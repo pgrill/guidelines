@@ -5,11 +5,12 @@ Guidelines
 Table of Contents
 -----------------
 
-.. image:: https://travis-ci.org/sophilabs/guidelines.svg?branch=master
-    :target: https://travis-ci.org/sophilabs/guidelines
 
 1. `Overview`_
 #. `License`_
+
+.. image:: https://travis-ci.org/sophilabs/guidelines.svg?branch=master
+    :target: https://travis-ci.org/sophilabs/guidelines
 
 
 Overview
