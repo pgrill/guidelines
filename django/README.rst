@@ -5,16 +5,17 @@ Django
 Table of Contents
 -----------------
 
-1. `Read <#Read>`__
-2. `Files <#Files>`__
-3. `Templates <#Templates>`__
-4. `Signals <#Signals>`__
-5. `Books <#Books>`__
+1. `Books`_
+2. `Files`_
+3. `Templates`_
+4. `Signals`_
 
-Read
-----
 
-`Django Two Scoops <http://twoscoopspress.org/>`__, Now.
+Books
+-----
+
+#. `Django Two Scoops <http://twoscoopspress.org/>`__
+
 
 Files
 -----
