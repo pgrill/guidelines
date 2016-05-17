@@ -1,9 +1,5 @@
-Guidelines
-==========
-
-
 Table of Contents
------------------
+=================
 
 
 1. `Overview`_
@@ -14,7 +10,7 @@ Table of Contents
 
 
 Overview
---------
+========
 
 These are the guidelines that lead us to create beautiful software.
 Please contribute to it following this `contribution guidelines <./CONTRIBUTING.rst>`__.
@@ -26,13 +22,8 @@ A note on the language:
 
 A reason is good when you can convince a teammate.
 
-`⬆ back to top <#>`__
-
 
 License
--------
+=======
 
 See `licence <./LICENSE.rst`__.
-
-
-`⬆ back to top <#>`__

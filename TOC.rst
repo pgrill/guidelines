@@ -1,6 +1,2 @@
-#. `General <./README.rst>`__
-
-   #. `General <./README.rst>`__
-   #. `General <./README.rst>`__
-
-#. `Python <./README.rst>`__
+#. `General <./general>`__
+#. `Django <./django>`__

@@ -1,9 +1,5 @@
-Django
-======
-
-
 Table of Contents
------------------
+=================
 
 1. `Books`_
 2. `Files`_
@@ -12,13 +8,13 @@ Table of Contents
 
 
 Books
------
+=====
 
 #. `Django Two Scoops <http://twoscoopspress.org/>`__
 
 
 Files
------
+=====
 
 .. code:: yaml
 
@@ -30,8 +26,9 @@ Files
     scss: lowercase-with-dashes.*
     scss (partials): _lowercase-with-dashes.*
 
+
 Templates
----------
+=========
 
 -  Name blocks with lowercase and underscores.
 
@@ -66,7 +63,7 @@ Templates
 
 
 Signals
--------
+=======
 
 .. code:: bash
 
@@ -83,10 +80,3 @@ Signals
         ...
 
         def ready(self):
-            import app.signals.handlers  # noqa
-
-
-Books
------
-
--  `Django Two Scoops <http://twoscoopspress.org/>`__
