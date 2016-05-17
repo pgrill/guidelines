@@ -1,13 +1,15 @@
 Table of Contents
 =================
 
-#. `Overview <#overview>`_
+1. `Overview`_
+#. `Workflow`_
+#. `Product Design`_
 
 Overview
 ========
 
 These are the guidelines that lead us to create beautiful software.
-Please contribute to it following this `contribution guidelines <./CONTRIBUTING>`__.
+Please contribute to it following this `contribution guidelines <./CONTRIBUTING.rst>`__.
 
 A note on the language:
 
@@ -217,4 +219,4 @@ Books
 License
 =======
 
--** `⬆ back to top <#table-of-contents>`__ **
+** `⬆ back to top <#table-of-contents>`__ **
