@@ -3,5 +3,6 @@ python:
     - 3.4
 before_install:
     - pip install restructuredtext_lint
+    - pip install Pygments==2.0.2
 script:
     - find . -name \*.rst -exec rst-lint {} +

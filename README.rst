@@ -26,4 +26,4 @@ A reason is good when you can convince a teammate.
 License
 =======
 
-See `licence <./LICENSE.rst`__.
+See `licence <./LICENSE.rst>`__.
