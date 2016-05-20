@@ -59,7 +59,6 @@ week. Now, this is the test class that tests this method and its base scenarios.
 
     from activities.models import Activity
 
-    # Create your tests here.
 
 
     class ActivityTestCase(TestCase):
