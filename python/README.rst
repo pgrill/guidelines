@@ -17,7 +17,7 @@ TDD - Unit tests
 How do we use TDD in Python?
 
 First off, we will start by designing a simple class that will do simple stuff
-just in form of example.
+just by way of example.
 
 
 .. code:: python
@@ -55,9 +55,15 @@ is the test class that tests this method and its base scenarios.
 
 
     class ActivityTestCase(TestCase):
+        @classmethod
         def setUp(self):
-            User.objects.create_user('admin', 'admin@example.com', 'examplepass')
-            Activity.objects.create(
+            super().setUpClass()
+            self.user = User.objects.create_user(
+                'admin',
+                'admin@example.com',
+                'examplepass'
+            )
+            self.this_week = Activity.objects.create(
                 user=User.objects.first(),
                 start_date=datetime.date.today(),
                 end_date=(datetime.date.today() + datetime.timedelta(days=1))
@@ -69,7 +75,7 @@ is the test class that tests this method and its base scenarios.
         def test_is_next_week_passed_next_week(self):
             self.assertTrue(True)
 
-        def test_is_next_week_today(self):
+        def test_is_next_week_this_week(self):
             self.assertTrue(True)
 
 
@@ -89,7 +95,7 @@ this test case richer.
 
     # Rest of the code stays the same.
     def test_is_next_week(self):
-        activity = Activity.objects.first()
+        activity = self.this_week
         self.assertTrue(activity.is_next_week())
 
     # The two other tests change exactly as this one
@@ -125,43 +131,47 @@ cases useful, and also the methods to call the correct activity:
 
 .. code:: python
 
-
+    @classmethod
     def setUp(self):
-            User.objects.create_user('admin', 'admin@example.com', 'examplepass')
-            today = datetime.date.today()
-            if today.weekday() == 0:
-                today += datetime.timedelta(7)
-            else:
-                today += datetime.timedelta(6)
-            Activity.objects.create(
-                user=User.objects.first(),
-                start_date=today,
-                end_date=(today + datetime.timedelta(days=1))
-            )
-            Activity.objects.create(
-                user=User.objects.first(),
-                start_date=datetime.date.today() + datetime.timedelta(15),
-                end_date=datetime.date.today() + datetime.timedelta(16)
-            )
-            Activity.objects.create(
-                user=User.objects.first(),
-                start_date=datetime.date.today(),
-                end_date=(datetime.date.today() + datetime.timedelta(days=1))
-            )
+        super().setUpClass()
+        self.user = User.objects.create_user('admin', 'admin@example.com', 'examplepass')
+        today = datetime.date.today()
+        if today.weekday() == 0:
+            today += datetime.timedelta(7)
+        else:
+            today += datetime.timedelta(6)
+        self.next_week = Activity.objects.create(
+            user=User.objects.first(),
+            start_date=today,
+            end_date=(today + datetime.timedelta(days=1))
+        )
+        self.passed_next_week = Activity.objects.create(
+            user=User.objects.first(),
+            start_date=datetime.date.today() + datetime.timedelta(15),
+            end_date=datetime.date.today() + datetime.timedelta(16)
+        )
+        self.this_week = Activity.objects.create(
+            user=User.objects.first(),
+            start_date=datetime.date.today(),
+            end_date=(datetime.date.today() + datetime.timedelta(days=1))
+        )
 
 
-        def test_is_next_week(self):
-            activity = Activity.objects.get(pk=1)
-            self.assertTrue(activity.is_next_week())
+    def test_is_next_week(self):
+        activity = self.next_week
+        self.assertTrue(activity.is_next_week())
 
-        def test_is_next_week_passed_next_week(self):
-            activity = Activity.objects.get(pk=2)
-            self.assertFalse(activity.is_next_week())
+    def test_is_next_week_passed_next_week(self):
+        activity = self.passed_next_week
+        self.assertFalse(activity.is_next_week())
 
-        def test_is_next_week_today(self):
-            activity = Activity.objects.get(pk=3)
-            self.assertFalse(activity.is_next_week())
+    def test_is_next_week_this_week(self):
+        activity = self.this_week
+        self.assertFalse(activity.is_next_week())
 
+Note: there is still one scenario we are not contemplating, and that would be if
+you run this tests on Monday, because it will find next Monday as todays, which
+is a validation that follows the same process that we have just described.
 
 This way, the three tests pass and we have ended the round of tdd testing.
 What comes next? We assumed that this dates came with the right format, etc. Now
