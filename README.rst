@@ -1,14 +1,3 @@
-Table of Contents
-=================
-
-
-1. `Overview`_
-#. `License`_
-
-.. image:: https://travis-ci.org/sophilabs/guidelines.svg?branch=master
-    :target: https://travis-ci.org/sophilabs/guidelines
-
-
 Overview
 ========
 
@@ -21,6 +10,16 @@ A note on the language:
 - "Avoid/Prefer" indicates worst/better options so you may violate them only with a good reason.
 
 A reason is good when you can convince a teammate.
+
+
+Table of Contents
+=================
+
+
+#. `License`_
+
+.. image:: https://travis-ci.org/sophilabs/guidelines.svg?branch=master
+    :target: https://travis-ci.org/sophilabs/guidelines
 
 
 License

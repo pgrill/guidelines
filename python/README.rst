@@ -1,5 +1,13 @@
+Table of Contents
+=================
+
+1. `Python`_
+2. `Styles`_
+3. `TDD - Unit tests`_
+
+
 Python
-======
+------
 
 -**`⬅ back to index <./>`__**
 
@@ -12,7 +20,7 @@ Styles
 
 
 TDD - Unit tests
------
+----------------
 
 How do we use TDD in Python?
 
@@ -37,9 +45,9 @@ just by way of example.
             return True
 
 
-This method called is_next_week, is a method of activity because as an example,
-we had the requirement to list all the activities that were next week. Now, this
-is the test class that tests this method and its base scenarios.
+This method called :code:`is_next_week`, is a method of activity because as
+an example, we had the requirement to list all the activities that were next
+week. Now, this is the test class that tests this method and its base scenarios.
 
 
 .. code:: python
@@ -82,10 +90,11 @@ is the test class that tests this method and its base scenarios.
 The base scenarios are as you can see if it starts in fact next week, if its
 this week, or if it is passed next week.
 
-The setUp method is a method that we build just because when using Django, it
-automatically builds an independent db for the tests which is empty, so we will
-have to populate it with something; due to how our models are made, this is the
-minimum data we will need to test the method, an activity and a User.
+The :code:`setUp` method is a method that we build just because when using
+Django, it automatically builds an independent db for the tests which is empty,
+so we will have to populate it with something; due to how our models are made,
+this is the minimum data we will need to test the method, an activity and a
+User.
 
 Now, as this test passes because it is just asserting True to True, we can make
 this test case richer.
@@ -134,7 +143,11 @@ cases useful, and also the methods to call the correct activity:
     @classmethod
     def setUp(self):
         super().setUpClass()
-        self.user = User.objects.create_user('admin', 'admin@example.com', 'examplepass')
+        self.user = User.objects.create_user(
+            'admin',
+            'admin@example.com',
+             'examplepass'
+        )
         today = datetime.date.today()
         if today.weekday() == 0:
             today += datetime.timedelta(7)
