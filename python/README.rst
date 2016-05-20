@@ -59,9 +59,8 @@ week. Now, this is the test class that tests this method and its base scenarios.
 
     from activities.models import Activity
 
-
-
     class ActivityTestCase(TestCase):
+
         @classmethod
         def setUp(self):
             super().setUpClass()
@@ -180,6 +179,7 @@ cases useful, and also the methods to call the correct activity:
     def test_is_next_week_this_week(self):
         activity = self.this_week
         self.assertFalse(activity.is_next_week())
+
 
 Note: there is still one scenario we are not contemplating, and that would be if
 you run this tests on Monday, because it will find next Monday as todays, which

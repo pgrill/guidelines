@@ -1,5 +1,5 @@
-Overview
-========
+Guidelines
+==========
 
 These are the guidelines that lead us to create beautiful software.
 Please contribute to it following this `contribution guidelines <./CONTRIBUTING.rst>`__.
