@@ -80,3 +80,11 @@ Signals
         ...
 
         def ready(self):
+
+
+Tests
+=====
+
+If you want to see how we do tests, please click here_.
+
+.. _here: https://github.com/sophilabs/guidelines/tree/master/python#tdd-unit-tests
