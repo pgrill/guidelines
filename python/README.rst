@@ -7,20 +7,18 @@ Table of Contents
 
 
 Python
-------
+======
 
--**`⬅ back to index <./>`__**
 
 Styles
-------
+======
 
--  Use ``flake8`` and ``iosort``
-
--**`⬅ back to index <./>`__**
+- Use ``flake8``
+- Use ``iosort``
 
 
 TDD - Unit tests
-----------------
+================
 
 How do we use TDD in Python?
 

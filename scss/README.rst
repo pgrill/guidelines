@@ -1,89 +1,121 @@
-SASS
-====
-
 Table of Contents
------------------
+=================
 
-1.
+1. `Principles`_
+#. `Rule Formatting`_
+#. `File Structure`_
+#. `Inspiration & Sources`_
 
-   -
+Principles
+==========
 
-2.
+* Don't use ``#ids`` in rule selectors.
+* Use one line per rule selector.
+* Use lowercase with dashes for class name and add an space between
+  the name and the bracket.
+* Use 2 speaces for indentation.
+* Use lowercase with dashes for filenames.
 
-   -
 
-3.
+Rule Formatting
+===============
 
-   -
+.. code:: scss
 
-4.
+    .rule-formatting {
+        // 1. Extends
+        @extend %foo;
 
-   -
+        // 2. Includes
+        @include bar(foo);
 
-Rules
------
+        // 3. Properties order by name
+        display: block;
+        z-index: 10;
+        ...
 
--  Don't use ``#ids``
+        // 4. Media queries
+        @media #{$mobile} {
+            ...
+        }
 
--  Name classes with dashes and have an space between the name and the
-   bracket.
+        @media #{$tablet} {
+            ...
+        }
 
-   .. code:: scss
+        // 5. Pseudo classes
+        &:hover {
+            ...
+        }
 
-       .class-with-dahses {
-       //styles
-       }
+        &:first-child {
+            ...
+        }
 
--  Order
+        // 6. Pseudo elements
+        &::after {
+            ...
+        }
 
-\`\`\`sass .class-with-dahses { // Variable definition $foo: #636363;
-$bar: 3.3em;
+        &::before {
+            ...
+        }
 
-::
+        // 7. Selectors
+        & > ... {
+            ...
+        }
 
-    // Includes and extends
-    @extend .foo;
-    @include bar(10%);
-
-    // Regular properties [a-z]
-    background-color: $foo;
-    display: block;
-    height: $bar;
-    width: $bar;
-    z-index: 6;
-
-    // media queries
-    @media #{$mobile}{
+        & ... {
+            ...
+        }
     }
-    @media #{$tablet}{
-    }
 
-    // pseudo classes
-    &:hover {
-    }
-    &:first-child {
-    }
 
-    // pseudo elements
-    &::after {
-    }
-    &::before {
-    }
+File Structure
+==============
 
-    // selectors
-    & > ... {
-    }
+.. code:: text
 
-} \`\`\`
+    ├── base
+    │   ├── modules
+    │   │   └── _all.scss
+    │   ├── partials
+    │   │   └── _....scss
+    │   ├── vendor
+    │   │   └── _....scss
+    │   ├── _base.scss
+    │   └── _page.scss
+    ├── desktop
+    │   ├── modules
+    │   │   └── _all.scss
+    │   ├── partials
+    │   │   └── _....scss
+    │   ├── vendor
+    │   │   └── _....scss
+    │   ├── base.scss
+    │   └── page.scss
+    ...
 
--**`⬆ back to top <#table-of-contents>`__**
+Modules, partials, and vendor
+-----------------------------
 
-Inspiration
------------
+As you can see this divides the project into three basic types of files: 
+Modules, partials, and vendored stylesheets.
 
--  `Css-Tricks <https://css-tricks.com/sass-style-guide/>`__
--  `SCSS Linter <https://github.com/brigade/scss-lint>`__
--  `SCSS Depth <https://smacss.com/book/applicability>`__
--  ` <http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/>`__
+* The modules directory is reserved for Sass code that doesn't cause Sass to 
+  actually output CSS. Things like mixin declarations, functions, and variables.
+* The partials directory is where the meat of my CSS is constructed.
+* The vendor directory is for third-party CSS. This is handy when using 
+  prepackaged components developed by other people (or for your own components that are maintained in another project). jQuery UI and a color picker are examples of CSS that you might want to place in the vendor directory. As a general rule I make it a point not to modify files in my vendor directory. If I need to make modifications I add those after the vendored files are included in my primary stylesheet. This should make it easy for me to update my third-party stylesheets to more current versions in the future.
 
--**`⬆ back to top <#table-of-contents>`__**
+
+
+Inspiration & Sources
+=====================
+
+* `How to structure a sass project <http://thesassway.com/beginner/how-to-structure-a-sass-project>`__
+* `Css-Tricks <https://css-tricks.com/sass-style-guide/>`__
+* `SCSS Linter <https://github.com/brigade/scss-lint>`__
+* `SCSS Depth <https://smacss.com/book/applicability>`__
+* `Mindbemding getting your head round-bem syntax <http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/>`__
