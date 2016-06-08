@@ -15,3 +15,13 @@ Some useful tools for contributing are:
 
        pip install restview
        restview .
+
+rST Guidelines
+==============
+
+Headings
+--------
+
+* Use ``======`` for level 1 headings.
+* Use ``------`` for level 2 headings.
+* Use ``^^^^^^`` for level 3 headings.
