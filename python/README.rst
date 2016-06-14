@@ -1,5 +1,5 @@
 Table of Contents
-=================
+-----------------
 
 #. `Styles`_
 #. `Tests`_
@@ -22,10 +22,10 @@ Styles
 
 
 Tests
-=====
+-----
 
 TDD - Unit tests
-----------------
+================
 
 How do we use TDD in Python?
 
@@ -198,6 +198,6 @@ left for the reader as an exercise.
 
 
 Sources
-=======
+-------
 
 - https://docs.djangoproject.com/en/1.9/internals/contributing/writing-code/coding-style/
