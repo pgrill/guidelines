@@ -1,17 +1,14 @@
 Table of Contents
 -----------------
 
-#. `Styles`_
+#. `Rules`_
 #. `Tests`_
 
 
-Styles
-------
+Rules
+-----
 
 #. Use four spaces for indentation.
-#. Use ``InitialCaps`` for class names (or for factory functions that return classes).
-#. Use underscores, not camelCase, for variable, function and method names
-   (i.e. ``poll.get_unique_voters()``, not ``poll.getUniqueVoters``).
 #. Please conform to the indentation style dictated in the .editorconfig file. 
    We recommend using a text editor with EditorConfig support to avoid indentation 
    and whitespace issues. User the following `.editorconfig file <./files/.editorconfig>`__
@@ -19,6 +16,37 @@ Styles
 #. Follow `PEP8 <https://www.python.org/dev/peps/pep-0008/>`__.
    Use `flake8 <https://pypi.python.org/pypi/flake8>`__ to check for problems in this area.
 #. In docstrings, follow `PEP 257 <https://www.python.org/dev/peps/pep-0257/>`__.
+
+
+Naming
+======
+
++----------------------------+--------------------+-------------------------------------------------------------------+
+| Type                       | Public             | Internal                                                          |
++============================+====================+===================================================================+
+| Packages                   | lower_with_under   |                                                                   |
++----------------------------+--------------------+-------------------------------------------------------------------+
+| Modules                    | lower_with_under   | _lower_with_under                                                 |
++----------------------------+--------------------+-------------------------------------------------------------------+
+| Classes                    | CapWords           | _CapWords                                                         |
++----------------------------+--------------------+-------------------------------------------------------------------+
+| Exceptions                 | CapWords           |                                                                   |
++----------------------------+--------------------+-------------------------------------------------------------------+
+| Functions                  | lower_with_under() | _lower_with_under()                                               |
++----------------------------+--------------------+-------------------------------------------------------------------+
+| Global/Class Constants     | CAPS_WITH_UNDER    | _CAPS_WITH_UNDER                                                  |
++----------------------------+--------------------+-------------------------------------------------------------------+
+| Global/Class Variables     | lower_with_under   | _lower_with_under                                                 |
++----------------------------+--------------------+-------------------------------------------------------------------+
+| Instance Variables         | lower_with_under   | _lower_with_under (protected) or __lower_with_under (private)     |
++----------------------------+--------------------+-------------------------------------------------------------------+
+| Method Names               | lower_with_under() | _lower_with_under() (protected) or __lower_with_under() (private) |
++----------------------------+--------------------+-------------------------------------------------------------------+
+| Function/Method Parameters | lower_with_under   |                                                                   |
++----------------------------+--------------------+-------------------------------------------------------------------+
+| Local Variables            | lower_with_under   |                                                                   |
++----------------------------+--------------------+-------------------------------------------------------------------+
+
 
 
 Tests
@@ -201,3 +229,4 @@ Sources
 -------
 
 - https://docs.djangoproject.com/en/1.9/internals/contributing/writing-code/coding-style/
+- https://google.github.io/styleguide/pyguide.html
