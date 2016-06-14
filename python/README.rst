@@ -6,7 +6,7 @@ Table of Contents
 
 
 Styles
-======
+------
 
 #. Use four spaces for indentation.
 #. Use ``InitialCaps`` for class names (or for factory functions that return classes).
