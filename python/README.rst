@@ -1,24 +1,31 @@
 Table of Contents
 =================
 
-1. `Python`_
-2. `Styles`_
-3. `TDD - Unit tests`_
-
-
-Python
-======
+#. `Styles`_
+#. `Tests`_
 
 
 Styles
 ======
 
-- Use ``flake8``
-- Use ``iosort``
+#. Use four spaces for indentation.
+#. Use ``InitialCaps`` for class names (or for factory functions that return classes).
+#. Use underscores, not camelCase, for variable, function and method names
+   (i.e. ``poll.get_unique_voters()``, not ``poll.getUniqueVoters``).
+#. Please conform to the indentation style dictated in the .editorconfig file. 
+   We recommend using a text editor with EditorConfig support to avoid indentation 
+   and whitespace issues. User the following `.editorconfig file <./files/.editorconfig>`__
+   as a base configuration.
+#. Follow `PEP8 <https://www.python.org/dev/peps/pep-0008/>`__.
+   Use `flake8 <https://pypi.python.org/pypi/flake8>`__ to check for problems in this area.
+#. In docstrings, follow `PEP 257 <https://www.python.org/dev/peps/pep-0257/>`__.
 
+
+Tests
+=====
 
 TDD - Unit tests
-================
+----------------
 
 How do we use TDD in Python?
 
@@ -34,6 +41,7 @@ just by way of example.
 
 
     class Activity(models.Model):
+
         user = models.ForeignKey(User)
         start_date = models.DateField()
         end_date = models.DateField()
@@ -187,3 +195,9 @@ This way, the three tests pass and we have ended the round of tdd testing.
 What comes next? We assumed that this dates came with the right format, etc. Now
 we will need to make sure that happens, but as this is just an example, that is
 left for the reader as an exercise.
+
+
+Sources
+=======
+
+- https://docs.djangoproject.com/en/1.9/internals/contributing/writing-code/coding-style/

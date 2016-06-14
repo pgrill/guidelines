@@ -1,5 +1,8 @@
-Guidelines
-==========
+.. |status| image:: https://travis-ci.org/sophilabs/guidelines.svg?branch=master
+    :target: https://travis-ci.org/sophilabs/guidelines
+
+Guidelines |status|
+===================
 
 These are the guidelines that lead us to create beautiful software.
 Please contribute to it following this `contribution guidelines <./CONTRIBUTING.rst>`__.
@@ -16,10 +19,24 @@ Table of Contents
 =================
 
 
+#. `Languages & Frameworks`_
 #. `License`_
 
-.. image:: https://travis-ci.org/sophilabs/guidelines.svg?branch=master
-    :target: https://travis-ci.org/sophilabs/guidelines
+
+Languages & Frameworks
+======================
+
+#. `C++ <./cpp/README.rst>`__
+#. `Django <./django/README.rst>`__
+#. `Python <./python/README.rst>`__
+#. `Sass <./sass/README.rst>`__
+
+
+Status
+======
+
+
+
 
 
 License
