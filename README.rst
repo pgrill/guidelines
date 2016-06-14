@@ -32,13 +32,6 @@ Languages & Frameworks
 #. `Sass <./sass/README.rst>`__
 
 
-Status
-======
-
-
-
-
-
 License
 =======
 
