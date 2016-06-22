@@ -58,3 +58,59 @@ Naming Conventions
 
        namespace io { };
        namespace math { };
+
+Syntax
+^^^^^^
+
+#. **Braces**
+
+   Each brace occupies its own line:
+
+    .. code-block:: c++
+
+        if (condition)
+        {
+            x++;
+        }
+
+        for (const auto& variable : iterable)
+        {
+            x++;
+        }
+
+        while (condition)
+        {
+            x++;
+        }
+
+        switch (something)
+        {
+        case Something:
+            break;
+        }
+
+        void do_something()
+        {
+            x++;
+        }
+
+        class Class
+        {
+        public:
+            int m_x;
+        };
+
+
+    Namespaces are an exception to the above:
+
+    .. code-block:: c++
+
+        namespace sophi {
+
+        // Stuff inside the namespace block has the same indentation as
+        // the block itself;
+        x++;
+
+        } /* sophi */
+
+    The final ``/* sophi */`` comment is mandatory.
