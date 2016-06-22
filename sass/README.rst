@@ -14,8 +14,17 @@ Principles
 * Use lowercase with dashes for class name and add an space between
   the name and the bracket.
 * Use 2 speaces for indentation.
+* Use single quotes.
 * Use lowercase with dashes for filenames.
-
+* Extend from `%placeholders <http://blog.teamtreehouse.com/extending-placeholder-selectors-with-sass/>`__, never from a class.
+* Don't abuse extend a placeholder in order to avoid side effects.
+* Lines as possible, shorter than 80 characters. You can split them into several lines when necessary.
+* Use colors expressed in HSL when possible, then RGB, then hexadecimal.
+* Use media queries inside the selector.
+* Use pseudo-elements '::after' and '::before' if you don't need link a action.
+* Generate source map just for develop propose '/*# sourceMappingURL=screen.css.map */'.
+* Use the flag !default in public libraries to safely override.
+* Don't use the flag !global for root declarations.
 
 Rule Formatting
 ===============
@@ -100,13 +109,13 @@ File Structure
 Modules, partials, and vendor
 -----------------------------
 
-As you can see this divides the project into three basic types of files: 
+As you can see this divides the project into three basic types of files:
 Modules, partials, and vendored stylesheets.
 
-* The modules directory is reserved for Sass code that doesn't cause Sass to 
+* The modules directory is reserved for Sass code that doesn't cause Sass to
   actually output CSS. Things like mixin declarations, functions, and variables.
 * The partials directory is where the meat of my CSS is constructed.
-* The vendor directory is for third-party CSS. This is handy when using 
+* The vendor directory is for third-party CSS. This is handy when using
   prepackaged components developed by other people (or for your own components that are maintained in another project). jQuery UI and a color picker are examples of CSS that you might want to place in the vendor directory. As a general rule I make it a point not to modify files in my vendor directory. If I need to make modifications I add those after the vendored files are included in my primary stylesheet. This should make it easy for me to update my third-party stylesheets to more current versions in the future.
 
 
