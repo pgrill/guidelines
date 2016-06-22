@@ -66,51 +66,62 @@ Syntax
 
    Each brace occupies its own line:
 
-    .. code-block:: c++
+   .. code-block:: c++
 
-        if (condition)
-        {
-            x++;
-        }
+       if (condition)
+       {
+           x++;
+       }
 
-        for (const auto& variable : iterable)
-        {
-            x++;
-        }
+       for (const auto& variable : iterable)
+       {
+           x++;
+       }
 
-        while (condition)
-        {
-            x++;
-        }
+       while (condition)
+       {
+           x++;
+       }
 
-        switch (something)
-        {
-        case Something:
-            break;
-        }
+       switch (something)
+       {
+       case Something:
+           break;
+       }
 
-        void do_something()
-        {
-            x++;
-        }
+       void do_something()
+       {
+           x++;
+       }
 
-        class Class
-        {
-        public:
-            int m_x;
-        };
+       class Class
+       {
+       public:
+           int m_x;
+       };
+
+       // Extra braces inside a function also follow this convention
+       void do_something()
+       {
+           {
+               // Another Scope
+               int x;
+               x++;
+           }
+       }
 
 
-    Namespaces are an exception to the above:
+   Namespaces are an exception to the above:
 
-    .. code-block:: c++
+   .. code-block:: c++
 
-        namespace sophi {
+       namespace sophi {
 
-        // Stuff inside the namespace block has the same indentation as
-        // the block itself;
-        x++;
+       // Stuff inside the namespace block has the same indentation as
+       // the block itself;
+       x++;
 
-        } /* sophi */
+       } /* sophi */
 
-    The final ``/* sophi */`` comment is mandatory.
+
+   The final ``/* sophi */`` comment is mandatory.
