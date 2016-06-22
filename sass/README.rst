@@ -2,13 +2,15 @@ Table of Contents
 =================
 
 #. `Ruleset`_
-1. `Declarations`_
-#. `File Structure`_
+#. `Naming`_
+#. `Declarations`_
+#. `Architecture`_
 #. `Inspiration & Sources`_
 
 Ruleset
 =======
 
+* Use single quotes.
 * Each selector on a new line.
 * Don't use ``#ids`` in selectors.
 * The opening brace (``{``) spaced from the last selector by a single space.
@@ -23,6 +25,15 @@ Ruleset
 * Write comments.
 * Comment the code using `SassSoc <http://sassdoc.com/>`__.
 * Use multiple lines comments ``/* ... */``` if you want to preserve the comments.
+* Extend from `%placeholders <http://blog.teamtreehouse.com/extending-placeholder-selectors-with-sass/>`__, never from a class.
+* Don't abuse extend a placeholder in order to avoid side effects.
+* Lines as possible, shorter than 80 characters. You can split them into several lines when necessary.
+* Use colors expressed in HSL when possible, then RGB, then hexadecimal.
+* Use media queries inside the selector.
+* Use pseudo-elements ``::after`` and ``::before`` if you don't need link a action.
+* Generate source map just for develop propose.
+* Use the flag ``!default`` in public libraries to safely override.
+* Don't use the flag ``!global`` for root declarations.
 
 Naming
 ======
@@ -91,8 +102,8 @@ Declarations
     }
 
 
-File Structure
-==============
+Architecture
+============
 
 .. code:: text
 
@@ -119,13 +130,13 @@ File Structure
 Modules, partials, and vendor
 -----------------------------
 
-As you can see this divides the project into three basic types of files: 
+As you can see this divides the project into three basic types of files:
 Modules, partials, and vendored stylesheets.
 
-* The modules directory is reserved for Sass code that doesn't cause Sass to 
+* The modules directory is reserved for Sass code that doesn't cause Sass to
   actually output CSS. Things like mixin declarations, functions, and variables.
 * The partials directory is where the meat of my CSS is constructed.
-* The vendor directory is for third-party CSS. This is handy when using 
+* The vendor directory is for third-party CSS. This is handy when using
   prepackaged components developed by other people (or for your own components that are maintained in another project). jQuery UI and a color picker are examples of CSS that you might want to place in the vendor directory. As a general rule I make it a point not to modify files in my vendor directory. If I need to make modifications I add those after the vendored files are included in my primary stylesheet. This should make it easy for me to update my third-party stylesheets to more current versions in the future.
 
 
