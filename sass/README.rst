@@ -1,24 +1,43 @@
 Table of Contents
 =================
 
-1. `Principles`_
-#. `Rule Formatting`_
+#. `Ruleset`_
+1. `Declarations`_
 #. `File Structure`_
 #. `Inspiration & Sources`_
 
-Principles
-==========
+Ruleset
+=======
 
-* Don't use ``#ids`` in rule selectors.
-* Use one line per rule selector.
-* Use lowercase with dashes for class name and add an space between
-  the name and the bracket.
+* Each selector on a new line.
+* Don't use ``#ids`` in selectors.
+* The opening brace (``{``) spaced from the last selector by a single space.
+* Each declaration on its own new line.
+* A space after the colon (``:``).
+* Trailing semi-colon (``;``) at the end of all declarations.
+* The closing brace (``}``) on its own new line.
+* A new line after the closing brace ``}``.
 * Use 2 speaces for indentation.
-* Use lowercase with dashes for filenames.
+* Force ``@charset 'utf-8';`` in the main stylesheet.
+* Sort properties by name.
+* Write comments.
+* Comment the code using `SassSoc <http://sassdoc.com/>`__.
+* Use multiple lines comments ``/* ... */``` if you want to preserve the comments.
+
+Naming
+======
+
+* Filenames: Use lowercase with dashes.
+* Classes: Use `BEM <http://getbem.com/naming/>`__.
+* Functions: All lowercase with dashes. ``@function my-function() { ...``
+* Mixins: All lowercase with dashes. ``@mixin my-mixin() { ...``
+* Variables: All lowercase with dashes. ``$my-variable = 50;``
+* Constants: All-caps snakerized. ``$POSITIONS = (top, right, bottom, left)``
+* Namespace: Prefix variables, mixins, functions, etc. by an abbreviation of the project.
 
 
-Rule Formatting
-===============
+Declarations
+============
 
 .. code:: scss
 
@@ -114,6 +133,7 @@ Modules, partials, and vendored stylesheets.
 Inspiration & Sources
 =====================
 
+* `Sass Guidelines <https://sass-guidelin.es>`__
 * `How to structure a sass project <http://thesassway.com/beginner/how-to-structure-a-sass-project>`__
 * `Css-Tricks <https://css-tricks.com/sass-style-guide/>`__
 * `SCSS Linter <https://github.com/brigade/scss-lint>`__
