@@ -22,6 +22,18 @@ documentation from annotated source code.
 Coding Style
 ============
 
+File Names
+^^^^^^^^^^
+
+#. **Headers**
+
+   Header files should be named with ``snake_case`` and use the ``.hpp``
+   extension for C++ headers, and ``.h`` for plain C headers.
+
+   - ``file_system.hpp``
+   - ``array_view.hpp``
+   - ``unused.hpp``
+
 Naming Conventions
 ^^^^^^^^^^^^^^^^^^
 
