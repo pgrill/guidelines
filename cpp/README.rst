@@ -27,23 +27,29 @@ Naming Conventions
 
 #. **Types** must be in ``UpperCamelCase``.
 
+    .. code-block:: c++
+
+        class FileSystem { };
+        struct User { };
+
+#. **Variables** must be in ``snake_case``.
+
+    .. code-block:: c++
+
+        int user_count;
+        int balance;
+
+    Member variables must have a ``m_`` prefix.
+
+    .. code-block:: c++
+
+        char* m_buffer;
+
+#. **Functions** must be verbs written in ``snake_case``.
+
    .. code-block:: c++
 
-       class FileSystem { };
-       struct User { };
-
-#. **Variables** must be in ``lowerCamelCase``.
-
-   .. code-block:: c++
-
-       int userCount;
-       int balance;
-
-#. **Functions** must be verbs written in ``lowerCamelCase``.
-
-   .. code-block:: c++
-
-       int computeTotal();
+       int compute_total();
        void clear();
 
 #. **Namespaces** must be written in ``lowercase``.
