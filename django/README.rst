@@ -85,6 +85,29 @@ Signals
 Tests
 =====
 
+TDD - Introduction
+==================
+
+First off, suppose you were required to create an app that should register user
+activities and then show if the activity was done on the current week.
+
+In order to do that you decide to create a new model. Where should you start?
+well you could start by creating the activity class, defining its fields and
+methods, documenting it, integrate it with the rest of the app, clicking around to
+make sure everything works and then write tests as an after thought.
+
+There are a couple of problems with that workflow, the main one is that creating
+the tests after the functionality will make you adapt your tests to the functionality
+and not the other way around, so the tests, instead of describing the requirements
+will describe the already implemented functionality (which can be wrong).
+
+Also, by writing tests firsts, you'll have a clear definition of the required public
+interface, the client requirements and a clear ending point of the development process.
+Once your test suit passes, you've successfully implemented the requirements, of course
+this doesn't necessarily means you are done, refactor is a key element in the development
+of any kind of software.
+
+
 TDD - Unit tests
 ================
 
