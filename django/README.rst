@@ -85,8 +85,8 @@ Signals
 Tests
 =====
 
-TDD - Introduction
-==================
+Introduction
+------------
 
 First off, suppose you were required to create an app that should register user
 activities and then show if the activity was done on the current week.
@@ -96,7 +96,7 @@ well you could start by creating the activity class, defining its fields and
 methods, documenting it, integrate it with the rest of the app, clicking around to
 make sure everything works and then write tests as an after thought.
 
-There are a couple of problems with that workflow, the main one is that creating
+There are a couple of problems with that workflow, the main one (related to testing) is that creating
 the tests after the functionality will make you adapt your tests to the functionality
 and not the other way around, so the tests, instead of describing the requirements
 will describe the already implemented functionality (which can be wrong).
@@ -107,15 +107,102 @@ Once your test suit passes, you've successfully implemented the requirements, of
 this doesn't necessarily means you are done, refactor is a key element in the development
 of any kind of software.
 
+Project structure and configuration
+-----------------------------------
+
+
+When creating an app, by default, django creates a test.py file on the app
+directory. We recommend deleting that file and creating a package in the same
+directory named tests. Inside it, create test_*.py files to test specific parts
+of the app (test_models.py, test_views.py, etc). Django will be able to find those
+tests anyway and it will be easier to maintain afterwards.
+
+We also like to keep a specific configuration for testing that depends on the
+environment, so if the environment variable TEST is true then all the project
+settings reflect it.
+
+If the project has tests that interact with the database, we configure our test
+database to use the same drivers as the production database so we can mimic the
+production environment as much as we can.
+
 
 TDD - Unit tests
-================
+----------------
 
-How do we use TDD in Python?
+How do we use TDD in Django?
 
-First off, we will start by designing a simple class that will do simple stuff
-just by way of example.
+We will start by defining the tests for the requirements defined on the introduction.
 
+.. code:: python
+
+    import datetime
+
+    from django.test import TestCase
+    from django.contrib.auth.models import User
+
+    # The Activity model does not exists yet, but by creating
+    # this test we already made the decision on where it should be defined
+    from activities.models import Activity
+    from users.models import User
+
+    # All tests that interact with the database
+    # should extend django.test.TestCase, this makes sure
+    # all your tests run inside a transaction.
+    # TestCase extends unittest.TestCase so all the standard python assertion
+    # helpers are available on the test suit
+    class ActivityTestCase(TestCase):
+
+        # This method is called once before running this
+        # test suit, so it should be used to configure
+        # values that are used across all the test suit
+        @classmethod
+        def setUpClass(cls):
+            super().setUpClass()
+            cls.user = User.objects.create_user(
+                'admin',
+                'admin@example.com',
+                'examplepass'
+            )
+
+        # Test names should describe what the test is doing,
+        # also, its important that the name starts with test_*
+        # this is what tells django that it should be executed
+        # when running the test suit
+        def test_is_current_week_with_current_week(self):
+
+            # The activity model does not exists but here we've
+            # defined what fields should be required
+            # on the activity
+            activity = Activity.objects.create(
+                user=cls.user,
+                done_at=datetime.date.today(),
+            )
+
+            # And by asserting its functionality we already
+            # defined the method signature and its expected
+            # functionality
+            self.assertTrue(activity.is_current_week())
+
+        # Its important to test failing cases as well
+        def test_is_current_week_with_next_week(self):
+            activity = Activity.objects.create(
+                user=cls.user,
+                done_at=datetime.date.today() + datetime.timedelta(days=7),
+            )
+            self.assertFalse(activity.is_current_week())
+
+        def test_is_current_week_with_previous_week(self):
+            activity = Activity.objects.create(
+                user=cls.user,
+                done_at=datetime.date.today() - datetime.timedelta(days=7),
+            )
+            self.assertFalse(activity.is_current_week())
+
+Now we have to write the Activity class, or else the test will definitely fail.
+We already defined the Activity on the test, so this process should be
+really straightforward.
+
+We'll start by implementing the bare minimum so that we can run the tests.
 
 .. code:: python
 
@@ -127,158 +214,44 @@ just by way of example.
     class Activity(models.Model):
 
         user = models.ForeignKey(User)
-        start_date = models.DateField()
-        end_date = models.DateField()
+        done_at = models.DateField()
 
-
-        def is_next_week(self):
+        # We know how the method should be named and
+        # that it should return a boolean so thats all
+        # we implement for now
+        def is_current_week(self):
             return True
 
+Now we can run our tests. This is done by running :code:`$ ./manage.py test` on
+the terminal. In this case test will fail, but thats okay, the development process
+should be: run test - fail tests - refactor - success test - refactor - run test
+and continue the cycle until you are satisfied with the implementation. If test
+exists, you'll be able to refactor your implementation with the assurance that
+you are always complying with the requirements.
 
-This method called :code:`is_next_week`, is a method of activity because as
-an example, we had the requirement to list all the activities that were next
-week. Now, this is the test class that tests this method and its base scenarios.
-
-
-.. code:: python
-
-    import datetime
-
-    from django.test import TestCase
-    from django.contrib.auth.models import User
-
-    from activities.models import Activity
-
-    class ActivityTestCase(TestCase):
-
-        @classmethod
-        def setUp(self):
-            super().setUpClass()
-            self.user = User.objects.create_user(
-                'admin',
-                'admin@example.com',
-                'examplepass'
-            )
-            self.this_week = Activity.objects.create(
-                user=User.objects.first(),
-                start_date=datetime.date.today(),
-                end_date=(datetime.date.today() + datetime.timedelta(days=1))
-            )
-
-        def test_is_next_week(self):
-            self.assertTrue(True)
-
-        def test_is_next_week_passed_next_week(self):
-            self.assertTrue(True)
-
-        def test_is_next_week_this_week(self):
-            self.assertTrue(True)
-
-
-The base scenarios are as you can see if it starts in fact next week, if its
-this week, or if it is passed next week.
-
-The :code:`setUp` method is a method that we build just because when using
-Django, it automatically builds an independent db for the tests which is empty,
-so we will have to populate it with something; due to how our models are made,
-this is the minimum data we will need to test the method, an activity and a
-User.
-
-Now, as this test passes because it is just asserting True to True, we can make
-this test case richer.
+Now lets update the Activity class so out test don't fail.
 
 
 .. code:: python
 
-    # Rest of the code stays the same.
-    def test_is_next_week(self):
-        activity = self.this_week
-        self.assertTrue(activity.is_next_week())
+    # (...) The rest of code stays the same, we only need to udpdate
+    # is_current_week
 
-    # The two other tests change exactly as this one
-
-This test case is richer because its mostly finished, because from now on its
-changes will be pretty simple for this example. After making sure this passes by
-running the tests, it is time to get to the code, and do it the simplest way we
-can. This will be:
-
-
-.. code:: python
-
-    import datetime
-
-    # (...) rest of code stays the same
-
-    def is_next_week(self):
-        # we need to figure out which is the next monday
-        next_monday = datetime.date.today()
-        while next_monday.weekday() != 0:
-            next_monday += datetime.timedelta(1)
-        return self.start_date >= next_monday and \
-               self.start_date <= (next_monday + datetime.timedelta(7))
-
-
-The simplest way to see if an activity starts on next week, is by finding out
-which is the next monday, and after that, check if the start day is between next
-monday and next sunday, if that is true, then the activity starts next week. Now
-if you run the test, they will fail, because of the data we entered, and so we
-will need to modify the data that we entered in order to make this three test
-cases useful, and also the methods to call the correct activity:
-
-
-.. code:: python
-
-    @classmethod
-    def setUp(self):
-        super().setUpClass()
-        self.user = User.objects.create_user(
-            'admin',
-            'admin@example.com',
-             'examplepass'
-        )
+    def is_current_week(self):
         today = datetime.date.today()
-        if today.weekday() == 0:
-            today += datetime.timedelta(7)
-        else:
-            today += datetime.timedelta(6)
-        self.next_week = Activity.objects.create(
-            user=User.objects.first(),
-            start_date=today,
-            end_date=(today + datetime.timedelta(days=1))
-        )
-        self.passed_next_week = Activity.objects.create(
-            user=User.objects.first(),
-            start_date=datetime.date.today() + datetime.timedelta(15),
-            end_date=datetime.date.today() + datetime.timedelta(16)
-        )
-        self.this_week = Activity.objects.create(
-            user=User.objects.first(),
-            start_date=datetime.date.today(),
-            end_date=(datetime.date.today() + datetime.timedelta(days=1))
-        )
+        monday = today - datetime.timedelta(days=today.weekday())
+        sunday = today + datetime.timedelta(days=6)
 
+        return monday <= self.done_at <= sunday
 
-    def test_is_next_week(self):
-        activity = self.next_week
-        self.assertTrue(activity.is_next_week())
+Run tests with :code:`$ ./manage.py tests` and tests should be successful! Now we
+can be sure we finished with the original requirements and move on to the next
+feature that needs to be implemented.
 
-    def test_is_next_week_passed_next_week(self):
-        activity = self.passed_next_week
-        self.assertFalse(activity.is_next_week())
-
-    def test_is_next_week_this_week(self):
-        activity = self.this_week
-        self.assertFalse(activity.is_next_week())
-
-
-Note: there is still one scenario we are not contemplating, and that would be if
-you run this tests on Monday, because it will find next Monday as todays, which
-is a validation that follows the same process that we have just described.
-
-This way, the three tests pass and we have ended the round of tdd testing.
-What comes next? We assumed that this dates came with the right format, etc. Now
-we will need to make sure that happens, but as this is just an example, that is
-left for the reader as an exercise.
+So we finish out first round of tdd testing.
+What comes next? We assumed all dates where correctly formatted and that is_current_week
+never unexpectedly failed. We should be testing those edge cases as well,
+but as this is just an example, that is left for the reader as an exercise.
 
 If you want to see how we do tests, please click here_.
 
