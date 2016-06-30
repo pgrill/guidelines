@@ -85,14 +85,147 @@ Signals
 Tests
 =====
 
+Introduction
+------------
+
+First off, suppose you were required to create an app that should register user
+activities and then show if the activity was done on the current week.
+
+In order to do that you decide to create a new model. Where should you start?
+well you could start by creating the activity class, defining its fields and
+methods, documenting it, integrate it with the rest of the app, clicking around to
+make sure everything works and then write tests as an after thought.
+
+There are a couple of problems with that workflow, the main one (related to testing) is that creating
+the tests after the functionality will make you adapt your tests to the functionality
+and not the other way around, so the tests, instead of describing the requirements
+will describe the already implemented functionality (which can be wrong).
+
+Also, by writing tests firsts, you'll have a clear definition of the required public
+interface, the client requirements and a clear ending point of the development process.
+Once your test suit passes, you've successfully implemented the requirements, of course
+this doesn't necessarily means you are done, refactor is a key element in the development
+of any kind of software.
+
+Project structure and configuration
+-----------------------------------
+
+**Folder structure**
+
+When creating an app, by default, django creates a test.py file on the app
+directory. We recommend deleting that file and creating a package in the same
+directory named tests. Inside it, create test_*.py files to test specific parts
+of the app (test_models.py, test_views.py, etc). Django will be able to find those
+tests anyway and it will be easier to maintain afterwards.
+
+**Configurations**
+
+We also like to keep a specific configuration for testing that depends on the
+environment, so if the environment variable TEST is true then all the project
+settings reflect it.
+
+If the project has tests that interact with the database, we configure our test
+database to use the same drivers as the production database so we can mimic the
+production environment as much as we can.
+
+**Coverage**
+
+Coverage is good metric to know how much of your code is being checked by your
+tests, we use `coverage.py <http://coverage.readthedocs.io/en/latest/>`__ for this.
+It has seemingness integration with django, all we need to do is run
+:code:`coverage run --source='.' manage.py test` when running tests. On most cases
+that command won't be enough for the project necessities though, so we end up creating
+a :code:`test.sh` file to set all environment variables and configurations
+and run test. As an example:
+
+.. code:: bash
+
+    #!/bin/bash
+
+    WARNINGS=0 TEST=YES coverage run --source=. manage.py test --noinput "$@"
+
+    if [ "$?" -eq '0' ]; then
+      coverage html
+    fi
+
+
 TDD - Unit tests
-================
+----------------
 
-How do we use TDD in Python?
+How do we use TDD in Django?
 
-First off, we will start by designing a simple class that will do simple stuff
-just by way of example.
+We will start by defining the tests for the requirements defined on the introduction.
 
+.. code:: python
+
+    import datetime
+
+    from django.test import TestCase
+    from django.contrib.auth.models import User
+
+    # The Activity model does not exists yet, but by creating
+    # this test we already made the decision on where it should be defined
+    from activities.models import Activity
+    from users.models import User
+
+    # All tests that interact with the database
+    # should extend django.test.TestCase, this makes sure
+    # all your tests run inside a transaction.
+    # TestCase extends unittest.TestCase so all the standard python assertion
+    # helpers are available on the test suit
+    class ActivityTestCase(TestCase):
+
+        # This method is called once before running this
+        # test suit, so it should be used to configure
+        # values that are used across all the test suit
+        @classmethod
+        def setUpClass(cls):
+            super().setUpClass()
+            cls.user = User.objects.create_user(
+                'admin',
+                'admin@example.com',
+                'examplepass'
+            )
+
+        # Test names should describe what the test is doing,
+        # also, its important that the name starts with test_*
+        # this is what tells django that it should be executed
+        # when running the test suit
+        def test_is_current_week_with_current_week(self):
+
+            # The activity model does not exists but here we've
+            # defined what fields should be required
+            # on the activity
+            activity = Activity.objects.create(
+                user=cls.user,
+                done_at=datetime.date.today(),
+            )
+
+            # And by asserting its functionality we already
+            # defined the method signature and its expected
+            # functionality
+            self.assertTrue(activity.is_current_week())
+
+        # Its important to test failing cases as well
+        def test_is_current_week_with_next_week(self):
+            activity = Activity.objects.create(
+                user=cls.user,
+                done_at=datetime.date.today() + datetime.timedelta(days=7),
+            )
+            self.assertFalse(activity.is_current_week())
+
+        def test_is_current_week_with_previous_week(self):
+            activity = Activity.objects.create(
+                user=cls.user,
+                done_at=datetime.date.today() - datetime.timedelta(days=7),
+            )
+            self.assertFalse(activity.is_current_week())
+
+Now we have to write the Activity class, or else the test will definitely fail.
+We already defined the Activity on the test, so this process should be
+really straightforward.
+
+We'll start by implementing the bare minimum so that we can run the tests.
 
 .. code:: python
 
@@ -104,159 +237,283 @@ just by way of example.
     class Activity(models.Model):
 
         user = models.ForeignKey(User)
-        start_date = models.DateField()
-        end_date = models.DateField()
+        done_at = models.DateField()
 
-
-        def is_next_week(self):
+        # We know how the method should be named and
+        # that it should return a boolean so thats all
+        # we implement for now
+        def is_current_week(self):
             return True
 
+Now we can run our tests. This is done by running :code:`$ ./manage.py test` on
+the terminal. In this case test will fail, but thats okay, the development process
+should be: run test - fail tests - refactor - success test - refactor - run test
+and continue the cycle until you are satisfied with the implementation. If test
+exists, you'll be able to refactor your implementation with the assurance that
+you are always complying with the requirements.
 
-This method called :code:`is_next_week`, is a method of activity because as
-an example, we had the requirement to list all the activities that were next
-week. Now, this is the test class that tests this method and its base scenarios.
-
-
-.. code:: python
-
-    import datetime
-
-    from django.test import TestCase
-    from django.contrib.auth.models import User
-
-    from activities.models import Activity
-
-    class ActivityTestCase(TestCase):
-
-        @classmethod
-        def setUp(self):
-            super().setUpClass()
-            self.user = User.objects.create_user(
-                'admin',
-                'admin@example.com',
-                'examplepass'
-            )
-            self.this_week = Activity.objects.create(
-                user=User.objects.first(),
-                start_date=datetime.date.today(),
-                end_date=(datetime.date.today() + datetime.timedelta(days=1))
-            )
-
-        def test_is_next_week(self):
-            self.assertTrue(True)
-
-        def test_is_next_week_passed_next_week(self):
-            self.assertTrue(True)
-
-        def test_is_next_week_this_week(self):
-            self.assertTrue(True)
-
-
-The base scenarios are as you can see if it starts in fact next week, if its
-this week, or if it is passed next week.
-
-The :code:`setUp` method is a method that we build just because when using
-Django, it automatically builds an independent db for the tests which is empty,
-so we will have to populate it with something; due to how our models are made,
-this is the minimum data we will need to test the method, an activity and a
-User.
-
-Now, as this test passes because it is just asserting True to True, we can make
-this test case richer.
+Now lets update the Activity class so out test don't fail.
 
 
 .. code:: python
 
-    # Rest of the code stays the same.
-    def test_is_next_week(self):
-        activity = self.this_week
-        self.assertTrue(activity.is_next_week())
+    # (...) The rest of code stays the same, we only need to udpdate
+    # is_current_week
 
-    # The two other tests change exactly as this one
-
-This test case is richer because its mostly finished, because from now on its
-changes will be pretty simple for this example. After making sure this passes by
-running the tests, it is time to get to the code, and do it the simplest way we
-can. This will be:
-
-
-.. code:: python
-
-    import datetime
-
-    # (...) rest of code stays the same
-
-    def is_next_week(self):
-        # we need to figure out which is the next monday
-        next_monday = datetime.date.today()
-        while next_monday.weekday() != 0:
-            next_monday += datetime.timedelta(1)
-        return self.start_date >= next_monday and \
-               self.start_date <= (next_monday + datetime.timedelta(7))
-
-
-The simplest way to see if an activity starts on next week, is by finding out
-which is the next monday, and after that, check if the start day is between next
-monday and next sunday, if that is true, then the activity starts next week. Now
-if you run the test, they will fail, because of the data we entered, and so we
-will need to modify the data that we entered in order to make this three test
-cases useful, and also the methods to call the correct activity:
-
-
-.. code:: python
-
-    @classmethod
-    def setUp(self):
-        super().setUpClass()
-        self.user = User.objects.create_user(
-            'admin',
-            'admin@example.com',
-             'examplepass'
-        )
+    def is_current_week(self):
         today = datetime.date.today()
-        if today.weekday() == 0:
-            today += datetime.timedelta(7)
-        else:
-            today += datetime.timedelta(6)
-        self.next_week = Activity.objects.create(
-            user=User.objects.first(),
-            start_date=today,
-            end_date=(today + datetime.timedelta(days=1))
-        )
-        self.passed_next_week = Activity.objects.create(
-            user=User.objects.first(),
-            start_date=datetime.date.today() + datetime.timedelta(15),
-            end_date=datetime.date.today() + datetime.timedelta(16)
-        )
-        self.this_week = Activity.objects.create(
-            user=User.objects.first(),
-            start_date=datetime.date.today(),
-            end_date=(datetime.date.today() + datetime.timedelta(days=1))
-        )
+        monday = today - datetime.timedelta(days=today.weekday())
+        sunday = today + datetime.timedelta(days=6)
 
+        return monday <= self.done_at <= sunday
 
-    def test_is_next_week(self):
-        activity = self.next_week
-        self.assertTrue(activity.is_next_week())
+Run tests with :code:`$ ./manage.py tests` and tests should be successful! Now we
+can be sure we finished with the original requirements and move on to the next
+feature that needs to be implemented.
 
-    def test_is_next_week_passed_next_week(self):
-        activity = self.passed_next_week
-        self.assertFalse(activity.is_next_week())
-
-    def test_is_next_week_this_week(self):
-        activity = self.this_week
-        self.assertFalse(activity.is_next_week())
-
-
-Note: there is still one scenario we are not contemplating, and that would be if
-you run this tests on Monday, because it will find next Monday as todays, which
-is a validation that follows the same process that we have just described.
-
-This way, the three tests pass and we have ended the round of tdd testing.
-What comes next? We assumed that this dates came with the right format, etc. Now
-we will need to make sure that happens, but as this is just an example, that is
-left for the reader as an exercise.
+So we finish out first round of tdd testing.
+What comes next? We assumed all dates where correctly formatted and that is_current_week
+never unexpectedly failed. We should be testing those edge cases as well,
+but as this is just an example, that is left for the reader as an exercise.
 
 If you want to see how we do tests, please click here_.
 
 .. _here: https://github.com/sophilabs/guidelines/tree/master/python#tdd-unit-tests
+
+TDD - Functional Tests
+----------------------
+
+    **Monkey patching and Inverse of control**
+
+    In Python, as a dynamic language, its not common to use a DIC or use
+    inverse of control patterns when designing the application, so in most cases
+    there is strong coupling between classes. This is particularly common on
+    django views.
+
+    That being said, inversion of control as a way of avoiding strong coupling
+    will make test a lot easier so it should be applied whenever possible.
+
+Continuing with the requirements defined on the introduction we should be able
+to show the activities of a user and if they where done on the current week.
+As we did with the unit test, we can benefit from writing the tests first.
+
+.. code:: python
+
+    import datetime
+    from django.test import TestCase, Client
+    from django.contrib.auth.models import User
+    from activities.models import Activity
+    from users.models import User
+
+    class ActivityTestCase(TestCase):
+
+        @classmethod
+        def setUpClass(cls):
+            super().setUpClass()
+            cls.user = User.objects.create_user(
+                'admin',
+                'admin@example.com',
+                'examplepass'
+            )
+
+        # We use a new client for each test
+        def setUp(self):
+            # Client is a django helper for making requests
+            # to out app, it supports all request types (GET, POST, DELETE, etc..)
+            self.client = Client()
+
+        def test_incorrect_url_returns_404(self):
+            # Its a good practice to hardcode urls on tests.
+            # Users can bookmarks urls, so if a url change in our
+            # project, we should add a permanent redirect from the old
+            # url to the new one.
+            response = self.client.get('/user/0/activities')
+
+            # User with id 0 does not exist. We define in the test that
+            # if no user is found, the response code should be 404
+            self.assertEqual(response.status_code, 404)
+
+        def test_user_with_no_activities(self):
+            response = self.client.get(
+              '/user/{}/activities'.format(self.user.id)
+            )
+
+            # We define whats the status code when the user exists
+            self.assertEqual(response.status_code, 200)
+
+            # We can assert the body of the response with contains,
+            # we could also test the context passed into the response
+            # with resonse.context.
+            # We define what the body should contain if the user
+            # has no activities
+            self.assertContains(response, 'No activities')
+
+        def test_user_with_old_activities(self):
+            response = self.client.get(
+                '/user/{}/activities'.format(self.user.id)
+            )
+
+            activity = Activity.objects.create(
+                user=self.user,
+                done_at=datetime.datetime.now() - datetime.timedelta(days=7)
+            )
+
+            self.assertEqual(response.status_code, 200)
+
+            # Defines what the body should contain in case there are any
+            # old activities
+            self.assertContainer(response, str(activity.id))
+
+        def test_user_with_new_activities(self):
+            response = self.client.get(
+                '/user/{}/activities'.format(self.user.id)
+            )
+
+            activity = Activity.objects.create(
+                user=self.user,
+                done_at=datetime.datetime.now()
+            )
+
+            self.assertEqual(response.status_code, 200)
+
+            # Defines what the body should contain in case there is any
+            # new activity
+            self.assertContaines(
+                response,
+                '{} was done this week!'.format(activity.id)
+            )
+
+Now that we defined how our view should behave we can start implementing it,
+we run test the same way we did for unittest :code:`./manage.py test`.
+
+Implementing the view should be easy now, we have all mayor steps defined.
+
+.. code:: python
+
+    # view.py
+
+    from django.views.generic.detail import DetailView
+    from accounts.models import User
+
+    class UserDetailView(DetailView):
+        template_name = "user.html"
+        model = User
+
+    # urls.py
+
+    urlpatterns = [
+      url(r'^users/(?P<user_id>[0-9]+)/$',
+          UserDetailView.as_view(), name='user-detail'),
+    ]
+
+.. code:: html
+
+    # user.html
+
+    {% for activity in object.activities %}
+      {% if activity.is_current_week %}
+        <p>{activity.id} was done this week!</p>
+      {% else %}
+        <p>{activity.id}</p>
+      {% endif %}
+    {% empty %}
+      <p>No activities</p>
+    {% endfor %}
+
+Because we had all the tests before coding the actual views, it makes it easier to
+implement, we know what type of views we should use (DetailView), we know we
+have to show something even if :code:`objects.activities` is empty and we know
+how the url should look. Now we can do progressive enhancements with confidence,
+knowing that if we mess up, the tests will let us know. Next we could add
+styles, javascript, more context information and as long as the test keep giving
+us the okay, we are complying to the requirements and our app works!
+
+TDD - Selenium
+--------------
+
+Suppose the app should only display the user activities after clicking a button
+on the page. This will use javascript to make an ajax call to bring the activities
+and then insert them in the DOM. We can't test that with out current stack as
+it does not runs javascript.
+
+Enter `Selenium <http://www.seleniumhq.org/>`__ a web browser automation.
+
+Testing with selenium in django is extremely easy.
+
+First, our tests should extend :code:`django.contrib.staticfiles.testing.StaticLiveServerTestCase`.
+StaticLiveServerTestCase launches a live django server in the background (running our app)
+and serves the static files to it.
+
+Here is how the selenium test would look like:
+
+.. code:: python
+
+    from django.contrib.staticfiles.testing import StaticLiveServerTestCase
+    from selenium import webdriver
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.support import expected_conditions
+    from selenium.webdriver.support.wait import WebDriverWait
+
+
+    class UserActivitiesTest(StaticLiveServerTestCase):
+        def setUp(self):
+          # (...) test setup, creating user and context
+
+          # First we load the selenium driver, its responsable of controlling
+          # the browser.
+          # We like using a chrome webdriver as its our goto browser
+          self.selenium = webdriver.Chrome(<path_to_driver>)
+          self.selenium.maximize_window()
+          super(GenerateReportTest, self).setUp()
+
+        def tearDown(self):
+            # Its important to close the selenium session
+            # once out test are done
+            self.selenium.quit()
+            super(GenerateReportTest, self).tearDown()
+
+        def test_async_user_activities(self):
+            # Load the page into the browser
+            self.selenium.get(
+                '{}{}'.format(self.live_server_url, '/user/1/activities')
+            )
+
+            # We can select DOM elements and interact with them
+            activity_button = self.selenium.find_element_by_id("activity-button")
+            activity_button.click()
+
+            # We wait for the activities maximum (acceptable) time
+            # and set the expected condition, if the time is reached and
+            # the condition evaluates to false, the test will fail.
+            WebDriverWait(self.selenium, 10).until(
+                expected_conditions.visibility_of_element_located(
+                    (By.CLASS_NAME, "user-activity")
+                )
+            )
+
+The above test, will check a couple of things. It will test that there is a button
+with the id :code:`activity-button`, it will check that when clicked the user should
+see an element with the class :code:`user-activity` and it will test that the delay
+between the click and the DOM update takes less that 10 seconds.
+
+So we are effectively testing the user experience. There is one big downside for
+this kind of test, if the html markup changes, the test will fail. Depending on
+the project, this can be a good thing or a bad thing. If the project is constantly
+redesigning its identity, the effort of maintaining this test is probably not worth
+it, but if the project has well defined style guidelines and its important for the
+application to comply to them, then the development process could really benefit
+from having this tests.
+
+The are different cases where its important (or mandatory) to test you website
+javascript and ux, to name a few:
+
+- SPA applications
+- Partial content loading
+- Real time applications
+- Strong Identity sites
+- Short loading time requirement
+
+For all those cases we need to be able to load the web page and simulate the user
+interaction with it, that way, we can make sure that the user experience in our
+site is the one that is expected. After all, the user experience is what gives
+value to our site, it would be foolish not to test it.
