@@ -428,8 +428,13 @@ knowing that if we mess up, the tests will let us know. Next we could add
 styles, javascript, more context information and as long as the test keep giving
 us the okay, we are complying to the requirements and our app works!
 
-Selenium
---------
+Acceptance Tests
+----------------
+
+While unit and functional tests are classified as white box tests, acceptance tests are considered black box tests.
+They are used to determine if the requirements of the specifications are met.
+
+**Selenium**
 
 Suppose the app should only display the user activities after clicking a button
 on the page. This will use javascript to make an ajax call to bring the activities
