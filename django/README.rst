@@ -85,8 +85,8 @@ Signals
 Tests
 =====
 
-Introduction
-------------
+TDD
+---
 
 First off, suppose you were required to create an app that should register user
 activities and then show if the activity was done on the current week.
@@ -101,7 +101,7 @@ the tests after the functionality will make you adapt your tests to the function
 and not the other way around, so the tests, instead of describing the requirements
 will describe the already implemented functionality (which can be wrong).
 
-Also, by writing tests firsts, you'll have a clear definition of the required public
+Also, by writing tests first, you'll have a clear definition of the required public
 interface, the client requirements and a clear ending point of the development process.
 Once your test suit passes, you've successfully implemented the requirements, of course
 this doesn't necessarily means you are done, refactor is a key element in the development
@@ -149,8 +149,8 @@ and run test. As an example:
     fi
 
 
-TDD - Unit tests
-----------------
+Unit tests
+----------
 
 How do we use TDD in Django?
 
