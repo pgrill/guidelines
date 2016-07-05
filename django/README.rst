@@ -280,8 +280,8 @@ If you want to see how we do tests, please click here_.
 
 .. _here: https://github.com/sophilabs/guidelines/tree/master/python#tdd-unit-tests
 
-TDD - Functional Tests
-----------------------
+Functional Tests
+----------------
 
     **Monkey patching and Inverse of control**
 
@@ -428,8 +428,8 @@ knowing that if we mess up, the tests will let us know. Next we could add
 styles, javascript, more context information and as long as the test keep giving
 us the okay, we are complying to the requirements and our app works!
 
-TDD - Selenium
---------------
+Selenium
+--------
 
 Suppose the app should only display the user activities after clicking a button
 on the page. This will use javascript to make an ajax call to bring the activities
