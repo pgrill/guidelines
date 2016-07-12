@@ -19,11 +19,11 @@ TBD
 Mandatory
 ---------
 
-* Duplicated code
-* ...
+- Duplicated code
+- ...
 
 Heuristics
 ----------
 
-* Test too specific
-* ...
+- Test too specific
+- ...
