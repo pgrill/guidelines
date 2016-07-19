@@ -125,7 +125,7 @@ As Django Two Scoops suggests, relying on fixtures could be problematic. They ar
 especially as it can be difficult to identify during the JSON load process where your JSON files
 are either broken or a subtly inaccurate representation of the database.
 
-To create initial data we use `Factory Boy <https://factoryboy.readthedocs.io/>`__. 
+To create initial data we use `Factory Boy <https://factoryboy.readthedocs.io/>`__.
 
 **Configurations**
 
@@ -284,8 +284,6 @@ So we finish out first round of tdd testing.
 What comes next? We assumed all dates where correctly formatted and that is_current_week
 never unexpectedly failed. We should be testing those edge cases as well,
 but as this is just an example, that is left for the reader as an exercise.
-
-.. _here: https://github.com/sophilabs/guidelines/tree/master/python#tdd-unit-tests
 
 Functional Tests
 ----------------
