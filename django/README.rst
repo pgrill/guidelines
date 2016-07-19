@@ -118,6 +118,15 @@ directory named tests. Inside it, create test_*.py files to test specific parts
 of the app (test_models.py, test_views.py, etc). Django will be able to find those
 tests anyway and it will be easier to maintain afterwards.
 
+
+**Test Data**
+
+As Django Two Scoops suggests, relying on fixtures could be problematic. They are hard to maintain,
+especially as it can be difficult to identify during the JSON load process where your JSON files
+are either broken or a subtly inaccurate representation of the database.
+
+To create initial data we use `Factory Boy <https://factoryboy.readthedocs.io/>`__. 
+
 **Configurations**
 
 We also like to keep a specific configuration for testing that depends on the
@@ -276,12 +285,13 @@ What comes next? We assumed all dates where correctly formatted and that is_curr
 never unexpectedly failed. We should be testing those edge cases as well,
 but as this is just an example, that is left for the reader as an exercise.
 
-If you want to see how we do tests, please click here_.
-
 .. _here: https://github.com/sophilabs/guidelines/tree/master/python#tdd-unit-tests
 
 Functional Tests
 ----------------
+
+The main purpose of functional tests is testing features. In django features could mean views,
+business logic or any other workflow involving several parts of the application.
 
     **Monkey patching and Inverse of control**
 
@@ -386,7 +396,7 @@ As we did with the unit test, we can benefit from writing the tests first.
 Now that we defined how our view should behave we can start implementing it,
 we run test the same way we did for unittest :code:`./manage.py test`.
 
-Implementing the view should be easy now, we have all mayor steps defined.
+Implementing the view should be easy now, we have all major steps defined.
 
 .. code:: python
 
