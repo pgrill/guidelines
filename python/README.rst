@@ -85,11 +85,10 @@ a project root directory, from which all the console commands are going to be
 executed, and then different folders for each module that represent different logic
 or scope. So, following that, we could take four different approaches:
 
-1. tests could all be contained in a :code:`test` folder inside the root directory
-2. tests could all be contained in a :code:`test.py` file in the root directory
-2. tests could be in a :code:`test.py` file inside each module, testing only that module
-4. tests could be in a :code:`test` folder inside each module
-
+#. tests could all be contained in a :code:`test` folder inside the root directory
+#. tests could all be contained in a :code:`test.py` file in the root directory
+#. tests could be in a :code:`test.py` file inside each module, testing only that module
+#. tests could be in a :code:`test` folder inside each module
 
     When using folders, test files should be named :code:`test.py` or
     :code:`test_<something>.py` to indicate what the file is testing.
@@ -224,7 +223,7 @@ Lets run our tests again, :code:`$ ./test.sh`. All green, tests passed, our
 sluggify function is ready!
 
 Mocking && Patching
--------
+-------------------
 
 Mocking is an esscencial part of testing in python. It allows developers to test
 specefic functionality in an insolated way.
@@ -233,7 +232,9 @@ Lets create a :code:`class` that represents a :code:`user`. The :code:`User`
 will have a name and a property that returns the sluggified version of that name.
 
 .. code:: python
-    #<project_root>/user.py
+
+    # <project_root>/user.py
+
     from slug import sluggify
 
     class User(object):
