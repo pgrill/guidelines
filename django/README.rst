@@ -184,7 +184,7 @@ We will start by defining the tests for the requirements defined on the introduc
     # helpers are available on the test suit
     class ActivityTestCase(TestCase):
 
-        # This method is called once before running this
+        # setUpClass is called once before running this
         # test suit, so it should be used to configure
         # values that are used across all the test suit.
         # From Django 1.8 onwards, setUpTestData should
