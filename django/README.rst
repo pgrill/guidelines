@@ -1,12 +1,3 @@
-Table of Contents
-=================
-
-1. `Books`_
-2. `Files`_
-3. `Templates`_
-4. `Signals`_
-
-
 Books
 =====
 
