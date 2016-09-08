@@ -1,11 +1,3 @@
-Table of Contents
-=================
-
-1. `Books`_
-2. `Documentation`_
-3. `Coding Style`_
-
-
 Books
 =====
 
