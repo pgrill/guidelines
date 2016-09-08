@@ -1,5 +1,8 @@
+Python
+======
+
 Rules
------
+=====
 
 #. Use four spaces for indentation.
 #. Please conform to the indentation style dictated in the .editorconfig file.
