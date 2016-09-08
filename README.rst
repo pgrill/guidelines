@@ -17,14 +17,6 @@ A note on the language:
 A reason is good when you can convince a teammate.
 
 
-Table of Contents
-=================
-
-
-#. `Languages & Frameworks`_
-#. `License`_
-
-
 Languages & Frameworks
 ======================
 
