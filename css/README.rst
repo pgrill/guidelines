@@ -1,8 +1,3 @@
-Table of Contents
-=================
-
-1. `Warning`_
-
 Warning
 =======
 
