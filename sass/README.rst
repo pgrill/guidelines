@@ -1,12 +1,3 @@
-Table of Contents
-=================
-
-#. `Ruleset`_
-#. `Naming`_
-#. `Declarations`_
-#. `Architecture`_
-#. `Inspiration & Sources`_
-
 Ruleset
 =======
 

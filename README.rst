@@ -1,8 +1,10 @@
-.. |status| image:: https://travis-ci.org/sophilabs/guidelines.svg?branch=master
-    :target: https://travis-ci.org/sophilabs/guidelines
+Guidelines
+==========
 
-Guidelines |status|
-===================
+.. image:: https://img.shields.io/travis/sophilabs/gulp-isort.svg?style=flat-square
+    :target: https://travis-ci.org/sophilabs/guidelines
+.. image:: https://img.shields.io/github/license/sophilabs/gulp-isort.svg?style=flat-square
+    :target: ./LICENSE.rst
 
 These are the guidelines that lead us to create beautiful software.
 Please contribute to it following this `contribution guidelines <./CONTRIBUTING.rst>`__.
@@ -15,26 +17,34 @@ be interpreted as described in
 `RFC 2119 <https://tools.ietf.org/html/rfc2119>`_.
 
 
-Table of Contents
-=================
-
-
-#. `Languages & Frameworks`_
-#. `License`_
-
-
 Languages & Frameworks
 ======================
 
+#. `Css <./css/README.rst>`__
 #. `C++ <./cpp/README.rst>`__
 #. `Django <./django/README.rst>`__
 #. `Python <./python/README.rst>`__
-#. `Css <./css/README.rst>`__
 #. `Sass <./sass/README.rst>`__
 #. `RST <./rst/README.rst>`__
+
+
+Code Reviews
+============
+
+#. `How to <./code-reviews/README.rst>`__
 
 
 License
 =======
 
-See `licence <./LICENSE.rst>`__.
+Guidelines is Copyright (c) 2016 sophilabs, inc. It is free software, and may be
+redistributed under the terms specified in the `licence <./LICENSE.rst>`__ file.
+
+About
+=====
+
+.. image:: https://res.cloudinary.com/jsconfuy/image/upload/c_pad,f_auto,h_200,w_200,e_trim/v1426608244/xuwbunompvfjaxuazlwo.png
+    :target: https://sophilabs.co
+
+Guidelines is maintained and funded by sophilabs, inc. The names and logos for
+sophilabs are trademarks of sophilabs, inc.

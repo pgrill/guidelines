@@ -1,12 +1,8 @@
-Table of Contents
------------------
-
-#. `Rules`_
-#. `Tests`_
-
+Python
+======
 
 Rules
------
+=====
 
 #. Use four spaces for indentation.
 #. Please conform to the indentation style dictated in the .editorconfig file.
@@ -46,7 +42,6 @@ Naming
 +----------------------------+--------------------+-------------------------------------------------------------------+
 | Local Variables            | lower_with_under   |                                                                   |
 +----------------------------+--------------------+-------------------------------------------------------------------+
-
 
 
 Tests
