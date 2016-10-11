@@ -9,10 +9,10 @@ Please contribute to it following this `contribution guidelines <./CONTRIBUTING.
 
 A note on the language:
 
-- "Don't/Use" are mandatory instructions.
-- "Avoid/Prefer" indicates worst/better options so you may violate them only with a good reason.
-
-A reason is good when you can convince a teammate.
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", 
+"SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to
+be interpreted as described in 
+`RFC 2119 <https://tools.ietf.org/html/rfc2119>`_.
 
 
 Table of Contents
@@ -31,6 +31,7 @@ Languages & Frameworks
 #. `Python <./python/README.rst>`__
 #. `Css <./css/README.rst>`__
 #. `Sass <./sass/README.rst>`__
+#. `RST <./rst/README.rst>`__
 
 
 License
