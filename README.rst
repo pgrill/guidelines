@@ -1,5 +1,5 @@
 Guidelines
-==========
+----------
 
 .. image:: https://img.shields.io/travis/sophilabs/gulp-isort.svg?style=flat-square
     :target: https://travis-ci.org/sophilabs/guidelines
