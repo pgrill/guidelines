@@ -1,11 +1,5 @@
-Table of Contents
-=================
-
-1. `Books`_
-2. `Files`_
-3. `Templates`_
-4. `Signals`_
-
+Django's Guidelines
+-------------------
 
 Books
 =====
@@ -86,7 +80,7 @@ Tests
 =====
 
 TDD
----
+^^^
 
 First off, suppose you were required to create an app that should register user
 activities and then show if the activity was done on the current week.
@@ -108,7 +102,7 @@ this doesn't necessarily means you are done, refactor is a key element in the de
 of any kind of software.
 
 Project structure and configuration
------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Folder structure**
 
@@ -117,6 +111,15 @@ directory. We recommend deleting that file and creating a package in the same
 directory named tests. Inside it, create test_*.py files to test specific parts
 of the app (test_models.py, test_views.py, etc). Django will be able to find those
 tests anyway and it will be easier to maintain afterwards.
+
+
+**Test Data**
+
+As Django Two Scoops suggests, relying on fixtures could be problematic. They are hard to maintain,
+especially as it can be difficult to identify during the JSON load process where your JSON files
+are either broken or a subtly inaccurate representation of the database.
+
+To create initial data we use `Factory Boy <https://factoryboy.readthedocs.io/>`__.
 
 **Configurations**
 
@@ -150,7 +153,7 @@ and run test. As an example:
 
 
 Unit tests
-----------
+^^^^^^^^^^
 
 How do we use TDD in Django?
 
@@ -175,12 +178,26 @@ We will start by defining the tests for the requirements defined on the introduc
     # helpers are available on the test suit
     class ActivityTestCase(TestCase):
 
-        # This method is called once before running this
+        # setUpClass is called once before running this
         # test suit, so it should be used to configure
-        # values that are used across all the test suit
+        # values that are used across all the test suit.
+        # From Django 1.8 onwards, setUpTestData should
+        # be used instead as it is specifically for that
+        # purpose.
+
+        # For Django 1.7 and lower
         @classmethod
         def setUpClass(cls):
             super().setUpClass()
+            cls.user = User.objects.create_user(
+                'admin',
+                'admin@example.com',
+                'examplepass'
+            )
+
+        # For Django 1.8 and higher
+        @classmethod
+        def setUpTestData(cls):
             cls.user = User.objects.create_user(
                 'admin',
                 'admin@example.com',
@@ -276,12 +293,11 @@ What comes next? We assumed all dates where correctly formatted and that is_curr
 never unexpectedly failed. We should be testing those edge cases as well,
 but as this is just an example, that is left for the reader as an exercise.
 
-If you want to see how we do tests, please click here_.
-
-.. _here: https://github.com/sophilabs/guidelines/tree/master/python#tdd-unit-tests
-
 Functional Tests
-----------------
+^^^^^^^^^^^^^^^^
+
+The main purpose of functional tests is testing features. In django features could mean views,
+business logic or any other workflow involving several parts of the application.
 
     **Monkey patching and Inverse of control**
 
@@ -386,7 +402,7 @@ As we did with the unit test, we can benefit from writing the tests first.
 Now that we defined how our view should behave we can start implementing it,
 we run test the same way we did for unittest :code:`./manage.py test`.
 
-Implementing the view should be easy now, we have all mayor steps defined.
+Implementing the view should be easy now, we have all major steps defined.
 
 .. code:: python
 
@@ -429,7 +445,7 @@ styles, javascript, more context information and as long as the test keep giving
 us the okay, we are complying to the requirements and our app works!
 
 Acceptance Tests
-----------------
+^^^^^^^^^^^^^^^^
 
 While unit and functional tests are classified as white box tests, acceptance tests are considered black box tests.
 They are used to determine if the requirements of the specifications are met.

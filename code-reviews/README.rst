@@ -1,10 +1,3 @@
-Table of Contents
-=================
-
-1. `Introduction`_
-2. `Process`_
-3. `Checklist`_
-
 Introduction
 ============
 
@@ -19,11 +12,9 @@ TBD
 Mandatory
 ---------
 
-* Duplicated code
-* ...
+- Duplicated code
 
 Heuristics
 ----------
 
-* Test too specific
-* ...
+- Test too specific

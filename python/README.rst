@@ -1,9 +1,5 @@
-Table of Contents
-=================
-
-#. `Rules`_
-#. `Tests`_
-
+Python
+------
 
 Rules
 =====
@@ -48,7 +44,6 @@ Naming
 +----------------------------+--------------------+-------------------------------------------------------------------+
 
 
-
 Tests
 =====
 
@@ -76,7 +71,7 @@ helpers to make writing test easy.
 
 
 Project structure and configuration
------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Folder structure**
 
@@ -129,7 +124,7 @@ the root directory.
 
 
 Unit tests
-----------
+^^^^^^^^^^
 
 Unit testing is a broad topic, a lot can be said about it. In its core, it means
 testing isolated functions, avoiding to test the way it communicates with other parts
@@ -223,7 +218,7 @@ Lets run our tests again, :code:`$ ./test.sh`. All green, tests passed, our
 sluggify function is ready!
 
 Mocking && Patching
--------------------
+^^^^^^^^^^^^^^^^^^^
 
 Mocking is an esscencial part of testing in python. It allows developers to test
 specefic functionality in an insolated way.
@@ -318,7 +313,7 @@ couple of minutes/hours vs solving bugs in a couple of days.
 
 
 Sources
--------
+=======
 
 - https://docs.djangoproject.com/en/1.9/internals/contributing/writing-code/coding-style/
 - https://google.github.io/styleguide/pyguide.html
