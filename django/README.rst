@@ -80,7 +80,7 @@ Tests
 =====
 
 TDD
----
+^^^
 
 First off, suppose you were required to create an app that should register user
 activities and then show if the activity was done on the current week.
@@ -102,7 +102,7 @@ this doesn't necessarily means you are done, refactor is a key element in the de
 of any kind of software.
 
 Project structure and configuration
------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Folder structure**
 
@@ -153,7 +153,7 @@ and run test. As an example:
 
 
 Unit tests
-----------
+^^^^^^^^^^
 
 How do we use TDD in Django?
 
@@ -294,7 +294,7 @@ never unexpectedly failed. We should be testing those edge cases as well,
 but as this is just an example, that is left for the reader as an exercise.
 
 Functional Tests
-----------------
+^^^^^^^^^^^^^^^^
 
 The main purpose of functional tests is testing features. In django features could mean views,
 business logic or any other workflow involving several parts of the application.
@@ -445,7 +445,7 @@ styles, javascript, more context information and as long as the test keep giving
 us the okay, we are complying to the requirements and our app works!
 
 Acceptance Tests
-----------------
+^^^^^^^^^^^^^^^^
 
 While unit and functional tests are classified as white box tests, acceptance tests are considered black box tests.
 They are used to determine if the requirements of the specifications are met.
