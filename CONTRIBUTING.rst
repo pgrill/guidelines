@@ -1,5 +1,5 @@
 Contributing
-============
+------------
 
 Feel free to contribute to this guidelines by creating a pull request. If you
 are going to upload code snippets, make sure that they respect the PEP8
@@ -20,7 +20,7 @@ rST Guidelines
 ==============
 
 Headings
---------
+^^^^^^^^
 
 * Use ``------`` for level 1 headings.
 * Use ``======`` for level 2 headings.
