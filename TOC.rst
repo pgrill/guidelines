@@ -1,4 +1,4 @@
-#. `General <./general>`__
+#. `Home <./>`__
 
    #. `General <./general>`__
    #. `General <./general>`__
