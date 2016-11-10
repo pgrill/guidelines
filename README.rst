@@ -28,12 +28,6 @@ Languages & Frameworks
 #. `RST <./rst/README.rst>`__
 
 
-Code Reviews
-============
-
-#. `How to <./code-reviews/README.rst>`__
-
-
 License
 =======
 
