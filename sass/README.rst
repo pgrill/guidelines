@@ -1,3 +1,6 @@
+Sass
+----
+
 Ruleset
 =======
 
@@ -119,7 +122,7 @@ Architecture
     ...
 
 Modules, partials, and vendor
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 As you can see this divides the project into three basic types of files:
 Modules, partials, and vendored stylesheets.
