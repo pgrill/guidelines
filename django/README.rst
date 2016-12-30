@@ -31,10 +31,9 @@ Templates
     {% block lowercase_with_underscores %}
     {% endbblock lowercase_with_underscore %}
 
--  If the block/endblock is inline you should avoid the name on the
-   endblock.
+-  Avoid block names on inline block tags.
 
--  In endblocks, add the name of the block they close.
+-  Multiline blocks should have the block name in start and end tags.
 
 .. code:: html
 
@@ -42,7 +41,7 @@ Templates
         ...
     {% endblock foo_bar %}
 
--  Indent everything within template tags.
+-  Indent everything within template tags for readability. Remember django templates are for the developers to read, the rendered result is for browsers.
 
 .. code:: html
 
@@ -74,6 +73,7 @@ Signals
         ...
 
         def ready(self):
+            import myapp.signals.handlers  # noqa
 
 
 Tests
@@ -98,7 +98,7 @@ will describe the already implemented functionality (which can be wrong).
 Also, by writing tests first, you'll have a clear definition of the required public
 interface, the client requirements and a clear ending point of the development process.
 Once your test suit passes, you've successfully implemented the requirements, of course
-this doesn't necessarily means you are done, refactor is a key element in the development
+this doesn't necessarily mean you are done, refactor is a key element in the development
 of any kind of software.
 
 Project structure and configuration
