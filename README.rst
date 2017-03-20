@@ -26,6 +26,7 @@ Languages & Frameworks
 #. `Python <./python/README.rst>`__
 #. `Sass <./sass/README.rst>`__
 #. `RST <./rst/README.rst>`__
+#. `React <./react/README.rst>`__
 
 
 Training
