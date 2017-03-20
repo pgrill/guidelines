@@ -36,7 +36,7 @@ Training
 License
 =======
 
-Guidelines is Copyright (c) 2016 sophilabs, inc. It is free software, and may be
+Guidelines is Copyright (c) 2016-2017 sophilabs, inc. It is free software, and may be
 redistributed under the terms specified in the `license <./LICENSE.rst>`__ file.
 
 About
