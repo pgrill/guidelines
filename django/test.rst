@@ -90,7 +90,7 @@ We will start by defining the tests for the requirements defined on the introduc
     from django.test import TestCase
     from django.contrib.auth.models import User
 
-    # The Activity model does not exists yet, but by creating
+    # The Activity model does not exist yet, but by creating
     # this test we already made the decision on where it should be defined
     from activities.models import Activity
     from users.models import User
@@ -134,7 +134,7 @@ We will start by defining the tests for the requirements defined on the introduc
         # when running the test suit
         def test_is_current_week_with_current_week(self):
 
-            # The activity model does not exists but here we've
+            # The activity model does not exist but here we've
             # defined what fields should be required
             # on the activity
             activity = Activity.objects.create(
@@ -379,7 +379,7 @@ They are used to determine if the requirements of the specifications are met.
 Suppose the app should only display the user activities after clicking a button
 on the page. This will use javascript to make an ajax call to bring the activities
 and then insert them in the DOM. We can't test that with out current stack as
-it does not runs javascript.
+it does not run javascript.
 
 Enter `Selenium <http://www.seleniumhq.org/>`__ a web browser automation.
 
