@@ -11,9 +11,9 @@ Please contribute to it following this `contribution guidelines <./CONTRIBUTING.
 
 A note on the language:
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", 
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
 "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to
-be interpreted as described in 
+be interpreted as described in
 `RFC 2119 <https://tools.ietf.org/html/rfc2119>`_.
 
 
@@ -27,6 +27,11 @@ Languages & Frameworks
 #. `Sass <./sass/README.rst>`__
 #. `RST <./rst/README.rst>`__
 
+
+Training
+========
+
+#. `Django <./training/django/README.rst>`__
 
 License
 =======

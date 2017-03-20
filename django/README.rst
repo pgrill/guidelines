@@ -1,11 +1,6 @@
 Django's Guidelines
 -------------------
 
-Books
-=====
-
-#. `Django Two Scoops <http://twoscoopspress.org/>`__
-
 
 Files
 =====
