@@ -34,6 +34,12 @@ Training
 
 #. `Django <./training/django/README.rst>`__
 
+
+Laptop setup
+============
+
+#. `Setting up OS X <./laptop-setup/osx.rst>`__
+
 License
 =======
 
