@@ -12,7 +12,13 @@ Rules
 #. Follow `PEP8 <https://www.python.org/dev/peps/pep-0008/>`__.
    Use `flake8 <https://pypi.python.org/pypi/flake8>`__ to check for problems in this area.
 #. In docstrings, follow `PEP 257 <https://www.python.org/dev/peps/pep-0257/>`__.
+#. Recommended ``flake8`` extensions:
 
+  - flake8-mutable (Mutable default parameters in function definitions)
+  - flake8-pep3101 (String formatting)
+  - flake8-print (``print`` calls)
+  - flake8-quotes (Enforce single quotes)
+  - flake8-debugger (``pdb/ipdb`` traces)
 
 Naming
 ======
