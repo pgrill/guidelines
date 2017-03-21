@@ -1,18 +1,13 @@
-Books
-=====
-
-#. `Django Two Scoops <http://twoscoopspress.org/>`__
-
-
-Resources
-=========
-
-#. `Writing your first Django app <https://docs.djangoproject.com/en/stable/intro/tutorial01/>`__
-#. `Awesome Django <https://gitlab.com/rosarior/awesome-django>`__
-#. `Django packages <https://djangopackages.org/>`__
-
+Django training
+---------------
 
 Exercises
 =========
 
 #. `Ticketing system <./exercises/ticketing-system.rst>`__
+
+
+Guidelines
+==========
+
+Check the `Django guidelines <../../django/README.rst>`__ for working on these exercises.
