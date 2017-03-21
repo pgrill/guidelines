@@ -29,12 +29,6 @@ Languages & Frameworks
 #. `React <./react/README.rst>`__
 
 
-Training
-========
-
-#. `Django <./training/django/README.rst>`__
-
-
 Laptop setup
 ============
 

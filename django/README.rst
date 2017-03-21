@@ -11,6 +11,12 @@ Resources
 #. `Django packages <https://djangopackages.org/>`__
 
 
+Training
+========
+
+#. `Ticketing system <./training/ticketing-system.rst>`__
+
+
 Files
 =====
 
