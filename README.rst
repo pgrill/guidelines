@@ -34,6 +34,12 @@ Laptop setup
 
 #. `Setting up OS X <./laptop-setup/osx.rst>`__
 
+
+Code reviews
+============
+
+#. `Code reviews <./code-reviews/README.rst>`__
+
 License
 =======
 
