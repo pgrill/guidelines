@@ -43,8 +43,8 @@ the merge request under the same url.
 Tips
 ====
 
-As the developer
-^^^^^^^^^^^^^^^^
+For the developer
+^^^^^^^^^^^^^^^^^
 #. You are the first reviewer of your code: read all your changes thoroughly
    before submitting the code review.
 #. Don't check only your code: also make sure your branch is correctly named
@@ -54,8 +54,8 @@ As the developer
    resulting code. Don't take it personally if there are mistakes or errors to
    fix.
 
-As the reviewer
-^^^^^^^^^^^^^^^
+For the reviewer
+^^^^^^^^^^^^^^^^
 #. Don't check only the code: also make sure the branch is correctly named
    (naming conventions will depend on the project) and that the author is
    requesting to merge their changes onto the right branch.
