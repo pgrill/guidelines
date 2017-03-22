@@ -16,11 +16,15 @@ Process
 As the developer
 ^^^^^^^^^^^^^^^^
 
-We use Gitlab to manage our code reviews. Every time you push changes to your
-branch Gitlab will allow you to open a code review to merge those changes onto
-a branch of your choice (usually ``dev``, but it will depend on the project
-you're working on). You get to choose the reviewer as well, typically your team
-will instruct you on who to choose.
+We use `Gitlab <https://git.sophilabs.io/>`__ or
+`Github <https://github.com/sophilabs>`_ to manage our code reviews. We'll be
+referring to Gitlab from now on since it's what you'll be using most of the
+time, but they're fairly similar.
+
+Every time you push changes to your branch Gitlab will allow you to open a code
+review to merge those changes onto a branch of your choice (usually ``dev``,
+but it will depend on the project you're working on). You get to choose the
+reviewer as well, typically your team will instruct you on who to choose.
 
 After the reviewer finishes, they will either merge your changes or add
 comments (you will see these comments in Gitlab) to your code, probably
