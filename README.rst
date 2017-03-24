@@ -17,8 +17,8 @@ be interpreted as described in
 `RFC 2119 <https://tools.ietf.org/html/rfc2119>`_.
 
 
-Languages & Frameworks
-======================
+Technologies
+============
 
 #. `Css <./css/README.rst>`__
 #. `C++ <./cpp/README.rst>`__
@@ -27,12 +27,19 @@ Languages & Frameworks
 #. `Sass <./sass/README.rst>`__
 #. `RST <./rst/README.rst>`__
 #. `React <./react/README.rst>`__
+#. `Git <./git/README.rst>`__
 
 
 Laptop setup
 ============
 
 #. `Setting up OS X <./laptop-setup/osx.rst>`__
+
+
+Code reviews
+============
+
+#. `Code reviews <./code-reviews/README.rst>`__
 
 License
 =======
