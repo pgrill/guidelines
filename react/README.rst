@@ -128,3 +128,9 @@ exception to this rule.
 Your inline styles must live in their own files or in the component's file. If
 you're going with the second approach, put all the rules in an easily 
 identifiable :code:`styles` constant at the top of your component.
+
+Testing
+=======
+
+We recommend using Jest along with Airbnb's `enzyme` library in order to make efficient reducer and component tests.
+Each test should live in the each component directory and should have the name of the component plus `.test.js`.
