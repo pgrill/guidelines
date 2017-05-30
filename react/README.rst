@@ -12,14 +12,47 @@ implementation we normally use, so our :code:`stores` directory is called
 .. code:: bash
 
     project
+    ├── config
+    │   ├── env.js
+    │   ├── jest
+    │   │   ├── cssTransform.js
+    │   │   └── fileTransform.js
+    │   ├── paths.js
+    │   ├── polyfills.js
+    │   ├── webpack.config.dev.js
+    │   ├── webpack.config.prod.js
+    │   └── webpackDevServer.config.js
+    ├── public
+    │   ├── favicon.ico
+    │   ├── index.html
+    │   └── manifest.json
+    ├── scripts
+    │   ├── build.js
+    │   ├── start.js
+    │   └── test.js
     ├── src
     │   ├── actions
+    │   │    └── example.js
     │   ├── components
-    │   ├── reducers
+    │   │   └── SomeComponent
+    │   │       ├── SomeComponent.css
+    │   │       ├── SomeComponent.js
+    │   │       └── SomeComponent.test.js
+    │   ├── containers
+    │   │   └── SomeContainer
+    │   │       ├── SomeContainer.css
+    │   │       └── SomeContainer.js
     │   ├── store
+    │   ├── reducers
+    │   │    ├── index.js
+    │   │    └── example.js
+    │   ├── registerServiceWorker.js
+    │   ├── constants.js
     │   └── index.js
     ├── package.json
-    └── webpack.config.js
+    ├── yarn.lock
+    └── README.md
+    
     
 Components
 ==========
