@@ -63,8 +63,7 @@ We follow the "Presentational and Container Components" pattern, where all our
 components fall in one of those two categories. Files inside the 
 :code:`components` directory can be organized within sub-directories using
 the structure you see more fit, but each component must live in a file of its 
-own and container components' files must have the :code:`container` suffix in 
-their names.
+own and container components' files must be in the :code:`containers` directory.
 
 **The render method**
 
