@@ -133,7 +133,7 @@ Testing
 =======
 
 We recommend using Jest along with Airbnb's :code:`enzyme` library in order to make efficient reducer and component tests.
-Each test should live in the each component directory and should have the name of the component plus :code:`.test.js`.
+Each test should live in each component directory and should have the name of the component plus :code:`.test.js`.
 We use the :code:`expect` module from :code:`chai` in order to compare values.
 
 **Reducer testing**
