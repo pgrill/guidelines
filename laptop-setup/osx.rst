@@ -1,5 +1,5 @@
 Setting up macOS
----------------
+----------------
 
 #. Install the `Homebrew <https://brew.sh/>`__ package manager for installing applications or utilities.
 #. macOS only comes with Python 2 installed. Install the latest Python 3 release from the `website <https://www.python.org/downloads/mac-osx/>`__.
