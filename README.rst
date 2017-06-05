@@ -20,20 +20,20 @@ be interpreted as described in
 Technologies
 ============
 
-#. `Css <./css/README.rst>`__
-#. `C++ <./cpp/README.rst>`__
-#. `Django <./django/README.rst>`__
-#. `Python <./python/README.rst>`__
-#. `Sass <./sass/README.rst>`__
-#. `RST <./rst/README.rst>`__
-#. `React <./react/README.rst>`__
-#. `Git <./git/README.rst>`__
+#. `Css <./languages/css/README.rst>`__
+#. `C++ <./languages/cpp/README.rst>`__
+#. `Django <./frameworks/django/README.rst>`__
+#. `Python <./languages/python/README.rst>`__
+#. `Sass <./languages/sass/README.rst>`__
+#. `RST <./languages/restructuredtext/README.rst>`__
+#. `React <./frameworks/react/README.rst>`__
+#. `Git <./tools/git/README.rst>`__
 
 
 Laptop setup
 ============
 
-#. `Setting up OS X <./laptop-setup/osx.rst>`__
+#. `Setting up OS X <./environment/laptop-setup/osx.rst>`__
 
 
 Code reviews
