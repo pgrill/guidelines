@@ -7,8 +7,17 @@ i.e.: configuring tools, make sure something is being use, make sure some method
 Testing Checklist
 =================
 
-Please fill this document with items every project should complete according with the Testing squad.
-i.e.: configuring tools, make sure something is being use, make sure some methodology is being applied, etc...
+- Implement unit testing in your project.
+    - Django: `Documentation <http://guidelines.sophilabs.io/django#testing>`_.
+    - React: `Documentation <http://guidelines.sophilabs.io/react#testing>`_.
+- Measure code coverage.
+- Run tests automatically in each merge request and prevent merging if they fail. 
+- Document your testing setup in the *manifiesto file*.
+
+React projects
+--------------
+
+- Implement component testing `Shallow rendering <http://guidelines.sophilabs.io/react#testing>`_.
 
 Deployment Checklist
 ====================
