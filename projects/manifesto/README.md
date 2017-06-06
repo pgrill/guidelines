@@ -18,9 +18,13 @@ We use Django's integrated testing system in order to perform unit testing to th
 
 In the hours management system client (JS + React) we use `mocha` along with `enzyme` to perform reducer and component tests.
 
+**Backend coverage**: We use `coverage.py` in order to perform backend code coverage measurement. You can measure the code coverage by running `coverage run --source="." manage.py test` in the folder where `manage.py` is located. Then, generate a report in the format you decide, for example: `coverage html`.
+
+**Frontend coverage**: We use `codecov` in order to perform JavaScript code coverage measurement. Run `npm run test` to run the tests along with a coverage report.
+
 ## Deployment
 
-In some-project, the app is deployed automatically by GitLab pipelines everytime a commit is pushed into the :code:`master` branch and it passes all the tests.
+In some-project, the app is deployed automatically by GitLab pipelines everytime a commit is pushed into the `master` branch and it passes all the tests.
 
 ## Code analysis
 
@@ -35,4 +39,4 @@ You should work on a separate branch for each issue using the [Git Flow](https:/
 In case you have to add dependencies to the project, 
 
 - **Python:** We have three `.pip` files located in `setup/some_project/containers/django/requirements/`. One for `development`, one for `production` and a `base` one which is inherited by the other ones.
-- - **JavaScript:** We have a common `package.json` file. If you use `yarn` instead of `npm`, please make sure you **do** commit the `yarn.lock` file.
+- **JavaScript:** We have a common `package.json` file. If you use `yarn` instead of `npm`, please make sure you **do** commit the `yarn.lock` file.
