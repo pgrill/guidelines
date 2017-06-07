@@ -7,7 +7,7 @@ We strongly recommend following the `Airbnb's JavaScript Styleguide <https://git
 
 React
 -----
-We've written our React guidelines `here <https://guidelines.sophilabs.io/frameworks/react>`_.
+We've written our React guidelines `here <https://guidelines.sophilabs.io/frameworks/react/>`_.
 
 ..  TODO
     ----

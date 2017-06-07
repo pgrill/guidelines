@@ -21,6 +21,7 @@ Technologies
 #. `Python <./languages/python/README.rst>`__
 #. `SASS <./languages/sass/README.rst>`__
 #. `RST <./languages/restructuredtext/README.rst>`__
+#. `JavaScript <./languages/javascript/README.rst>`__
 #. `React <./frameworks/react/README.rst>`__
 #. `Git <./tools/git/README.rst>`__
 
@@ -55,5 +56,5 @@ sophilabs are trademarks of sophilabs, inc.
 
 .. image:: https://img.shields.io/travis/sophilabs/guidelines.svg?style=flat-square
     :target: https://travis-ci.org/sophilabs/guidelines
-.. image:: https://img.shields.io/github/license/sophilabs/gulp-isort.svg?style=flat-square
+.. image:: https://img.shields.io/github/license/sophilabs/guidelines.svg?style=flat-square
     :target: ./LICENSE.rst
