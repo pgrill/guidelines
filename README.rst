@@ -1,11 +1,6 @@
 Guidelines
 ----------
 
-.. image:: https://img.shields.io/travis/sophilabs/gulp-isort.svg?style=flat-square
-    :target: https://travis-ci.org/sophilabs/guidelines
-.. image:: https://img.shields.io/github/license/sophilabs/gulp-isort.svg?style=flat-square
-    :target: ./LICENSE.rst
-
 These are the guidelines that lead us to create beautiful software.
 Please contribute to it following this `contribution guidelines <./CONTRIBUTING.rst>`__.
 
@@ -20,11 +15,11 @@ be interpreted as described in
 Technologies
 ============
 
-#. `Css <./languages/css/README.rst>`__
+#. `CSS <./languages/css/README.rst>`__
 #. `C++ <./languages/cpp/README.rst>`__
 #. `Django <./frameworks/django/README.rst>`__
 #. `Python <./languages/python/README.rst>`__
-#. `Sass <./languages/sass/README.rst>`__
+#. `SASS <./languages/sass/README.rst>`__
 #. `RST <./languages/restructuredtext/README.rst>`__
 #. `React <./frameworks/react/README.rst>`__
 #. `Git <./tools/git/README.rst>`__
@@ -41,6 +36,7 @@ Code reviews
 
 #. `Code reviews <./code-reviews/README.rst>`__
 
+
 License
 =======
 
@@ -55,3 +51,9 @@ About
 
 Guidelines is maintained and funded by sophilabs, inc. The names and logos for
 sophilabs are trademarks of sophilabs, inc.
+
+
+.. image:: https://img.shields.io/travis/sophilabs/guidelines.svg?style=flat-square
+    :target: https://travis-ci.org/sophilabs/guidelines
+.. image:: https://img.shields.io/github/license/sophilabs/gulp-isort.svg?style=flat-square
+    :target: ./LICENSE.rst
