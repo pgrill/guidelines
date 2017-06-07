@@ -8,8 +8,7 @@ Testing Checklist
 =================
 
 - Implement unit testing in your project.
-    - Django: `Documentation <http://guidelines.sophilabs.io/django#testing>`_.
-    - React: `Documentation <http://guidelines.sophilabs.io/react#testing>`_.
+    - You can read the following guides for `Django <http://guidelines.sophilabs.io/django#testing>`_ and `React <http://guidelines.sophilabs.io/react#testing>`_.
 - Measure code coverage.
 - Run tests automatically in each merge request and prevent merging if they fail. 
 - Document your testing setup in the *manifiesto file*.
