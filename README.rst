@@ -12,19 +12,24 @@ be interpreted as described in
 `RFC 2119 <https://tools.ietf.org/html/rfc2119>`__.
 
 
-Technologies
-============
+Languages
+=========
 
 #. `CSS <./languages/css/README.rst>`__
 #. `C++ <./languages/cpp/README.rst>`__
-#. `Django <./frameworks/django/README.rst>`__
 #. `Python <./languages/python/README.rst>`__
 #. `SASS <./languages/sass/README.rst>`__
-#. `RST <./languages/restructuredtext/README.rst>`__
 #. `JavaScript <./languages/javascript/README.rst>`__
-#. `React <./frameworks/react/README.rst>`__
-#. `Git <./tools/git/README.rst>`__
+#. `RST <./languages/restructuredtext/README.rst>`__
 
+Frameworks
+==========
+#. `Django <./frameworks/django/README.rst>`__
+#. `React <./frameworks/react/README.rst>`__
+
+Tools
+=====
+#. `Git <./tools/git/README.rst>`__
 
 Laptop setup
 ============
@@ -35,7 +40,7 @@ Laptop setup
 Code reviews
 ============
 
-#. `Code reviews <./code-reviews/README.rst>`__
+#. `Code reviews <./programming/code-reviews/README.rst>`__
 
 
 License
