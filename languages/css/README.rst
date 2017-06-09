@@ -1,5 +1,5 @@
-CSS
----
+CSS Guidelines
+--------------
 
 Warning
 =======

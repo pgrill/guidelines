@@ -1,5 +1,5 @@
-Sass
-----
+SASS Guidelines
+---------------
 
 Ruleset
 =======

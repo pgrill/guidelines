@@ -1,11 +1,5 @@
-Table of Contents
-=================
-
-#. `Books`_
-#. `Coding Style`_
-	#. `Rules`_
-	#. `Naming`_
-	#. `Syntax`_
+C# Guidelines
+-------------
 
 Books
 =====

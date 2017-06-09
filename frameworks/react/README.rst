@@ -1,5 +1,5 @@
-React
------
+React Guidelines
+----------------
 
 Project structure
 =================
