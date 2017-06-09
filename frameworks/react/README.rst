@@ -53,7 +53,18 @@ implementation we normally use, so our :code:`stores` directory is called
     ├── yarn.lock
     └── README.md
     
-    
+Naming
+^^^^^^
+- **Extensions:** Use :code:`.js` extensions even for React components.
+-  **Reference naming:**: Use PascalCase for React components and camelCase for their instances:
+
+.. code:: js
+
+    import WorkbenchItem from './WorkbenchItem';
+    const workbenchItem = <WorkbenchItem />;
+
+        
+
 Components
 ==========
 
