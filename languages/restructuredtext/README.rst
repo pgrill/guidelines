@@ -1,5 +1,5 @@
-Restructuredtext's Guidelines
-=============================
+ReStructuredText
+================
 
 Linters
 -------
