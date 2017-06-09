@@ -7,7 +7,7 @@ Rules
 #. Use four spaces for indentation.
 #. Please conform to the indentation style dictated in the .editorconfig file.
    We recommend using a text editor with EditorConfig support to avoid indentation
-   and whitespace issues. User the following `.editorconfig file <./files/.editorconfig>`__
+   and whitespace issues. Use the following `.editorconfig file <./files/.editorconfig>`__
    as a base configuration.
 #. Follow `PEP8 <https://www.python.org/dev/peps/pep-0008/>`__.
    Use `flake8 <https://pypi.python.org/pypi/flake8>`__ to check for problems in this area.
