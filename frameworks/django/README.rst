@@ -36,33 +36,33 @@ Templates
 
 -  Name blocks with lowercase and underscores.
 
-.. code:: html
+   .. code:: html
 
-    {% block lowercase_with_underscores %}
-    {% endbblock lowercase_with_underscore %}
+        {% block lowercase_with_underscores %}
+        {% endbblock lowercase_with_underscore %}
 
 -  Avoid block names on inline block tags.
 
 -  Multiline blocks should have the block name in start and end tags.
 
-.. code:: html
+   .. code:: html
 
-    {% block foo_bar %}
-        ...
-    {% endblock foo_bar %}
+        {% block foo_bar %}
+            ...
+        {% endblock foo_bar %}
 
 -  Indent everything within template tags for readability. Remember django templates are for the developers to read, the rendered result is for browsers.
 
-.. code:: html
+   .. code:: html
 
-    {% block foo_bar %}
-        <html-tag></html-tag>
-        {% if foo %}
+        {% block foo_bar %}
             <html-tag></html-tag>
-        {% else %}
-            <html-tag></html-tag>
-        {% endif %}
-    {% endblock foo_bar %}
+            {% if foo %}
+                <html-tag></html-tag>
+            {% else %}
+                <html-tag></html-tag>
+            {% endif %}
+        {% endblock foo_bar %}
 
 
 Signals
