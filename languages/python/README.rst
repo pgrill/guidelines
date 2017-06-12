@@ -54,7 +54,6 @@ Tests
 =====
 
 Python :code:`v3.3` or higher is assumed.
-Python ``v3.3`` or higher is assumed.
 
 Testing is very important. Not only to prevent and debug annoying bugs but it also helps
 project newcomers to better understand the expected functionality of your functions and
@@ -65,7 +64,7 @@ In the python world, testing is embraced. Its part of the standard.
 :code:`unittest` is  the python standard module which provides a lot of useful
 helpers to make writing test easy.
 
-    **A note on Doctest**
+.. note:: **A note on Doctest**
 
     :code:`doctest` is a python module that will search for text that looks
     like an :code:`python` on your docstrings and execute it, if the result of
