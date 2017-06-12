@@ -53,7 +53,8 @@ Naming
 Tests
 =====
 
-    Python :code:`v3.3` or higher is assumed.
+Python :code:`v3.3` or higher is assumed.
+Python ``v3.3`` or higher is assumed.
 
 Testing is very important. Not only to prevent and debug annoying bugs but it also helps
 project newcomers to better understand the expected functionality of your functions and
