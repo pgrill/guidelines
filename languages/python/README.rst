@@ -79,7 +79,8 @@ helpers to make writing test easy.
 Project structure and configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Folder structure**
+Folder structure
+++++++++++++++++
 
 When creating a python project (library, app, etc), its always good to define
 a project root directory, from which all the console commands are going to be
@@ -100,7 +101,8 @@ the size of it. As a general rule, for apps, the test folder per module approach
 for medium projects the test folder on the root directory is a good choice, for everything
 else, its up to the developers to make the call.
 
-**Configurations**
+Configurations
+++++++++++++++
 
 Configuration, in general, depends on the tools/framework your app is using. If
 the project depends on no framework, then (on most cases) no configuration is needed

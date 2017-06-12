@@ -7,14 +7,14 @@ standard by running linters on it.
 
 Some useful tools for contributing are:
 
-#. `restview <https://github.com/mgedmin/restview>`__
+- `restview <https://github.com/mgedmin/restview>`__
 
-   A viewer for ReStructuredText documents that renders them on the fly.
+  A viewer for ReStructuredText documents that renders them on the fly.
 
-   .. code-block:: bash
+  .. code-block:: bash
 
-       pip install restview
-       restview .
+      pip install restview
+      restview .
 
 rST Guidelines
 ==============
@@ -25,3 +25,4 @@ Headings
 * Use ``------`` for level 1 headings.
 * Use ``======`` for level 2 headings.
 * Use ``^^^^^^`` for level 3 headings.
+* Use ``++++++`` for level 4 headings.
