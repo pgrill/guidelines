@@ -29,7 +29,7 @@ Frameworks
 
 Tools
 =====
-#. `Git <./tools/git/README.rst>`__
+#. `Git <./tools/git.rst>`__
 
 Laptop setup
 ============
@@ -40,7 +40,7 @@ Laptop setup
 Code reviews
 ============
 
-#. `Code reviews <./programming/code-reviews/README.rst>`__
+#. `Code reviews <./programming/code-reviews.rst>`__
 
 
 License
