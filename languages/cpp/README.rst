@@ -33,15 +33,13 @@ Naming Conventions
 ^^^^^^^^^^^^^^^^^^
 
 #. **Types** must be in ``UpperCamelCase``.
-
-    .. code-block:: c++
+   .. code-block:: c++
 
         class FileSystem { };
         struct User { };
 
 #. **Variables** must be in ``snake_case``.
-
-    .. code-block:: c++
+   .. code-block:: c++
 
         int user_count;
         int balance;
@@ -53,14 +51,12 @@ Naming Conventions
         char* m_buffer;
 
 #. **Functions** must be verbs written in ``snake_case``.
-
    .. code-block:: c++
 
        int compute_total();
        void clear();
 
 #. **Namespaces** must be written in ``lowercase``.
-
    .. code-block:: c++
 
        namespace io { };
