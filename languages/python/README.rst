@@ -91,6 +91,7 @@ or scope. So, following that, we could take four different approaches:
 #. tests could be in a :code:`test.py` file inside each module, testing only that module
 #. tests could be in a :code:`test` folder inside each module
 
+.. note::
     When using folders, test files should be named :code:`test.py` or
     :code:`test_<something>.py` to indicate what the file is testing.
 
