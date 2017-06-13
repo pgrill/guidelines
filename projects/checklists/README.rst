@@ -44,11 +44,13 @@ Code Analysis Checklist
 
 - For every language use linters tool to verify code style guidelines. The following
   tools are preferred:
- - `flake8` for Python.
- - `eslint` for Javascript.
- - `scsslint` for Sass.
- - `htmllint` for HTML.
- - `credo` for Elixir.
+  
+  - `flake8` for Python.
+  - `eslint` for Javascript.
+  - `scsslint` for Sass.
+  - `htmllint` for HTML.
+  - `credo` for Elixir.
+  
 - Define Commit Message guidelines. For example `/\d+: [A-Z](\w|\s)*\./` (e.g. 555: Title finished by a dot character.).
 - Use commit hooks to verify the code style guidelines and the commit message by overriding the following files `.git/hooks/pre-commit` and `.git/hooks/commit-msg` respectively.
 - The master branch, or the equivalent for the project must be protected, meaning all commits must be merged from feature branches
@@ -56,6 +58,7 @@ Code Analysis Checklist
 - Code reviews must be enforced before merging code to the master branch.
 - Code reviews should follow the guidelines in the Sophilabs Playbook.
 - Every project must have a README file for new hires explaining the Tools needed for work and processes involved in the everyday work. This includes
-    - Development tools: Text editors, IDEs, Plugins
-    - Required environment files
-    - Procedures for installing Hooks
+
+  - Development tools: Text editors, IDEs, Plugins
+  - Required environment files
+  - Procedures for installing Hooks
