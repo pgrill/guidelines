@@ -4,7 +4,7 @@ Python Guidelines
 Rules
 =====
 
-- Use four spaces for indentation.
+- Use 4 spaces for indentation.
 - Please conform to the indentation style dictated in the .editorconfig file.
   We recommend using a text editor with EditorConfig support to avoid indentation
   and whitespace issues. Use the following `.editorconfig file <./files/.editorconfig>`__
@@ -82,7 +82,7 @@ Project structure and configuration
 Folder structure
 ++++++++++++++++
 
-When creating a python project (library, app, etc), its always good to define
+When creating a python project (library, app, etc), it's always good to define
 a project root directory, from which all the console commands are going to be
 executed, and then different folders for each module that represent different logic
 or scope. So, following that, we could take four different approaches:
@@ -113,7 +113,7 @@ When using :code:`unittest`, running
 in any of the ways defined above.
 
 To make things easier, we tend to create a script that runs the test for us. If
-we need to set same env variables or do something after or before running the tests
+we need to set same env variables or do something after or before running the tests,
 this is the file to do it.
 
 .. code:: bash
