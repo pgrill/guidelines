@@ -1,15 +1,19 @@
 Guidelines
 ----------
 
+Purpose
+=======
+
 These are the guidelines that lead us to create beautiful software.
 Please contribute to it following this `contribution guidelines <./CONTRIBUTING.rst>`__.
 
-A note on the language:
+.. note::
+    **A note on the language**
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
-"SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to
-be interpreted as described in
-`RFC 2119 <https://tools.ietf.org/html/rfc2119>`__.
+    The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
+    "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to
+    be interpreted as described in
+    `RFC 2119 <https://tools.ietf.org/html/rfc2119>`__.
 
 
 Languages
@@ -48,6 +52,11 @@ License
 
 Guidelines is Copyright (c) 2016-2017 sophilabs, inc. It is free software, and may be
 redistributed under the terms specified in the `license <./LICENSE.rst>`__ file.
+
+.. image:: https://licensebuttons.net/l/by-nc/4.0/88x31.png
+   :target: ./LICENSE.rst
+
+Creative Commons Attribution-NonCommercial 4.0 International
 
 About
 =====
