@@ -16,24 +16,19 @@ Please contribute to it following this `contribution guidelines <./CONTRIBUTING.
     `RFC 2119 <https://tools.ietf.org/html/rfc2119>`__.
 
 
-Languages
-=========
+- For `languages <./languages/README.rst>`__:
+  `Python <./languages/python/README.rst>`__, 
+  `SASS <./languages/sass/README.rst>`__
+  `JavaScript <./languages/javascript/README.rst>`__, 
+  etc.
 
-#. `CSS <./languages/css/README.rst>`__
-#. `C++ <./languages/cpp/README.rst>`__
-#. `Python <./languages/python/README.rst>`__
-#. `SASS <./languages/sass/README.rst>`__
-#. `JavaScript <./languages/javascript/README.rst>`__
-#. `RST <./languages/restructuredtext/README.rst>`__
+- For `frameworks <./frameworks/README.rst>`__:
+  `Django <./frameworks/django/README.rst>`__,
+  `React <./frameworks/react/README.rst>`__,
+  etc
 
-Frameworks
-==========
-#. `Django <./frameworks/django/README.rst>`__
-#. `React <./frameworks/react/README.rst>`__
-
-Tools
-=====
-#. `Git <./tools/git.rst>`__
+- Tools `frameworks <./tools/README.rst>`__:
+  `Git <./tools/README.rst#git>`__, etc.
 
 Laptop setup
 ============
