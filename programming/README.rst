@@ -1,3 +1,3 @@
-Programming Guidelines
+Programming guidelines
 ----------------------
 

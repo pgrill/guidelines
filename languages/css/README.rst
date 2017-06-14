@@ -1,4 +1,4 @@
-CSS Guidelines
+CSS guidelines
 --------------
 
 Warning

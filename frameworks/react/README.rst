@@ -1,4 +1,4 @@
-React Guidelines
+React guidelines
 ----------------
 
 Project structure

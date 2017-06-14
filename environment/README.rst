@@ -1,3 +1,3 @@
-Environment Guidelines
+Environment guidelines
 ----------------------
 

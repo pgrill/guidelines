@@ -1,3 +1,3 @@
-Frameworks Guidelines
+Frameworks guidelines
 ---------------------
 

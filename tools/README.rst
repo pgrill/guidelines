@@ -1,6 +1,5 @@
-Tools' Guidelines
+Tools' guidelines
 -----------------
-
 
 GIT
 ===

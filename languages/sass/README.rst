@@ -1,4 +1,4 @@
-SASS Guidelines
+SASS guidelines
 ---------------
 
 Ruleset
@@ -135,8 +135,8 @@ Modules, partials, and vendored stylesheets.
 
 
 
-Inspiration & Sources
-=====================
+References
+==========
 
 * `Sass Guidelines <https://sass-guidelin.es>`__
 * `How to structure a sass project <http://thesassway.com/beginner/how-to-structure-a-sass-project>`__

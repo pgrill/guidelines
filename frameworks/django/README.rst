@@ -1,4 +1,4 @@
-Django Guidelines
+Django guidelines
 -----------------
 
 
@@ -86,7 +86,7 @@ Signals
             import myapp.signals.handlers  # noqa
 
 
-Tests
-=====
+Testing
+=======
 
-Visit the `testing page <./test.rst>`__.
+Visit the `testing <./testing.rst>`__ page.

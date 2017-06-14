@@ -16,7 +16,7 @@ Some useful tools for contributing are:
       pip install restview
       restview .
 
-rST Guidelines
+rST guidelines
 ==============
 
 Headings

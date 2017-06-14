@@ -1,4 +1,4 @@
-C# Guidelines
+C# guidelines
 -------------
 
 Books
@@ -74,8 +74,8 @@ Syntax
 			Location = "Sophilabs"
 		};
 
-Sources
-=======
+References
+==========
 
 1. `C# Code Style <https://msdn.microsoft.com/en-us/library/ff926074.aspx>`__ 
 2. `Framework Design Guidelines <https://msdn.microsoft.com/en-us/library/ms229042.aspx>`__

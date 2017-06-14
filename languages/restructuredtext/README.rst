@@ -1,4 +1,4 @@
-ReStructuredText Guidelines
+ReStructuredText guidelines
 ---------------------------
 
 Linters
