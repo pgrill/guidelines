@@ -15,31 +15,28 @@ Please contribute to it following this `contribution guidelines <./CONTRIBUTING.
     be interpreted as described in
     `RFC 2119 <https://tools.ietf.org/html/rfc2119>`__.
 
+Areas
+=====
 
-- For `languages <./languages/README.rst>`__:
+- `Programming <./programming/README.rst>`__:
+  `Code reviews <./programming/code-reviews.rst>`__.
+
+- `Languages <./languages/README.rst>`__:
   `Python <./languages/python/README.rst>`__, 
   `SASS <./languages/sass/README.rst>`__
   `JavaScript <./languages/javascript/README.rst>`__, 
   etc.
 
-- For `frameworks <./frameworks/README.rst>`__:
+- `Frameworks <./frameworks/README.rst>`__:
   `Django <./frameworks/django/README.rst>`__,
   `React <./frameworks/react/README.rst>`__,
   etc
 
-- Tools `frameworks <./tools/README.rst>`__:
+- `Tools <./tools/README.rst>`__:
   `Git <./tools/README.rst#git>`__, etc.
 
-Laptop setup
-============
-
-#. `Setting up OS X <./environment/laptop-setup/osx.rst>`__
-
-
-Code reviews
-============
-
-#. `Code reviews <./programming/code-reviews.rst>`__
+- `Environment <./environment/README.rst>`__:
+  `Setting up OS X <./environment/laptop-setup/osx.rst>`__
 
 
 License
