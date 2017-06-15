@@ -1,2 +1,2 @@
-Languages guidelines
+Project's guidelines
 --------------------

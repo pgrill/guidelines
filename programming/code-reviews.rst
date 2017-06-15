@@ -13,8 +13,8 @@ improve our own skills and knowledge.
 Process
 =======
 
-As the developer
-^^^^^^^^^^^^^^^^
+As the developer [#DP]_
+^^^^^^^^^^^^^^^^^^^^^^^
 
 We use `Gitlab <https://git.sophilabs.io/>`__ or
 `Github <https://github.com/sophilabs>`_ to manage our code reviews. We'll be
@@ -99,7 +99,8 @@ comments to individual lines of each file. If you do so, the author will update
 their code and push their branch again, then you will see an updated view of
 the merge request under the same url.
 
-**Tips**
+**Tips** [#CP]_
+
 
 #. Don't check only the code: also make sure the branch is correctly named
    (naming conventions will depend on the project) and that the author is
@@ -154,7 +155,9 @@ the merge request under the same url.
    promptly. Your coworkers are waiting for you.
 #. Review fewer than 200-400 lines of code at a time.
 
-Sources
-=======
 
-- Tips are borrowed from https://docs.djangoproject.com/en/1.9/internals/contributing/writing-code/coding-style/
+References
+==========
+
+.. [#CP] https://www.codeproject.com/Articles/524235/Codeplusreviewplusguidelines
+.. [#DP] https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/coding-style/

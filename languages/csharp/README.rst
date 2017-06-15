@@ -28,36 +28,36 @@ Naming
 
 #. **Interfaces** must be in ``CamelCase`` and prefixed with I.
 
-	.. code-block:: c#
-	
-		interface IService {}
+    .. code-block:: c#
+    
+        interface IService {}
 
 #. **Function/Method** must be in ``CamelCase``.
 
-	.. code-block:: c#
-		
-		class User
-		{
-			private int GetPublicId()
-			{
-				...
-			}
-		}
+    .. code-block:: c#
+        
+        class User
+        {
+            private int GetPublicId()
+            {
+                ...
+            }
+        }
 
 #. **Variables** must be in ``camelCase``.
 
-	.. code-block:: c#
-		
-		string name = "this is a variable";
+    .. code-block:: c#
+        
+        string name = "this is a variable";
 
 #. **Function/Method Parameters** must be in ``camelCase``.
 
-	.. code-block:: c#
-	
-		int GetTest(string para, string longParam)
-		{
-			...
-		}
+    .. code-block:: c#
+    
+        int GetTest(string para, string longParam)
+        {
+            ...
+        }
 
 #. Do not prefix enums, classes, or delegates with any letter .
 
@@ -66,13 +66,13 @@ Syntax
 
 #. Use object intilization.
 
-	.. code-block:: c#
-	
-		ExampleClass element = new ExampleClass { 
-			Id = 1,
-			Name = "Test", 
-			Location = "Sophilabs"
-		};
+    .. code-block:: c#
+    
+        ExampleClass element = new ExampleClass { 
+            Id = 1,
+            Name = "Test", 
+            Location = "Sophilabs"
+        };
 
 References
 ==========
