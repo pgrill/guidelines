@@ -1,8 +1,6 @@
 Testing
 -------
 
-`Back <./README.rst>`__
-
 TDD
 ===
 
