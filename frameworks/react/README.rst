@@ -6,7 +6,7 @@ Project structure
 
 Our usual structure is built around the Flux pattern, so we have specific
 folders for our actions, components, reducers and stores. Redux is the Flux
-implementation we normally use, so our :code:`stores` directory is called 
+implementation we normally use, so our :code:`stores` directory is called
 :code:`store` instead.
 
 .. code:: bash
@@ -52,7 +52,7 @@ implementation we normally use, so our :code:`stores` directory is called
     ├── package.json
     ├── yarn.lock
     └── README.md
-    
+
 Naming
 ^^^^^^
 - **Extensions:** Use :code:`.js` extensions even for React components.
@@ -63,7 +63,7 @@ Naming
     import WorkbenchItem from './WorkbenchItem';
     const workbenchItem = <WorkbenchItem />;
 
-        
+
 
 Components
 ==========
@@ -71,14 +71,14 @@ Components
 **Presentational and Container Components**
 
 We follow the "Presentational and Container Components" pattern, where all our
-components fall in one of those two categories. Files inside the 
+components fall in one of those two categories. Files inside the
 :code:`components` directory can be organized within sub-directories using
-the structure you see more fit, but each component must live in a file of its 
+the structure you see more fit, but each component must live in a file of its
 own and container components' files must be in the :code:`containers` directory.
 
 **The render method**
 
-The :code:`render` method of your React components must not include arrow 
+The :code:`render` method of your React components must not include arrow
 functions or bindings. Doing so causes new objects to be created every time
 the component re-renders which results in more work for the garbage collector.
 
@@ -91,8 +91,8 @@ State
 **Slices' names**
 
 Every slice of the state that you manage in a separate reducer should have a
-name defined in the reducer's file and exported as a constant. Use this 
-constant everywhere you need to access the state as a whole to avoid 
+name defined in the reducer's file and exported as a constant. Use this
+constant everywhere you need to access the state as a whole to avoid
 hard-coding the slice name.
 
 For example, in your home page reducer you have:
@@ -100,23 +100,23 @@ For example, in your home page reducer you have:
 .. code:: javascript
 
     export const sliceName = 'homePage';
-    
+
     export const homePageReducer = (state = initialState, action) => {
         switch (action.type) {
         ...
-        
+
 And then use this constant when you need to access specific slices of your
 state outside the reducer. For example, in the home page actions file:
 
 .. code:: javascript
 
     import { sliceName } from '../reducers/home-page';
-    
+
     function fetchData () {
         return function (dispatch, getState) {
             currentData = getState()[sliceName].data
             ...
-            
+
 **Initial state**
 
 The initial state of each slice should be defined as a constant as well. Every
@@ -137,7 +137,7 @@ exception to this rule.
 **Inline styles**
 
 Your inline styles must live in their own files or in the component's file. If
-you're going with the second approach, put all the rules in an easily 
+you're going with the second approach, put all the rules in an easily
 identifiable :code:`styles` constant at the top of your component.
 
 Testing
@@ -156,7 +156,7 @@ As the reducers are pure functions, they are very easy to test. You just have to
 We use shallow rendering in order to test React components in an efficient way.
 
 .. code:: javascript
-    
+
     import { expect } from 'chai';
     import { shallow } from 'enzyme';
 
@@ -191,6 +191,3 @@ We use shallow rendering in order to test React components in an efficient way.
       });
 
     });
-    
-    
-

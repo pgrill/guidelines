@@ -18,8 +18,10 @@ Testing Checklist
 =================
 
 - Implement unit testing in your project.
-    - You can read the following guides for `Django <https://guidelines.sophilabs.io/frameworks/django/test>`_ and `React <https://guidelines.sophilabs.io/react#testing>`_.
-- Implement load testing. 
+    - You can read the following guides for
+      `Django </frameworks/django/testing.rst>`_ and
+      `React </frameworks/react#testing>`_.
+- Implement load testing.
 - Measure code coverage.
 - Run code coverage measurements automatically for each merge request.
 - Prevent merging if team-defined criteria is not met. (For example: coverage percentage below 90%)
@@ -28,7 +30,7 @@ Testing Checklist
 
 
 React projects
---------------
+^^^^^^^^^^^^^^
 
 - Implement component testing `Shallow rendering <http://guidelines.sophilabs.io/react#testing>`_.
 
