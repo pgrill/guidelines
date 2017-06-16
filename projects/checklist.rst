@@ -19,8 +19,8 @@ Testing Checklist
 
 - Implement unit testing in your project.
     - You can read the following guides for
-      `Django </frameworks/django/testing.rst>`_ and
-      `React </frameworks/react#testing>`_.
+      `Django <./../frameworks/django/testing.rst>`_ and
+      `React <./../frameworks/react#testing>`_.
 - Implement load testing.
 - Measure code coverage.
 - Run code coverage measurements automatically for each merge request.
