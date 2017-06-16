@@ -18,13 +18,17 @@ Please contribute to it following this `contribution guidelines <./CONTRIBUTING.
 Areas
 =====
 
+- `Projects <./projects/README.rst>`__:
+  `Manifesto <./projects/manifesto/README.rst>`__ and
+  `Checklist <./projects/checklist.rst>`__.
+
 - `Programming <./programming/README.rst>`__:
   `Code reviews <./programming/code-reviews.rst>`__.
 
 - `Languages <./languages/README.rst>`__:
-  `Python <./languages/python/README.rst>`__, 
+  `Python <./languages/python/README.rst>`__,
   `SASS <./languages/sass/README.rst>`__
-  `JavaScript <./languages/javascript/README.rst>`__, 
+  `JavaScript <./languages/javascript/README.rst>`__,
   etc.
 
 - `Frameworks <./frameworks/README.rst>`__:
