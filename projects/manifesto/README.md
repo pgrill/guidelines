@@ -1,4 +1,4 @@
-# Sophia
+# {project_name}
 
 Sophia is the internal management system of Sophilabs.
 
