@@ -23,7 +23,7 @@ Areas
   `Checklist <./projects/checklist.rst>`__.
 
 - `Programming <./programming/README.rst>`__:
-  `Code reviews <./programming/code-reviews.rst>`__.
+  `Code reviews <./programming/codereviews.rst>`__.
 
 - `Languages <./languages/README.rst>`__:
   `Python <./languages/python/README.rst>`__,

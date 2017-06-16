@@ -57,16 +57,8 @@ i.e.: configuring tools, make sure something is being use, make sure some method
 Code Analysis Checklist
 =======================
 
-- For every language use linters tool to verify code style guidelines. The following
-  tools are preferred:
-  
-  - `flake8` for Python.
-  - `eslint` for Javascript.
-  - `scsslint` for Sass.
-  - `htmllint` for HTML.
-  - `credo` for Elixir.
-  
-- Define Commit Message guidelines. For example `/\d+: [A-Z](\w|\s)*\./` (e.g. 555: Title finished by a dot character.).
+- For every language use linters tool to verify code style guidelines. If you are in doubt about which tool you should use, refer to each language guidelines page. e.g. `Javascript <https://guidelines.sophilabs.io/languages/javascript/>`_, `Python <https://guidelines.sophilabs.io/languages/python/>`_, `Sass <https://guidelines.sophilabs.io/languages/sass/>`_.
+- Define Commit Message guidelines. For example ``/\d+: [A-Z](\w|\s)*\./`` (e.g. 555: Title finished by a dot character.).
 - Use commit hooks to verify the code style guidelines and the commit message by overriding the following files `.git/hooks/pre-commit` and `.git/hooks/commit-msg` respectively.
 - The master branch, or the equivalent for the project must be protected, meaning all commits must be merged from feature branches
 - Every commit must be made inside a particular branch that encapsulate that particular task.
