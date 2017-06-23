@@ -14,7 +14,7 @@ Resources
 Training
 ========
 
-#. `Ticketing system <./training/ticketing-system.rst>`__
+#. `Ticketing system <./ticketing-system.rst>`__
 
 
 Files

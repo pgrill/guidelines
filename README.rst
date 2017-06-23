@@ -42,6 +42,8 @@ Areas
 - `Environment <./environment/README.rst>`__:
   `Setting up OS X <./environment/laptop-setup/osx.rst>`__
 
+- `Training <./training/README.rst>`__
+
 
 License
 =======
