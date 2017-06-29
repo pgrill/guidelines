@@ -45,8 +45,14 @@ i.e.: configuring tools, make sure something is being use, make sure some method
 Methodologies Checklist
 =======================
 
-Please fill this document with items every project should complete according with the Methodologies squad.
-i.e.: configuring tools, make sure something is being use, make sure some methodology is being applied, etc...
+- Every team clearly understands and subscribes to `Agile <https://playbook.sophilabs.io/#the-agile-way>`_ management principles
+- `Customer <https://playbook.sophilabs.io/#customer-availability>`_ inclusion as part of the team is essential for delivering the greatest product 
+- Teams strive for a clear `Product Vision <https://playbook.sophilabs.io/#understanding-product-vision>`_ from the customer, focusing in value-added tasks
+- Always deliver committed work by the agreed upon schedule
+- Always create `Tasks <https://playbook.sophilabs.io/#tasks>`_ for every work item done (on Jira, Trello, Github or any other system agreed for the project)
+- Include as much valuable info in your Tasks as you can  (e.g. Description, Priority, Reporter, Start Date/Time, End Date/Time)
+- Each team meets often to inspect, adapt and continuously improve (Planning, `Daily Stand-Ups <https://playbook.sophilabs.io/#standups>`_, Reviews and `Retrospectives <https://playbook.sophilabs.io/#biweekly-retrospective>`_)
+- Focus efforts on always adding value; automate valuable time-consuming tasks and remove non-valuable ones  
 
 
 Software Design Checklist
