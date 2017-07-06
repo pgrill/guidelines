@@ -59,9 +59,9 @@ Software Design Checklist
 =========================
 
 - Every project must have: 
-    - High level Architecture
-    - Class Diagram
-    - DB Diagram
+    - `High-level design <https://en.wikipedia.org/wiki/High-level_design>`_
+    - `Class Diagram <https://en.wikipedia.org/wiki/Class_diagram>`_
+    - `Entity relationship model <https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model>`_
 
 
 Code Analysis Checklist
