@@ -58,8 +58,10 @@ Methodologies Checklist
 Software Design Checklist
 =========================
 
-Please fill this document with items every project should complete according with the Software Design squad.
-i.e.: configuring tools, make sure something is being use, make sure some methodology is being applied, etc...
+- Every project must have: 
+    - High level Architecture
+    - Class Diagram
+    - DB Diagram
 
 
 Code Analysis Checklist
