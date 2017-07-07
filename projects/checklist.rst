@@ -74,7 +74,7 @@ Code Analysis Checklist
     - The master branch, or the equivalent for the project must be protected, meaning all commits must be merged from feature branches.
     - Every commit must be made inside a particular branch that encapsulate that particular task.
 
-- Code reviews:
+- Code reviews should be a common practice to ensure code quality and attachment to the `guidelines <http://vintage.agency/blog/how-to-implement-code-review-process-in-a-web-development-team/>`_.
    - Code reviews must be enforced before merging code to the master branch.
    - Code reviews should follow the `guidelines <https://playbook.sophilabs.io/#code-reviews>`_ in the Sophilabs Playbook.
 
