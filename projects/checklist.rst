@@ -78,7 +78,7 @@ Code Analysis Checklist
    - Code reviews must be enforced before merging code to the master branch.
    - Code reviews should follow the `guidelines <https://playbook.sophilabs.io/#code-reviews>`_ in the Sophilabs Playbook.
 
-- Every project must have a README file for new hires explaining the Tools needed for work and processes involved in the everyday work. This includes
+- Every project must have docmentation for new hires explaining the Tools needed for work and processes involved in the everyday work. This includes having a `README <https://gist.github.com/PurpleBooth/109311bb0361f32d87a2a>`_ and a `Contributing <https://gist.github.com/PurpleBooth/b24679402957c63ec426>`_ guidelines file. 
 
   - Development tools: Text editors, IDEs, Plugins
   - Required environment files
