@@ -69,7 +69,7 @@ Code Analysis Checklist
 
 - For every language use linters tool to verify code style guidelines. If you are in doubt about which tool you should use, refer to each language guidelines page. e.g. `Javascript <https://guidelines.sophilabs.io/languages/javascript/>`_, `Python <https://guidelines.sophilabs.io/languages/python/>`_, `Sass <https://guidelines.sophilabs.io/languages/sass/>`_.
 - Define Commit Message guidelines. For example ``/\d+: [A-Z](\w|\s)*\./`` (e.g. 555: Title finished by a dot character.).
-- Use commit hooks to verify the code style guidelines and the commit message by overriding the following files `.git/hooks/pre-commit` and `.git/hooks/commit-msg` respectively. Check out this `article <https://www.atlassian.com/git/tutorials/git-hooks>` to learn more about Git hooks.
+- Use commit hooks to verify the code style guidelines and the commit message by overriding the following files `.git/hooks/pre-commit` and `.git/hooks/commit-msg` respectively. Check out this `article <https://www.atlassian.com/git/tutorials/git-hooks>`_ to learn more about Git hooks.
 - Your project must follow a clear branching strategy, like `Git Flow <https://danielkummer.github.io/git-flow-cheatsheet/>`_. 
     - The master branch, or the equivalent for the project must be protected, meaning all commits must be merged from feature branches.
     - Every commit must be made inside a particular branch that encapsulate that particular task.
