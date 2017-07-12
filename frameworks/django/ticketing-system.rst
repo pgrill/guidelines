@@ -16,7 +16,7 @@ Build a web based ticketing system supporting multiple projects, tagging system,
 Users sign up/sign in to the system and go to their dashboard.
 In the header of the page a filter by project will be always present.
 
-From here the user will be able to navigate to different areas of the app
+From here the user will be able to navigate to different areas of the app.
 
 Views
 =====
@@ -26,7 +26,7 @@ These are going to be the main views:
 Sign up
 ^^^^^^^
 
-A form requiring First Name, Last Name, Email and Password
+A form requiring First Name, Last Name, Email and Password.
 
 Sign in
 ^^^^^^^
@@ -95,12 +95,12 @@ This report should be generated using a background job. When processing is done 
 Admin area
 ==========
 
-The administrator is responsible for managing projects, users and tags in the backend
+The administrator is responsible for managing projects, users and tags in the backend.
 
 Projects
 ^^^^^^^^
 
-They have a name, a description and users associated
+They have a name, a description and users associated.
 
 Tags
 ^^^^
@@ -112,18 +112,18 @@ Non-Functional requirements
 
 - Follow our `Python <https://guidelines.sophilabs.io/python/>`__ and `Django <https://guidelines.sophilabs.io/django/>`__ guidelines
 - Use Virtualenv or Virtualenvwrapper
-- Organize the project according to Django Two Scoops Book.
+- Organize the project according to Django Two Scoops Book
 - Use Class Based Views
 - Use Mixins
 - Minify static files
 - Use python social auth
 - Use celery for background jobs
 - Create unit and functional tests, comply with a minimum of 80% of coverage
-- Create at least 1 integration test that executes javascript functions
+- Create at least 1 integration test that executes JavaScript functions
 - Use the latest stable version of Python and Django
 - Comply with pep8 and Django best practices
-- Use SASS
-- Use SASS & JS linters. See `here <https://guidelines.sophilabs.io/sass/>`__.
+- Use Sass
+- Use Sass & JS linters. See `here <https://guidelines.sophilabs.io/sass/>`__.
 - Use the Django Admin app for administrator tasks
 
 Boilerplate project: https://git.sophilabs.io/sophilabs/sophia/tree/dev.
@@ -144,10 +144,10 @@ Comment Ticket                                        4
 Log hours to Ticket                                   5
 PDF Report Generator using Celery                     10
 Admin Area                                            4
-Virtualenv + django last version + pep8 + two scoops  6
+Virtualenv + Django last version + pep8 + Two Scoops  6
 Class based views + Mixins                            6
 80% coverage + unit/integration/functional tests      10
-Saas + js/sass linters + minify assets                6
+Sass + JS/Sass linters + minify assets                6
 ====================================================  ==========
 
 
