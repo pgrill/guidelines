@@ -58,11 +58,15 @@ Methodologies Checklist
 Software Design Checklist
 =========================
 
-- Every project must have: 
-    - `High-level design <https://en.wikipedia.org/wiki/High-level_design>`_
-    - `Class Diagram <https://en.wikipedia.org/wiki/Class_diagram>`_
-    - `Entity relationship model <https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model>`_
-
+- Every project must have:
+    - Documentation:
+        - `High-level design <https://en.wikipedia.org/wiki/High-level_design>`_
+        - `Class Diagram <https://en.wikipedia.org/wiki/Class_diagram>`_
+        - `Entity relationship model <https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model>`_
+    - Development Process
+        - At least 2 team members must be involved on the component design within a project
+        - Validate designs with other team members
+        - Reach experienced developers for guidence
 
 Code Analysis Checklist
 =======================
