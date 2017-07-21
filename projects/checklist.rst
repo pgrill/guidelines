@@ -72,13 +72,17 @@ Code Analysis Checklist
 =======================
 
 - For every language use linters tool to verify code style guidelines. If you are in doubt about which tool you should use, refer to each language guidelines page. e.g. `Javascript <https://guidelines.sophilabs.io/languages/javascript/>`_, `Python <https://guidelines.sophilabs.io/languages/python/>`_, `Sass <https://guidelines.sophilabs.io/languages/sass/>`_.
-- Define Commit Message guidelines. For example ``/\d+: [A-Z](\w|\s)*\./`` (e.g. 555: Title finished by a dot character.).
-- Use commit hooks to verify the code style guidelines and the commit message by overriding the following files `.git/hooks/pre-commit` and `.git/hooks/commit-msg` respectively.
-- The master branch, or the equivalent for the project must be protected, meaning all commits must be merged from feature branches
-- Every commit must be made inside a particular branch that encapsulate that particular task.
-- Code reviews must be enforced before merging code to the master branch.
-- Code reviews should follow the guidelines in the Sophilabs Playbook.
-- Every project must have a README file for new hires explaining the Tools needed for work and processes involved in the everyday work. This includes
+- Define Commit Message guidelines. For example ``/#\d+: [A-Z](\w|\s)*/`` (i.e. #555: Fix typo in guideline). You may find this `article <https://chris.beams.io/posts/git-commit/>`_ useful.
+- Use commit hooks to verify the code style guidelines and the commit message by overriding the following files ``.git/hooks/pre-commit`` and ``.git/hooks/commit-msg`` respectively. Check out this `article <https://www.atlassian.com/git/tutorials/git-hooks>`_ to learn more about Git hooks.
+- Your project must follow a clear branching strategy, like `Git Flow <https://danielkummer.github.io/git-flow-cheatsheet/>`_. 
+    - The master branch, or the equivalent for the project must be protected, meaning all commits must be merged from feature branches.
+    - Every commit must be made inside a particular branch that encapsulate that particular task.
+
+- Code reviews should be a common practice to ensure code quality and attachment to the `guidelines <http://vintage.agency/blog/how-to-implement-code-review-process-in-a-web-development-team/>`_.
+   - Code reviews must be enforced before merging code to the master branch.
+   - Code reviews should follow the `guidelines <https://playbook.sophilabs.io/#code-reviews>`_ in the Sophilabs Playbook.
+
+- Every project must have docmentation for new hires explaining the Tools needed for work and processes involved in the everyday work. This includes having a `README <https://gist.github.com/PurpleBooth/109311bb0361f32d87a2a>`_ and a `Contributing <https://gist.github.com/PurpleBooth/b24679402957c63ec426>`_ guidelines file. 
 
   - Development tools: Text editors, IDEs, Plugins
   - Required environment files
