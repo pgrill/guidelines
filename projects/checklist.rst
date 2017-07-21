@@ -59,6 +59,7 @@ Software Design Checklist
 =========================
 
 Every project must have:
+
 - Documentation
     - `High-level design <https://en.wikipedia.org/wiki/High-level_design>`_
     - `Class Diagram <https://en.wikipedia.org/wiki/Class_diagram>`_
