@@ -24,6 +24,7 @@ Testing Checklist
 - Implement load testing.
 - Measure code coverage.
 - Run code coverage measurements automatically for each merge request.
+    - Check out the `Gitlab documentation <https://docs.gitlab.com/ee/ci/>`_ for further information about continuous integration.
 - Prevent merging if team-defined criteria is not met. (For example: coverage percentage below 90%)
 - Run tests automatically in each merge request and prevent merging if they fail.
 - Document your testing setup in the *manifiesto file*.
