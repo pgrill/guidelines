@@ -83,6 +83,7 @@ Code Analysis Checklist
 - Does the project follow a clear branching strategy, like `Git Flow <https://danielkummer.github.io/git-flow-cheatsheet/>`__? This includes: 
     - Having the master branch (or the equivalent) protected, meaning all commits must be merged from feature branches.
     - Ensuring every commit must be made inside a particular branch that encapsulate that particular task.
+
 If this not the case, you can ask the Code Analysis Squad for assistance to implementing a branching strategy in your project.
 
 - Is the submitted code in the master branch reviewed by other team members before commiting? If not, you can implement Code Reviews, which is a practice to ensure code quality and attachment to the `guidelines <http://vintage.agency/blog/how-to-implement-code-review-process-in-a-web-development-team/>`__. As a rule of thumb:
