@@ -4,7 +4,11 @@ Project's checklist
 Purpose
 =======
 
-TBD
+Foster continuous improvement within Sophilabs, by promoting a self-critical culture that thrives on welcoming and adapting to change. To do so, each Squad operates through basic quality tools (such as customized checklists), allowing each project a thorough process-alignment analysis against best practices for specific knowledge-domains like: Security, Software Design, Methodologies, etc.
+
+Checklists are built on top of a simplified "Objectives & Key Results" approach, where expected results align with best practices and are validated by specific questions. In consequence, deviated results are visible and suggested action plans can be assessed and implemented. 
+
+E.g.: "Does every team (and team member) subscribes to Agile management practices? - If not, assistance can be requested from the Agile Master to assess the team's knowledge gaps and implement Agile awareness workshops"
 
 
 Security Checklist
