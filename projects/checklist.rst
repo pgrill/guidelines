@@ -28,7 +28,7 @@ Testing Checklist
 - Are you actively writing and running load tests in your project?
     - If not, checkout Apache's `JMeter <https://jmeter.apache.org/>`__.
 - Are you actively measuring your code coverage?
-    - If not, there several options depending on your technology stack. Check out our guidelines, if your technology isn't included feel free to add it!
+    - If not, there are several options depending on your technology stack. Check out our guidelines, if your technology isn't included feel free to add it!
 - Do you run code coverage measurements automatically for each merge request?
     - If not, and you are using Gitlab, check out the `Gitlab documentation <https://docs.gitlab.com/ee/ci/>`__ for further information about continuous integration.
 - Do you prevent merging pull requests (or building) if team-defined criteria are not met? (For example: coverage percentage below 90%)
