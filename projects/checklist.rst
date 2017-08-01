@@ -21,17 +21,21 @@ i.e.: configuring tools, make sure something is being use, make sure some method
 Testing Checklist
 =================
 
-- Implement unit testing in your project.
-    - You can read the following guides for
+- Are you actively writing and running unit tests in your project?
+    - If not, you can read the following guides for
       `Django <./../frameworks/django/testing.rst>`__ and
       `React <./../frameworks/react#testing>`__.
-- Implement load testing.
-- Measure code coverage.
-- Run code coverage measurements automatically for each merge request.
-    - Check out the `Gitlab documentation <https://docs.gitlab.com/ee/ci/>`__ for further information about continuous integration.
-- Prevent merging if team-defined criteria is not met. (For example: coverage percentage below 90%)
-- Run tests automatically in each merge request and prevent merging if they fail.
-- Document your testing setup in the *manifiesto file*.
+- Are you actively writing and running load tests in your project?
+    - If not, checkout Apache's `JMeter <https://jmeter.apache.org/>`__.
+- Are you actively measuring your code coverage?
+    - If not, there several options depending on your technology stack. Check out our guidelines, if your technology isn't included feel free to add it!
+- Do you run code coverage measurements automatically for each merge request?
+    - If not, and you are using Gitlab, check out the `Gitlab documentation <https://docs.gitlab.com/ee/ci/>`__ for further information about continuous integration.
+- Do you prevent merging pull requests (or building) if team-defined criteria are not met? (For example: coverage percentage below 90%)
+    - See previous suggestion.
+- Do you run tests automatically in each merge request and prevent merging (or building) if they fail?
+    - See previous suggestion.
+- Did you write your testing setup in the *manifiesto file* and are actively updating it?
 
 
 React projects
