@@ -29,6 +29,7 @@ Areas
   `Python <./languages/python/README.rst>`__,
   `SASS <./languages/sass/README.rst>`__,
   `JavaScript <./languages/javascript/README.rst>`__,
+  `HTML <./languages/html/README.rst>`__,
   etc.
 
 - `Software design <./software-design/README.rst>`__:
