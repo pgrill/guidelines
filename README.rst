@@ -29,19 +29,20 @@ Areas
   `Python <./languages/python/README.rst>`__,
   `SASS <./languages/sass/README.rst>`__,
   `JavaScript <./languages/javascript/README.rst>`__,
-  `HTML <./languages/html/README.rst>`__,
-  etc.
+  `HTML <./languages/html/README.rst>`__.
 
 - `Software design <./software-design/README.rst>`__:
   `Reports <./software-design/reports/README.rst>`__
 
+- `Project setup <./project-setup/README.rst>`__:
+  `Project structure <./project-setup/project-structure.rst>`__.
+
 - `Frameworks <./frameworks/README.rst>`__:
   `Django <./frameworks/django/README.rst>`__,
-  `React <./frameworks/react/README.rst>`__,
-  etc
+  `React <./frameworks/react/README.rst>`__.
 
-- `Tools <./tools/README.rst>`__:
-  `Git <./tools/README.rst#git>`__, etc.
+- `Development workflow <./workflow/README.rst>`__:
+  `Git <./workflow/README.rst#git>`__.
 
 - `Environment <./environment/README.rst>`__:
   `Setting up OS X <./environment/laptop-setup/osx.rst>`__
