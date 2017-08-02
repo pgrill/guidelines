@@ -8,3 +8,4 @@ Languages guidelines
 * `Python <./python/README.rst>`_
 * `Restructured Text <./restructuredtext/README.rst>`_
 * `Sass <./sass/README.rst>`_
+* `HTML <./html/README.rst>`_
