@@ -1,6 +1,36 @@
-# {project_name}
+# Project Title
 
-Sophia is the internal management system of Sophilabs.
+One Paragraph of project description goes here
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+What things you need to install the software and how to install them
+
+```
+Give examples
+```
+
+### Installing
+
+A step by step series of examples that tell you have to get a development env running
+
+Say what the step will be
+
+```
+Give the example
+```
+
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo
 
 ## Testing
 
@@ -18,11 +48,21 @@ In some-project, the app is deployed automatically by GitLab pipelines everytime
 
 ## Code analysis
 
-Please, setup the Gilp pre-commit hook in order to run `pylint` and `eslint` everytime you commit code and ensure all code you write is linted.
+Describe the tools used to check the code before a commit is done. For example using gilp or another tool. 
 
 ## Branching and code review
 
-You should work on a separate branch for each issue using the [Git Flow](https://github.com/nvie/gitflow)_ branching model and send a *Merge Request* to the `dev` branch in order for a teammate to review your code and merge it or request changes.
+We work in separate branch for each issue using the [Git Flow](https://github.com/nvie/gitflow)_ branching model and send a *Merge Request* to the `dev` branch in order for a teammate to review your code and merge it or request changes. Describe the naming convention for branches like:
+
+* 1234: Feature description.
+
+### Code Review
+
+Describe your code review process here, if you have any. An example could be dhe following one. Refer to the Playbook for code review guidelines.
+
+1. Make commit to your repository.
+2. A developer downloads your code and test it.
+3. After the review is done, we merge the code to dev.
 
 ## Dependency management
 
@@ -30,3 +70,4 @@ In case you have to add dependencies to the project,
 
 - **Python:** We have three `.pip` files located in `setup/some_project/containers/django/requirements/`. One for `development`, one for `production` and a `base` one which is inherited by the other ones.
 - **JavaScript:** We have a common `package.json` file. If you use `yarn` instead of `npm`, please make sure you **do** commit the `yarn.lock` file.
+- **Elixir:** We use mix, and hex for dependency management.
