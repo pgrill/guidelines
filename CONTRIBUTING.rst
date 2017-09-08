@@ -16,6 +16,11 @@ Some useful tools for contributing are:
       pip install restview
       restview .
 
+File and folder names
+=====================
+
+Lowercase, hyphenated file and folder names, i.e. `code-reviews.rst`.
+
 rST guidelines
 ==============
 

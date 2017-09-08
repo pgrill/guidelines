@@ -21,17 +21,21 @@ i.e.: configuring tools, make sure something is being use, make sure some method
 Testing Checklist
 =================
 
-- Implement unit testing in your project.
-    - You can read the following guides for
+- Are you actively writing and running unit tests in your project?
+    - If not, you can read the following guides for
       `Django <./../frameworks/django/testing.rst>`__ and
       `React <./../frameworks/react#testing>`__.
-- Implement load testing.
-- Measure code coverage.
-- Run code coverage measurements automatically for each merge request.
-    - Check out the `Gitlab documentation <https://docs.gitlab.com/ee/ci/>`__ for further information about continuous integration.
-- Prevent merging if team-defined criteria is not met. (For example: coverage percentage below 90%)
-- Run tests automatically in each merge request and prevent merging if they fail.
-- Document your testing setup in the *manifiesto file*.
+- Are you actively writing and running load tests in your project?
+    - If not, checkout Apache's `JMeter <https://jmeter.apache.org/>`__.
+- Are you actively measuring your code coverage?
+    - If not, there are several options depending on your technology stack. Check out our guidelines, if your technology isn't included feel free to add it!
+- Do you run code coverage measurements automatically for each merge request?
+    - If not, and you are using Gitlab, check out the `Gitlab documentation <https://docs.gitlab.com/ee/ci/>`__ for further information about continuous integration.
+- Do you prevent merging pull requests (or building) if team-defined criteria are not met? (For example: coverage percentage below 90%)
+    - See previous suggestion.
+- Do you run tests automatically in each merge request and prevent merging (or building) if they fail?
+    - See previous suggestion.
+- Did you write your testing setup in the *manifiesto file* and are actively updating it?
 
 
 React projects
@@ -43,9 +47,18 @@ React projects
 Deployment Checklist
 ====================
 
-Please fill this document with items every project should complete according with the Deployment squad.
-i.e.: configuring tools, make sure something is being use, make sure some methodology is being applied, etc...
-
+- Are you using a version control system?
+    - Every project must use a VCS. `Git <https://git-scm.com>`__ is our preferred VCS and we use `GitHub <https://github.com>`__ for open-source projects and `GitLab <https://gitlab.com>`__ for proprietary projects.
+- Are you using a containerization or virtualization system?
+    - In order to improve the project flexibility and portability we recommend using  `Docker <https://www.docker.com>`__.
+- Are you using continuous integration?
+    - A continuous integration service eases the development workflow by automating tasks such as testing and deployment. Please take a look at  `GitLab CI <https://about.gitlab.com/features/gitlab-ci-cd/>`__ and  `Jenkins <https://jenkins.io>`__.
+- Are you using a staging server for development branch releases?
+    - If not, set up a staging server to improve the project visibility and the development process.
+- Does your project have a rollback plan?
+    - If not, schedule a meeting with your team in order to create and document a rollback plan.
+- Is the deployment process well documented?
+    - If not, schedule a meeting with your team in order to determine and document the end-to-end deployment process, tools and activities.
 
 Methodologies Checklist
 =======================
