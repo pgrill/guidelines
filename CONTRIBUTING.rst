@@ -7,7 +7,7 @@ Styling Rules
 =============
 
 - Introduce changes by creating pull requests and assigning them to the targeted content's owning squad
-- Avoid copying content from other sources, you'd rather just link it
+- Avoid copying content from other sources, just link it
 - If you are going to upload code snippets, make sure that they respect the PEP8 standard by running linters on it
 - Be concise
 - Use bullet-lists extensively
