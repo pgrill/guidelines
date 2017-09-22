@@ -23,60 +23,53 @@ find specific best practices, or you could either use our summarized
 `checklist of project´s musts <./checklist.rst>`__ as a starting point, as most
 of their items contain links to the actual best practices.
 
-Software development life cycle
-===============================
+Project's life cycle
+====================
 
-`Project kick-off <./kick-off/README.rst>`__
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `Kick-off <./kick-off/README.rst>`__
+    - `Projects manifesto <./kick-off/manifesto/README.rst>`__
+    - `Software development workflow <./kick-off/workflow.rst>`__
+    - `Development environment <./kick-off/environment.rst>`__
+    - `Docker setup <./kick-off/docker.rst>`__
+    - `Project bootstrapping <./kick-off/bootstrapping.rst>`__
 
-- `Projects manifesto <./kick-off/manifesto/README.rst>`__
-- `Software development workflow <./kick-off/workflow.rst>`__
-- `Development environment <./kick-off/environment.rst>`__
-- `Docker setup <./kick-off/docker.rst>`__
-- `Project bootstrapping <./kick-off/bootstrapping.rst>`__
+- `Visual design <./visual-design/README.rst>`__
+    - `User interface <./visual-design/user-interface.rst>`__
+    - `Interaction design <./visual-design/interaction-design.rst>`__
 
-`Software design <./software-design/README.rst>`__
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `Software design <./software-design/README.rst>`__
+    - `Principles <./software-design/principles.rst>`__
+    - `Best practices <./software-design/best-practices.rst>`__
 
-- `Principles <./software-design/principles.rst>`__
-- `Best practices <./software-design/best-practices.rst>`__
+- `Databases <./databases/README.rst>`__
+    - `Best practices <./databases/best-practices.rst>`__
 
-`Databases <./databases/README.rst>`__
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- `Security <./security/README.rst>`__
+    - `Best practices <./security/best-practices.rst>`__
 
-- `Best practices <./databases/best-practices.rst>`__
+- `Programming <./programming/README.rst>`__
+    - `Languages <./programming/languages/README.rst>`__
+        - `Python <./programming/languages/python/README.rst>`__
+        - `JavaScript <./programming/languages/javascript/README.rst>`__
+        - `SASS <./programming/languages/sass/README.rst>`__
+        - `HTML <./programming/languages/html/README.rst>`__
+    - `Frameworks and libraries <./programming/frameworks-and-libraries/README.rst>`__
+        - `Django <./programming/frameworks-and-libraries/django/README.rst>`__
+        - `React <./programming/frameworks-and-libraries/react/README.rst>`__
+    - `Code reviews <./programming/code-reviews.rst>`__
 
-`Security <./security/README.rst>`__
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-- `Best practices <./security/best-practices.rst>`__
-
-`Programming <./programming/README.rst>`__
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-- `Languages <./programming/languages/README.rst>`__
-    - `Python <./programming/languages/python/README.rst>`__
-    - `JavaScript <./programming/languages/javascript/README.rst>`__
-    - `SASS <./programming/languages/sass/README.rst>`__
-    - `HTML <./programming/languages/html/README.rst>`__
-- `Frameworks and libraries <./programming/frameworks-and-libraries/README.rst>`__
-    - `Django <./programming/frameworks-and-libraries/django/README.rst>`__
-    - `React <./programming/frameworks-and-libraries/react/README.rst>`__
-- `Code reviews <./programming/code-reviews.rst>`__
-
-`Testing <./testing/README.rst>`__
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-- `Automated testing <./testing/automated/README.rst>`__
-    - `Python <./testing/automated/python/README.rst>`__
-- `QA reviews <./testing/qa-reviews.rst>`__
-
-`Deployment <./deployment/README.rst>`__
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-- `Versioning <./deployment/versioning.rst>`__
-- `Continuous integrations <./deployment/continuous-integration.rst>`__
-- `Containerization <./deployment/containerization.rst>`__
+- `Testing <./testing/README.rst>`__
+    - `Automated testing <./testing/automated/README.rst>`__
+        - `Languages <./testing/automated/languages/README.rst>`__
+            - `Python <./testing/automated/languages/python/README.rst>`__
+        - `Frameworks and libraries <./testing/automated/frameworks-and-libraries/README.rst>`__
+            - `Django <./testing/automated/frameworks-and-libraries/django/README.rst>`__
+            - `React <./testing/automated/frameworks-and-libraries/react/README.rst>`__
+    - `QA reviews <./testing/qa-reviews.rst>`__
+- `Deployment <./deployment/README.rst>`__
+    - `Versioning <./deployment/versioning.rst>`__
+    - `Continuous integrations <./deployment/continuous-integration.rst>`__
+    - `Containerization <./deployment/containerization.rst>`__
 
 License
 =======
