@@ -1,4 +1,5 @@
-Software design guidelines
---------------------------
+Software design
+---------------
 
-* `Reports <./reports/README.rst>`_
+- `Principles <./principles.rst>`__
+- `Best practices <./best-practices.rst>`__

@@ -15,40 +15,68 @@ Please contribute to it following this `contribution guidelines <./CONTRIBUTING.
     be interpreted as described in
     `RFC 2119 <https://tools.ietf.org/html/rfc2119>`__.
 
-Areas
-=====
+How to read these guidelines
+============================
 
-- `Projects <./projects/README.rst>`__:
-  `Manifesto <./projects/manifesto/README.rst>`__ and
-  `Checklist <./projects/checklist.rst>`__.
+You can go over each different phase of the software development life cycle to
+find specific best practices, or you could either use our summarized
+`checklist of project´s musts <./checklist.rst>`__ as a starting point, as most
+of their items contain links to the actual best practices.
 
-- `Programming <./programming/README.rst>`__:
-  `Code reviews <./programming/codereviews.rst>`__.
+Software development life cycle
+===============================
 
-- `Languages <./languages/README.rst>`__:
-  `Python <./languages/python/README.rst>`__,
-  `SASS <./languages/sass/README.rst>`__,
-  `JavaScript <./languages/javascript/README.rst>`__,
-  `HTML <./languages/html/README.rst>`__.
+`Project kick-off <./kick-off/README.rst>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- `Software design <./software-design/README.rst>`__:
-  `Reports <./software-design/reports/README.rst>`__
+- `Projects manifesto <./kick-off/manifesto/README.rst>`__
+- `Software development workflow <./kick-off/workflow.rst>`__
+- `Development environment <./kick-off/environment.rst>`__
+- `Docker setup <./kick-off/docker.rst>`__
+- `Project bootstrapping <./kick-off/bootstrapping.rst>`__
 
-- `Project setup <./project-setup/README.rst>`__:
-  `Project structure <./project-setup/project-structure.rst>`__.
+`Software design <./software-design/README.rst>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- `Frameworks <./frameworks/README.rst>`__:
-  `Django <./frameworks/django/README.rst>`__,
-  `React <./frameworks/react/README.rst>`__.
+- `Principles <./software-design/principles.rst>`__
+- `Best practices <./software-design/best-practices.rst>`__
 
-- `Development workflow <./workflow/README.rst>`__:
-  `Git <./workflow/README.rst#git>`__.
+`Databases <./databases/README.rst>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- `Environment <./environment/README.rst>`__:
-  `Setting up OS X <./environment/laptop-setup/osx.rst>`__
+- `Best practices <./databases/best-practices.rst>`__
 
-- `Training <./training/README.rst>`__
+`Security <./security/README.rst>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+- `Best practices <./security/best-practices.rst>`__
+
+`Programming <./programming/README.rst>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- `Languages <./programming/languages/README.rst>`__
+    - `Python <./programming/languages/python/README.rst>`__
+    - `JavaScript <./programming/languages/javascript/README.rst>`__
+    - `SASS <./programming/languages/sass/README.rst>`__
+    - `HTML <./programming/languages/html/README.rst>`__
+- `Frameworks and libraries <./programming/frameworks-and-libraries/README.rst>`__
+    - `Django <./programming/frameworks-and-libraries/django/README.rst>`__
+    - `React <./programming/frameworks-and-libraries/react/README.rst>`__
+- `Code reviews <./programming/code-reviews.rst>`__
+
+`Testing <./testing/README.rst>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- `Automated testing <./testing/automated/README.rst>`__
+    - `Python <./testing/automated/python/README.rst>`__
+- `QA reviews <./testing/qa-reviews.rst>`__
+
+`Deployment <./deployment/README.rst>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- `Versioning <./deployment/versioning.rst>`__
+- `Continuous integrations <./deployment/continuous-integration.rst>`__
+- `Containerization <./deployment/containerization.rst>`__
 
 License
 =======
