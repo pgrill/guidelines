@@ -18,7 +18,7 @@ Please contribute to it following this `contribution guidelines <./CONTRIBUTING.
 How to read these guidelines
 ============================
 
-You can go over each different phase of the software development life cycle to
+You can go over each different phases of the project's life cycle to
 find specific best practices, or you could either use our summarized
 `checklist of project´s musts <./checklist.rst>`__ as a starting point, as most
 of their items contain links to the actual best practices.
@@ -30,7 +30,6 @@ Project's life cycle
     - `Projects manifesto <./kick-off/manifesto/README.rst>`__
     - `Software development workflow <./kick-off/workflow.rst>`__
     - `Development environment <./kick-off/environment.rst>`__
-    - `Docker setup <./kick-off/docker.rst>`__
     - `Project bootstrapping <./kick-off/bootstrapping.rst>`__
 
 - `Visual design <./visual-design/README.rst>`__

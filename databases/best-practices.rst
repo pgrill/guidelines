@@ -1,4 +1,0 @@
-Databases best practices
-------------------------
-
-TBD

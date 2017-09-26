@@ -1,4 +1,0 @@
-Security best practices
------------------------
-
-TBD

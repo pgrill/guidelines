@@ -1,4 +1,7 @@
 Security
 ---------
 
-- `Best practices <./best-practices.rst>`__
+Best practices
+==============
+
+TBD
