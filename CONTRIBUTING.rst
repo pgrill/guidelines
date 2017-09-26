@@ -38,3 +38,26 @@ Headings
 * Use ``======`` for level 2 headings.
 * Use ``^^^^^^`` for level 3 headings.
 * Use ``++++++`` for level 4 headings.
+
+Ownership
+=========
+
+Guidelines is divided into different sections, and each section has an owner.
+The owners are responsible for the content of those areas, every pull request
+that affects an area should be assigned to the corresponding owner.
+
+This is the current ownership configuration:
+
+- `Kick-off <./kick-off/README.rst>`__
+    - `Projects manifesto <./kick-off/manifesto/README.rst>`__ **[Meta squad]**
+    - `Software development workflow <./kick-off/workflow.rst>`__ **[Deployment squad]**
+    - `Development environment <./kick-off/environment.rst>`__ **[Code analysis squad]**
+    - `Docker setup <./kick-off/docker.rst>`__ **[Deployment squad]**
+    - `Project bootstrapping <./kick-off/bootstrapping.rst>`__ **[Code analysis squad]**
+- `Visual design <./visual-design/README.rst>`__ **[Visual design squad]**
+- `Software design <./software-design/README.rst>`__ **[Software design squad]**
+- `Databases <./databases/README.rst>`__ **[Databases squad]**
+- `Security <./security/README.rst>`__ **[Security squad]**
+- `Programming <./programming/README.rst>`__ **[Code analysis squad]**
+- `Testing <./testing/README.rst>`__ **[Testing squad]**
+- `Deployment <./deployment/README.rst>`__ **[Deployment squad]**
