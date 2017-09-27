@@ -18,7 +18,7 @@ Please contribute to it following this `contribution guidelines <./CONTRIBUTING.
 How to read these guidelines
 ============================
 
-You can go over each different phases of the project's life cycle to
+You can go over each different phase of the project's life cycle to
 find specific best practices, or you could either use our summarized
 `checklist of project´s musts <./checklist.rst>`__ as a starting point, as most
 of their items contain links to the actual best practices.
