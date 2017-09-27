@@ -37,14 +37,10 @@ Project's life cycle
     - `Interaction design <./visual-design/interaction-design.rst>`__
 
 - `Software design <./software-design/README.rst>`__
-    - `Principles <./software-design/principles.rst>`__
-    - `Best practices <./software-design/best-practices.rst>`__
 
 - `Databases <./databases/README.rst>`__
-    - `Best practices <./databases/best-practices.rst>`__
 
 - `Security <./security/README.rst>`__
-    - `Best practices <./security/best-practices.rst>`__
 
 - `Programming <./programming/README.rst>`__
     - `Languages <./programming/languages/README.rst>`__
