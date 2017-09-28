@@ -32,6 +32,19 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
+## Security
+
+When you start working with your development environment, you will have an admin user predefined.
+
+```
+user: admin@pt.com
+password: admin
+```
+
+For storing and sharing secure passwords we use [1Password](https://agilebits.com/onepassword). Ask your principal to give you access for the needed services and environments passwords.
+
+You also need to create a ssh key and ask your principal to include it in the staging server.
+
 ## Testing
 
 We use Django's integrated testing system in order to perform unit testing to the project. You can find each app tests in the `<app-name>/tests.py` file and you can run the tests by running `manage.py test`.
