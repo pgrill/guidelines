@@ -1,0 +1,2 @@
+Server security guidelines
+--------------------------
