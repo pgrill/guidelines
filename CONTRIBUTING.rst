@@ -48,11 +48,11 @@ that affects an area should be assigned to the corresponding owner.
 
 This is the current ownership configuration:
 
+- `Checklists <./checklist.rst>`__ **[Meta squad]**
 - `Kick-off <./kick-off/README.rst>`__
     - `Projects manifesto <./kick-off/manifesto/README.rst>`__ **[Meta squad]**
     - `Software development workflow <./kick-off/workflow.rst>`__ **[Deployment squad]**
     - `Development environment <./kick-off/environment.rst>`__ **[Code analysis squad]**
-    - `Docker setup <./kick-off/docker.rst>`__ **[Deployment squad]**
     - `Project bootstrapping <./kick-off/bootstrapping.rst>`__ **[Code analysis squad]**
 - `Visual design <./visual-design/README.rst>`__ **[Visual design squad]**
 - `Software design <./software-design/README.rst>`__ **[Software design squad]**
