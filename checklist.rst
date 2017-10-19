@@ -21,14 +21,13 @@ Security Checklist
             Subscribe to security maillists. Ex https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce
 
 - Do you have SSH configured without password and root login?
-    If not: `SSH Guidelines </security/server/README.rst#ssh>`_
+    If not: `SSH Server Configuration <https://wiki.archlinux.org/index.php/Secure_Shell#Configuration_2>`_
 - Are you using only version 2 of SSH protocol?
-    If not, see previous suggestion.
+    If not: `SSH Server Configuration <https://wiki.archlinux.org/index.php/Secure_Shell#Configuration_2>`_
 - Are you using HTTPS everywhere?
-    If not `HTTPS Guidelines </security/server/README.rst#https>`_
+    If not: you can read about how to configure `HTTPS Guidelines </security/server/README.rst#https>`_
 - Are you using HSTS?
     If not `HSTS Guidelines </security/server/README.rst#hsts>`_
-
 - Are you whitelisting database connections?
     If not `Database Guidelines </security/server/README.rst#database>`_
 

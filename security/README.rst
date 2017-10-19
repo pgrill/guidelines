@@ -1,9 +1,11 @@
 Security
 --------
 
-Best practices
-==============
+GNU/PG
+======
 
-- `Server <./server/README.rst>`__
-- `Application <./application/README.rst>`__
-- `Operations <./operations/README.rst>`__
+TODO
+
+
+TODO: Write user setup guide for ubuntu.
+
