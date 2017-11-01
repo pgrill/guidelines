@@ -44,7 +44,36 @@ In the hours management system client (JS + React) we use `mocha` along with `en
 
 ## Deployment
 
-In some-project, the app is deployed automatically by GitLab pipelines everytime a commit is pushed into the `master` branch and it passes all the tests.
+### Traceability
+
+The project uses Git as the version control system and GitHub/GitLab for development platform following the Git Flow’s branching model.
+
+An up-to-date changelog can be found [here](CHANGELOG.md).
+
+### Portability
+
+In order to improve the project’s portability it is using Docker and Docker Compose as the containerization solution.
+
+### Visibility
+
+GitLab CI/Jenkins is used as the continuous integration system.
+CI is configured for every environment such as dev, RC, and prod.
+
+- The development server can be found [here](https://<subdomain>.sophilabs.me)
+- The RC server can be found [here](https://<subdomain>.sophilabs.me)
+- CI dashboard can be found [here](https://<subdomain>.sophilabs.me)
+- Full deployment process and tools documentation can be found [here](DEPLOYMENT.md)
+
+CI notifications are configured to send build statuses via Slack/email.
+
+### Reversibility 
+
+Database backups are automatically created every <days> days.
+
+The project can be automatically downgraded. The rollback plan can be found [here](DEPLOYMENT.md).
+
+To prevent server downtime the project is using Docker Swarm for deployment.
+
 
 ## Code analysis
 
