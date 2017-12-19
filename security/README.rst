@@ -1,7 +1,11 @@
 Security
----------
+--------
 
-Best practices
-==============
+GNU/PG
+======
 
-TBD
+TODO
+
+
+TODO: Write user setup guide for ubuntu.
+
