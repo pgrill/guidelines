@@ -101,7 +101,7 @@ Methodologies Checklist
     - If not, schedule your team's attendance to upcoming "Agility" workshops. Or directly reach out to your Agile Master for advice or definition of a more comprehensive Agility roadmap
 - Is `Customer <https://playbook.sophilabs.io/#customer-availability>`__ inclusion a natural consideration and ocurrence in your  team's value-creation process?
     - If not, engage and bring them closer to the product creation process. Customer inclusion is essencial for delivering the greatest and most "fit-for-purpose" product
-- Does your team have a clear `Product Vision <https://playbook.sophilabs.io/#understanding-product-vision>`__? from the customer, focusing in value-added tasks
+- Does your team receive a clear `Product Vision <https://playbook.sophilabs.io/#understanding-product-vision>`__ from the customer (focusing in value-added tasks)?
     - If not, refer to the previous point. Customer inclusion helps refine a comprehensive and clear Product Vision, allowing teams to add the most value posible in early stages
 - Does your team always deliver committed work by the agreed upon schedule with quality?
     - If not, track your team's performance artifacts (account for team's capacity & velocity). Also, consider assessing your planning, estimation and engineering practices. Reach out to your Agile Master for further assistance
@@ -110,7 +110,7 @@ Methodologies Checklist
 - Is your team continuously improving the product being created and the process value-stream behind it?
     - If not, make sure your team meets often to inspect, adapt and continuously improve (Planning, `Daily Stand-Ups <https://playbook.sophilabs.io/#standups>`__, Reviews and `Retrospectives <https://playbook.sophilabs.io/#biweekly-retrospective>`__)
 - Is your team flexible, readily adapting to product changes leveraged by the customer?
-    - If not, focus team efforts on always adding value; automate valuable time-consuming tasks and remove non-valuable ones. Consult your Agile Master about agility-boosting strategies for your team
+    - If not, focus team efforts on always adding value; automate or remove repeatable and/or time-consuming tasks according to their value-yield. Consult your Agile Master about agility-boosting strategies for your team
 
 
 Software Design Checklist
