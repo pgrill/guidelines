@@ -1,6 +1,13 @@
 Python guidelines
 -----------------
 
+
+Resources
+=========
+
+#. Test your `regular expressions <https://pythex.org>`__
+#. Stay up to date: `Python Weekly <https://www.pythonweekly.com/>`__
+
 Rules
 =====
 
