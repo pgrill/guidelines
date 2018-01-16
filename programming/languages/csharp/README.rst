@@ -26,10 +26,11 @@ Rules
 * Do not throw exceptions from exception filter blocks.
 * Throw exceptions from instance constructors, if appropriate.
 * Use one of the following linting tools `FxCop <http://msdn.microsoft.com/en-us/library/bb429476.aspx>`__ - `Microsoft Code Analysis <https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017>`__ - `Resharper <http://www.jetbrains.com/resharper/>`__
+
 ------
 
 Naming
------
+------
 #. **Classes** must be in ``CamelCase``.
 
     .. code-block:: c#
