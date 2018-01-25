@@ -43,7 +43,7 @@ Be sure to ask your Development Manager (DM) for training accounts to start your
 
 ## Tips for self learning
 
-Took from https://www.ivywise.com/ivywise-knowledgebase/newsletter/article/self-studying-whats-the-benefit-and-how-to-do-it/
+Taken from https://www.ivywise.com/ivywise-knowledgebase/newsletter/article/self-studying-whats-the-benefit-and-how-to-do-it/
 
 Self-learning does take a lot of discipline and can be difficult at first, but like any endeavor, with time it becomes easier. Self-study, when done correctly, is a very effective learning tool, so it can be helpful when used to prepare for a test or learn an entirely new subject matter on your own. Here are some tips for practicing successful self-studying:
 
