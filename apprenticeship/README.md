@@ -19,4 +19,9 @@ The rest of this section is divided in subsections, ordered chronogically from t
 * [Training Project](training.md) (2 weeks)
 * [First Client Project](clientproject.md)
 
+# Final words
+
+We encourage you to propose changes to the apprentice process. We believe in a [continous improvement](https://man.sophilabs.io/people/#continuous-improvement) process and we are constantly trying to do a better job at it. As an apprentice, you have much better insight into what could make the process better for you than does someone who's been working here for five years.
+Feedback is always appreciated. If you have feedback on the overall apprentice program, please discuss the issue with your mentor, or DM.
+
 Note: This page is based on the great work done by Thoughtbot, available at their [Github](https://github.com/thoughtbot/apprenticeship) repository.
