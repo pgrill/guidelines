@@ -1,6 +1,8 @@
 Testing
 -------
 
+TBD: Re-write
+
 TDD
 ===
 
@@ -460,4 +462,3 @@ For all those cases we need to be able to load the web page and simulate the use
 interaction with it, that way, we can make sure that the user experience in our
 site is the one that is expected. After all, the user experience is what gives
 value to our site, it would be foolish not to test it.
-

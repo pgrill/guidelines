@@ -1,7 +1,4 @@
 Databases
 ---------
 
-Best practices
-==============
-
-TBD
+TBD: Write database introduction
