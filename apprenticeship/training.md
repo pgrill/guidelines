@@ -14,23 +14,27 @@ Expand requirements here if applicable!!!!!!!!!!!!
 
 TBD And extend!!!!
 
-* Question and answers
-* Code Reviews
-* Gitlab Repo setup
-* Deploy
-* Demo
-* Frontend Tests
-* Backend Tests
-* Merge Requests
+### Gitlab Repo setup
+We create a gitlab repository for the tickets training. Make sure you have access to the private company's [gitlab](https://git.sophilabs.io/). Please set up [gilp](https://sophilabs.co/blog/gulp-and-commit-hooks-gilp) commit hooks for Python, and Javascript languages. You can download a sample gilp ready `gulpfile.js` [here](https://github.com/sophilabs/gilp/blob/master/examples/full.js) and adapt it to your needs.
+
+### Code Reviews & Merge Requests
+You should follow a [git flow](http://nvie.com/posts/a-successful-git-branching-model/)  branching model development. In this project this means whenever you make a new feature you must create a feature branch for the work you are doing. Whenever you finish your work you should create a [Merge Request](https://docs.gitlab.com/ee/gitlab-basics/add-merge-request.html) so every commit into the master branch is reviewed by your mentor. Your mentor will review your code following the [Code Review](https://sophilabs.co/playbook/#code-reviews) flow and give you feedback on your work.
+### Frontend Tests
+
+### Backend Tests
+
+### Production Deployment
+
+### Demo
+
+### Final code review
 
 ## Tips
 
-* Prioritize Mandatory requirements vs Optional ....
-* Organize your work using Trello
-* Consider using a Poodoro timer
-* Requirements are not written into stone. Feel free to negociate deadlines. This is a common practice in software projects.
-* Relax
-* Ask teammates (/guru)
-* Ask in Slack #developers #python #javascript
-* Be in contact with your mentor
-* Do pair programming
+* *Prioritize*: Mandatory requirements vs Optional. Consider doing mandatory requirements first, and then focusing into the optional ones if you have time.
+* *Organize*: your work using a Trello Board, this will prevent you on getting stuck and focusing in the important things.
+* *Negociate* requirements. Any developer should negociate if the scope is too big. Feel free to negociate deadlines and requirements with your mentor. This is a common practice in software projects.
+* *Ask* around if you get stuck. In Sophilabs we have several ways to get help if needed.
+    * Use `/guru` slack command to find expert people in certain your question. Try it in any channel
+    *  the appropiate Slack channels such as [#developers](https://sophilabs.slack.com/messages/developers), [#python](https://sophilabs.slack.com/messages/python), or [#react_redux](https://sophilabs.slack.com/messages/react_redux)
+    * Ask your mentor. He might know or point you towards the right direction.
