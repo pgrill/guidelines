@@ -12,7 +12,7 @@ We want you to remember these three things during your training.
 
 # The timeline
 
-The rest of this section is divided in subsections, ordered chronogically from the first day up to your first client project. Your first one or two months are spent learning. After that you'll meet with your DM to discuss your promotion to a Sophilabs developer.
+The rest of this section is divided in subsections, ordered chronogically from the first day up to your first client project. Your first one or two months are spent learning. After that you'll meet with your DM to discuss your promotion to a sophilabs developer.
 
 * [First Day](firstday.md)
 * [Self Learning](selflearning.md) (2-4 weeks)

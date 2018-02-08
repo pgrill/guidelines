@@ -4,7 +4,7 @@ Project's checklist
 Purpose
 =======
 
-Foster continuous improvement within Sophilabs, by promoting a self-critical culture that thrives on welcoming and adapting to change. To do so, each Squad operates through basic quality tools (such as customized checklists), allowing each project a thorough process-alignment analysis against best practices for specific knowledge-domains like: Security, Software Design, Methodologies, etc.
+Foster continuous improvement within sophilabs, by promoting a self-critical culture that thrives on welcoming and adapting to change. To do so, each Squad operates through basic quality tools (such as customized checklists), allowing each project a thorough process-alignment analysis against best practices for specific knowledge-domains like: Security, Software Design, Methodologies, etc.
 
 Checklists are built on top of a simplified "Objectives & Key Results" approach, where expected results align with best practices and are validated by specific questions. In consequence, deviated results are visible and suggested action plans can be assessed and implemented.
 
@@ -153,7 +153,7 @@ Code Analysis Checklist
   - If not, you can implement Code Reviews, which is a practice to ensure code quality and attachment to the `guidelines <http://vintage.agency/blog/how-to-implement-code-review-process-in-a-web-development-team/>`__. As a rule of thumb:
 
     - Code reviews must be enforced before merging code to the master branch.
-    - Code reviews should follow the `guidelines </programming/code-reviews.rst>`_ in the Sophilabs Playbook.
+    - Code reviews should follow the `guidelines </programming/code-reviews.rst>`_ in the sophilabs Playbook.
 
 - Does your project have documentation for new hires explaining the Tools needed for work and processes involved in the everyday work?
 

@@ -29,13 +29,13 @@ Naming
 #. **Interfaces** must be in ``CamelCase`` and prefixed with I.
 
     .. code-block:: c#
-    
+
         interface IService {}
 
 #. **Function/Method** must be in ``CamelCase``.
 
     .. code-block:: c#
-        
+
         class User
         {
             private int GetPublicId()
@@ -47,13 +47,13 @@ Naming
 #. **Variables** must be in ``camelCase``.
 
     .. code-block:: c#
-        
+
         string name = "this is a variable";
 
 #. **Function/Method Parameters** must be in ``camelCase``.
 
     .. code-block:: c#
-    
+
         int GetTest(string para, string longParam)
         {
             ...
@@ -67,15 +67,15 @@ Syntax
 #. Use object intilization.
 
     .. code-block:: c#
-    
-        ExampleClass element = new ExampleClass { 
+
+        ExampleClass element = new ExampleClass {
             Id = 1,
-            Name = "Test", 
-            Location = "Sophilabs"
+            Name = "Test",
+            Location = "sophilabs"
         };
 
 References
 ==========
 
-1. `C# Code Style <https://msdn.microsoft.com/en-us/library/ff926074.aspx>`__ 
+1. `C# Code Style <https://msdn.microsoft.com/en-us/library/ff926074.aspx>`__
 2. `Framework Design Guidelines <https://msdn.microsoft.com/en-us/library/ms229042.aspx>`__
