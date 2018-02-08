@@ -16,7 +16,7 @@ During your first day you will be assigned a Trello board. If you need any help 
 
 ## Some tips
 
-* We have general Company standups every Tuesday at 11am UYT (9am EST), where we make announcements and we speak about the latest events of sophilabs projects. Be sure to attend punctually.
+* We have general Company standups every Tuesday at 11am UYT/9am EST/10 am EDT, where we make announcements and we speak about the latest events of sophilabs projects. Be sure to attend punctually.
 * We have Friday Talks every Friday at noon, an instance to meet with your teammates, and spend some time together talking about technology related topics. Attending is optional and the lunch is free. Check out [sophilabs Manual](https://man.sophilabs.io/people/#perks) for more details.
 * Ask your mentor, DM or Office Manager if you have any questions.
 * We are a friendly bunch and we'd like to get to know you better! That being said, it's easy to feel intimidated or uncomfortable in a new environment. In sophilabs we often host meetups, and have after office events. So feel free to join into any of them to help meet new people.
