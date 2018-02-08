@@ -9,7 +9,7 @@ If you will be joining us the Development Manager and the Operations Manager wil
 
 ## Tips
 
-* Ask your Development Manager for access to the project Source Code.
+* Ask your Development Manager for access to the project source code.
 * Ask your new teammates how to set up your project, so you can test the code in your machine.
 * Learn any technology needed for the project. We don't expect you know every up front, but we do expect you to be able to fill the gaps and become a full fledged developer when time passes.
 * Don't be afraid to ask around about how the project works. Any large project can be daunting at first, so having someone else to explain how things work is essential.
