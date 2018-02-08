@@ -5,8 +5,10 @@ Django guidelines
 Resources
 =========
 
-#. `Django Two Scoops <http://twoscoopspress.org/>`__ (book)
+#. `Virtualenv guide <https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments/>`__
 #. `Writing your first Django app <https://docs.djangoproject.com/en/stable/intro/tutorial01/>`__
+#. `DigitalOcean's deployment guide <https://www.digitalocean.com/community/tutorials/how-to-deploy-a-local-django-app-to-a-vps>`__
+#. `Django Two Scoops <http://twoscoopspress.org/>`__ (book)
 #. `Awesome Django <https://gitlab.com/rosarior/awesome-django>`__
 #. `Django packages <https://djangopackages.org/>`__
 
