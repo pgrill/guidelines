@@ -199,16 +199,15 @@ Software Design Checklist
 
   Each project should have documentation that helps to understand better the
   architecture. For example:
-    - `High-level design <https://en.wikipedia.org/wiki/High-level_design>`__
-    - `Class Diagram <https://en.wikipedia.org/wiki/Class_diagram>`__
-    - `Entity relationship model
-    <https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model>`__
+  - `High-level design <https://en.wikipedia.org/wiki/High-level_design>`__
+  - `Class Diagram <https://en.wikipedia.org/wiki/Class_diagram>`__
+  - `Entity relationship model
+  <https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model>`__
 
 Code Analysis Checklist
 =======================
 
-- Does the authored code in the project comply with the respective code
-style guidelines? (This excludes third-party code).
+- Does the authored code in the project comply with the respective code style guidelines? (This excludes third-party code).
 
   You can use linters tool to verify code style guidelines.
   If you are in doubt about which tool you should use, refer to each language
@@ -224,8 +223,7 @@ style guidelines? (This excludes third-party code).
   You may find this `article <https://chris.beams.io/posts/git-commit/>`_
   useful.
 
-- Does the project have an automatic way to verify the compliance of code
-guidelines and commit messages?
+- Does the project have an automatic way to verify the compliance of code guidelines and commit messages?
 
   You can use commit hooks to verify the code style guidelines and the commit
   message by overriding the following files ``.git/hooks/pre-commit`` and
@@ -244,8 +242,7 @@ guidelines and commit messages?
   encapsulate that particular task.
 
 
-- Is the submitted code in the master branch reviewed by other team members
-before committing?
+- Is the submitted code in the master branch reviewed by other team members before committing?
 
   You can implement Code Reviews, which is a practice to ensure code quality
   and attachment to the `guidelines
@@ -253,22 +250,21 @@ before committing?
 
   As a rule of thumb:
 
-    - Code reviews must be enforced before merging code to the master branch.
-    - Code reviews should follow the `guidelines <./programming/code-reviews.rst>`_.
+  - Code reviews must be enforced before merging code to the master branch.
+  - Code reviews should follow the `guidelines <./programming/code-reviews.rst>`_.
 
-- Does your project have documentation for new hires explaining the Tools needed
-for work and processes involved in the everyday work?
+- Does your project have documentation for new hires explaining the Tools needed for work and processes involved in the everyday work?
 
   You should consider having a
   `README <https://gist.github.com/PurpleBooth/109311bb0361f32d87a2>`_
   and a `Contributing <https://gist.github.com/PurpleBooth/b24679402957c63ec426>`_
   guidelines file in the root of your project. Those files can include:
 
-    - Development tools: Text editors, IDEs, Plugins.
-    - Required environment files.
-    - Procedures for installing Hooks.
-    - Naming conventions.
-    - Common design patterns used in the code.
+  - Development tools: Text editors, IDEs, Plugins.
+  - Required environment files.
+  - Procedures for installing Hooks.
+  - Naming conventions.
+  - Common design patterns used in the code.
 
 
 Methodologies Checklist
@@ -285,15 +281,14 @@ Methodologies Checklist
 
   - Identify knowledge gaps within team's members.
   - Aid less knowledgeable or new team members to get trained appropriately.
-  - Adopt implementation of workshops (either for technical or management
-  knowledge gaps removal).
+  - Adopt implementation of workshops (either for technical or management knowledge gaps removal).
 
 
 - Is the team cross-functional?
 
   - Perform team dynamics to identify the reasons why there's role-lock
   - Propose distributed workload adoption and internal coaching on teams, so
-  they're able to even out gaps locking members into specific roles.
+    they're able to even out gaps locking members into specific roles.
 
 
 - Is "Definition of Done" (DoD) agreed by all?
