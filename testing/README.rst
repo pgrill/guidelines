@@ -2,7 +2,8 @@ Testing
 -------
 TBD: Write testing introduction
 
-- `Unit testing <./unit.rst>`
-- `Integration testing <./integration.rst>`
-- `Automated testing <./automated/README.rst>`__
-- `QA reviews <./qa-reviews.rst>`__
+- `Unit testing <./unit.rst>`_
+- `Automated testing <./automated/README.rst>`_
+- `Integration testing <./integration.rst>`_
+- `QA reviews <./qa-reviews.rst>`_
+- `Coverage <./coverage.rst>`_
