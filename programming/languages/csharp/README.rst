@@ -78,17 +78,18 @@ Syntax
 #. Use object intilization.
 
     .. code-block:: c#
-        ExampleClass element = new ExampleClass 
-        { 
+
+        ExampleClass element = new ExampleClass
+        {
             Id = 1,
             Name = "Test",
             Location = "sophilabs"
         };
 
 #. If you are defining an event handler that you do not need to remove later, use a lambda expression.
-    
+
     .. code-block:: c#
-    
+
         public Form2()
         {
             // You can use a lambda expression to define an event handler.
@@ -109,31 +110,31 @@ Syntax
         {
             MessageBox.Show(((MouseEventArgs)e).Location.ToString());
         }
-      
+
 #. Align query clauses under the from clause.
-    
+
     .. code-block:: c#
-    
+
         var seattleCustomers2 = from cust in customers
                                 where cust.City == "Seattle"
                                 orderby cust.Name
                                 select cust;
- 
+
 #. Use multiple from clauses instead of a join clause to access inner collections.
-    
+
     .. code-block:: c#
-    
+
         var scoreQuery = from student in students
                          from score in student.Scores
                          where score > 90
                          select new { Last = student.LastName, score };
-                         
+
 
 References
 ==========
 
 1. `C# Code Style <https://msdn.microsoft.com/en-us/library/ff926074.aspx>`__
 2. `Framework Design Guidelines <https://msdn.microsoft.com/en-us/library/ms229042.aspx>`__
-3. `FxCop <http://msdn.microsoft.com/en-us/library/bb429476.aspx>`__  
+3. `FxCop <http://msdn.microsoft.com/en-us/library/bb429476.aspx>`__
 4. `Microsoft Code Analysis <https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017>`__
 5. `Resharper <http://www.jetbrains.com/resharper/>`__
