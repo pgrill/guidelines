@@ -156,27 +156,23 @@ Testing Checklist
   Have a testing section in your manifesto makes easier add new developers to
   the project.
 
+
 Deployment Checklist
 ====================
 
 - Are you using a version control system?
 
-  Every project must use a VCS. `Git <https://git-scm.com>`_ is our preferred
-  VCS. We use `GitHub <https://github.com>`_ for open-source projects and
-  `GitLab <https://gitlab.com>`_ for proprietary projects.
+  Take a look to `VCS <./deployment/README.rst#Version Control System>`_.
 
 - Are you using a containerization or virtualization system?
 
-  In order to improve the project flexibility and portability we recommend
-  using  `Docker <https://www.docker.com>`_.
+  In order to improve project flexibility and portability we recommend using a
+  containerization system. Take a look to
+  `Containerization <./infrastructure/README.rst#Containerization>`_.
 
 - Are you using continuous integration?
 
-  A continuous integration service eases the development workflow by
-  automating tasks such as testing and deployment.
-  Please take a look at
-  `GitLab CI <https://about.gitlab.com/features/gitlab-ci-cd/>`_ and
-  `Jenkins <https://jenkins.io>`_.
+  Take a look to `CI <./deployment/README.rst#Continuous Integration>`_.
 
 - Are you using a staging server for development branch releases?
 
