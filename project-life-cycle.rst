@@ -27,9 +27,9 @@ Project phases
 
 
 - `Methodologies <./methodologies/README.rst>`__
-    - `Scrum <#>`
-    - `Roles <#>`
-    - `Ceremonies <#>`
+    - `Scrum <#>`_
+    - `Roles <#>`_
+    - `Ceremonies <#>`_
 
 
 - `Programming <./programming/README.rst>`__
