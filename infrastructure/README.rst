@@ -12,7 +12,8 @@ containerization.
 Amazon Web Services
 ===================
 
-`Amazon Web Services <https://aws.amazon.com/>`_ provides a set of scalable and reliable services that help you to host and monitor your web applications.
+`Amazon Web Services <https://aws.amazon.com/>`_ provides a set of scalable and
+reliable services that help you to host and monitor your web applications.
 Amazon provides solutions to:
 
 - Compute
@@ -31,14 +32,15 @@ Amazon provides solutions to:
 - Monitoring
 	- `Amazon CloudWatch <https://aws.amazon.com/cloudwatch/?hp=tile&so-exp=below>`_
 
+
 Containerization
 ================
 
 `Containerization
 <https://en.wikipedia.org/wiki/Operating-system-level_virtualization>`_ is
 important to isolate your web application server and database.
-We recommend use `Docker <https://www.docker.com/>`_ to define the containers that
-your application needs.
+We recommend use `Docker <https://www.docker.com/>`_ to define the containers
+that your application needs.
 
 For example, a simple web application can use 3 containers.
 
@@ -48,9 +50,31 @@ For example, a simple web application can use 3 containers.
   Backend Server to do any operation with the system.
 - A Backend Server, which exposes an API for operating with the system. It can
   contain the Admin Site to approve users.
-- A Database Server to store persistent data,
-  using PostgreSQL or another database engine of your choice.
+- A Database Server to store persistent data, using PostgreSQL or another
+	database engine of your choice.
 
 For big systems, maybe you require Containers Orchestration. In these cases, we
 recommend uses `Docker Swarm <https://docs.docker.com/engine/swarm/>`_ or
 `Kubernetes <https://kubernetes.io/>`_.
+
+
+Domain Names
+============
+
+We suggest using `Domize <https://domize.com/>`_ to see what's available. Use
+`DNSimple <https://dnsimple.com/>`_ to buy and maintain domain names if a client
+hasn't registered a domain name yet.
+
+
+SSL Certificates
+================
+
+Buy a wildcard certificate from
+`DNSimple <https://dnsimple.com/ssl-certificates>`_. The wildcard (*) lets you
+use the same certificate on www., staging., api., and any other future
+subdomains. SSL and DNS are tightly coupled. If we're doing any work with SSL,
+we need to make sure we have access to make DNS changes, such as adding a CNAME
+record. When working with a client that has a DNS department, schedule time
+during off-peak hours in order to pair program with their DNS personnel to
+ensure smooth sailing. We can accidentally take down a site that is all SSL if
+this work isn't done methodically.
