@@ -39,7 +39,7 @@ Security Checklist
 - Are you using only version 2 of SSH protocol?
 
   Use last version of SSH protocol is safer. For more information check
-  `SSH section <./security/server.rst#SSH>`-.
+  `SSH section <./security/server.rst#SSH>`_.
 
 - Are you using HTTPS everywhere?
 
@@ -51,13 +51,13 @@ Security Checklist
 
   TBD: Explain importance of HSTS
   If you don't know how to configure it take a look at
-  `HSTS Guidelines <./security/server.rst#hsts>`_
+  `HSTS Guidelines <./security/server.rst#hsts>`_.
 
 - Are you whitelisting database connections?
 
   Whitelisting database connections is important to protect your data.
   You can learn how to do this reading `Database Guidelines
-  <./security/server.rst#database>`_
+  <./security/server.rst#database>`_.
 
 - Are you limiting the login attempts in your app?
 
@@ -199,10 +199,11 @@ Software Design Checklist
 
   Each project should have documentation that helps to understand better the
   architecture. For example:
+
   - `High-level design <https://en.wikipedia.org/wiki/High-level_design>`__
   - `Class Diagram <https://en.wikipedia.org/wiki/Class_diagram>`__
   - `Entity relationship model
-  <https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model>`__
+    <https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model>`__
 
 Code Analysis Checklist
 =======================
@@ -212,6 +213,7 @@ Code Analysis Checklist
   You can use linters tool to verify code style guidelines.
   If you are in doubt about which tool you should use, refer to each language
   guidelines page. e.g:
+
   - `Javascript <./programming/languages/javascript/README.rst>`_
   - `Python <./programming/languages/python/README.rst>`_
   - `Sass <./programming/languages/sass/README.rst>`_
@@ -236,6 +238,7 @@ Code Analysis Checklist
   You can follow `Git Flow
   <https://danielkummer.github.io/git-flow-cheatsheet/>`_
   Recommended strategies:
+
   - Having the master branch (or the equivalent) protected, meaning all commits
   must be merged from feature branches.
   - Ensuring every commit must be made inside a particular branch that

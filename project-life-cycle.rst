@@ -54,5 +54,5 @@ Project phases
 
 
 - `Infrastructure <./Infrastructure/README.rst>`__
-    - `Amazon Web Services <./infrastructure/aws.rst>`__
-    - `Containerization <./infrastructure/containerization.rst>`__
+    - `Amazon Web Services <./infrastructure/README.rst#Amazon Web Services>`__
+    - `Containerization <./infrastructure/README.rst#Containerization>`__
