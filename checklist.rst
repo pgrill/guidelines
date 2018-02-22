@@ -283,20 +283,18 @@ Methodologies Checklist
   - Aid less knowledgeable or new team members to get trained appropriately.
   - Adopt implementation of workshops (either for technical or management knowledge gaps removal).
 
-
 - Is the team cross-functional?
 
   - Perform team dynamics to identify the reasons why there's role-lock
   - Propose distributed workload adoption and internal coaching on teams, so
     they're able to even out gaps locking members into specific roles.
 
-
 - Is "Definition of Done" (DoD) agreed by all?
 
   - If exists but unclear (or not visible to all) make sure to refine it and
-  make it visible to the whole team.
+    make it visible to the whole team.
   - Schedule a session with a dynamic aid for PO and dev team to agree on a
-  clear Definition of Done.
+    clear Definition of Done.
 
 - Does the team respect DoD?
 
@@ -305,8 +303,8 @@ Methodologies Checklist
 
 - Are all team members co-located?
 
- Implement "work team co-location" of development teams and all core roles as a
- mandatory policy.
+  Implement "work team co-location" of development teams and all core roles as a
+  mandatory policy.
 
 - Have distributed teams clear communication rules?
 
@@ -316,15 +314,14 @@ Methodologies Checklist
 - Is there an Agile Master?
 
   Work with management, PO & client/stakeholders to appoint an appropriate agile
-   master
+  master
 
 - Does the team comply with agile practices & processes?
 
   - Ask agile master to engage in the team's activities; agile master should
-  focus on inspecting how work is done and identifying areas for improvement.
+    focus on inspecting how work is done and identifying areas for improvement.
   - Make sure the agile master is appropriately trained and seasoned in agile
-  practices.
-
+    practices.
 
 - Does the team help to achieve goals by removing impediments?
 
@@ -335,11 +332,10 @@ Methodologies Checklist
 - Does the Agile Master protect the team?
 
   - Teams should be wary and vigilant of their own limits, but it's always a
-  good idea to ask the agile master for feedback about commitment vs. capacity
-  gaps management.
+    good idea to ask the agile master for feedback about commitment vs. capacity
+    gaps management.
   - Ask the agile master for help assessing the team's delivery capacity vs.
-  commitments and making suggestions about it.
-
+    commitments and making suggestions about it.
 
 - Is there a clearly defined "Product Owner" (PO)?
 
@@ -349,321 +345,287 @@ Methodologies Checklist
 - Is the PO empowered to prioritize?
 
   - Negotiate the clients/stakeholders acknowledgment empowering the PO to be
-  the "Voice of the Customer".
+    the "Voice of the Customer".
   - Aid PO in acknowledging its faculty to prioritize, empower the role and
-  follow its direction.
-
+    follow its direction.
 
 - Has the PO enough knowledge to prioritize tasks?
 
   - Make sure that clients/stakeholders appoint the appropriate person (vastly
-  knowledgeable of the product at hand) to perform the PO role.
+    knowledgeable of the product at hand) to perform the PO role.
   - If not possible, work with PO and stakeholders so they fill in
-  product-related knowledge gaps.
-
+    product-related knowledge gaps.
 
 - Has the PO direct contact with dev team?
 
   - Always agree with PO as to which communication channels will be used and if
-  segmentation by priority will be established.
+    segmentation by priority will be established.
   - Make sure PO commits to being available to dev team when needed.
-
 
 - Has the PO direct contact with stakeholders?
 
   - Constantly ask the PO to provide opinions, impressions and feedback from
-  the stakeholder's point of view; if PO is unable to do so, urge PO to reach
-  out to stakeholders and grasp their vision
-
+    the stakeholder's point of view; if PO is unable to do so, urge PO to reach
+    out to stakeholders and grasp their vision
 
 - Does the PO speak in "one voice"?
 
   - Ask PO to work in ordering stakeholder's ideas or requirements in means of
-  priority and features, rather than simply including them as they come in.
+    priority and features, rather than simply including them as they come in.
   - In situations were several PO's are being catered, convene with all of them
-  there's an unified front on their side and no conflicting prioritization or requests are made
-
+    there's an unified front on their side and no conflicting prioritization or
+    requests are made
 
 - Does the PO provide a clear product direction/ short-term goals?
 
   - Ask the PO to confirm the strategic goal for the product as a whole.
-  Always match how the dev team's current efforts add towards reaching that
-  goal.
+    Always match how the dev team's current efforts add towards reaching that
+    goal.
   - If unknown, ask PO to address this with the stakeholder's community and
-  organizational leadership
+    organizational leadership
   - In lower-level goals, such as a sprint goal, Ask the PO to be specific as
-  possible about.
-
+    possible about.
 
 - Is the PO the only owner of the "Product Backlog" (PBL)?
 
   - If there's a PBL but the PO doesn't "own" it, meet with PO to discuss the
-  PBL importance and obtain: PO's acknowledgment of the PBL's value (and risks
-  of not having one), plus PO's commitment to PBL ownership and maintenance
+    PBL importance and obtain: PO's acknowledgment of the PBL's value (and risks
+    of not having one), plus PO's commitment to PBL ownership and maintenance
   - If there's no PBL, ask your agile master to aid PO in consolidating it
-  (dev team can also participate if needed).
-
+    (dev team can also participate if needed).
 
 - Does the PO delegate PBL management to another person?
 
   - Best case scenario consists in trying to influence the PO to not delegate
-  this essential function, discuss the PBL's importance and the risks of not
-  actively engaging its management
+    this essential function, discuss the PBL's importance and the risks of not
+    actively engaging its management
   - In any other case, ask your agile master to aid PBL delegates in actively
-  and appropriately managing it
-
+    and appropriately managing it
 
 - Does the PBL exist?
 
   - If there's no PBL, ask your agile master to aid PO in consolidating it
-  (dev team can also participate if needed).
-
+    (dev team can also participate if needed).
 
 - Does the PO/delegate maintain the PBL?
 
   - Ask your agile coach to meet with the PO/delegates to discuss the importance
-  of actively managing the PBL; failure to do so can harshly constraint the
-  product development.
-
+    of actively managing the PBL; failure to do so can harshly constraint the
+    product development.
 
 - Does the PO prioritize top items by business value?
 
   - Discuss with PO about the importance of prioritization and how it relates
-  to the product's vision and goals
+    to the product's vision and goals
   - If needed, conduct a workshop with PO & stakeholders (product community) to
-  draft priorities appropriately.
+    draft priorities appropriately.
 
 - Are the PBL's top items refined enough?
 
   - Work with PO in further refining epics and huge stories: discuss dev team's
-  overall capacity and importance of PBI's fitting iterations
-
+    overall capacity and importance of PBI's fitting iterations
 
 - Are the PBL's top estimated by the team?
 
- - Make sure the PO is constantly grooming the PBL (if not, make clear to PO
- the value in doing so).
- - Work with PO and dev team so they cyclically conduct PBL grooming sessions.
-
+  - Make sure the PO is constantly grooming the PBL (if not, make clear to PO
+    the value in doing so).
+  - Work with PO and dev team so they cyclically conduct PBL grooming sessions.
 
 - Does the PO endorse all PBL items?
 
   - Make sure the PO is constantly grooming the PBL (if not, make clear to PO
-  the value of doing so)
+    the value of doing so)
   - Discuss with PO the benefits of keeping a lean PBL: suggest constant
-  grooming and removal of items no longer needed.
-
+    grooming and removal of items no longer needed.
 
 - Has each iteration a max length of 2 weeks?
 
   - Identify (team discussion) reasons why dev team can't commit to a fixed
-  sprint.
+    sprint.
   - Suggest framework adjustments where applicable.
-
 
 - Is not the dev team disrupted/controlled by outsiders?
 
   - Identify external (to the dev team) parties that might be disrupting dev
-  team's work
+    team's work
   - Engage them to discuss active sprint working rules, agree on establishing
-  priority according needs to reach out to the dev team
+    priority according needs to reach out to the dev team
 
 
 - Does the team deliver what they commit to?
 
   - Retrospect with the dev team about it. Focus dynamics on isolating reasons
-  for the team not delivering to commitment. Work out action plans to resolve by next iteration
-
+    for the team not delivering to commitment. Work out action plans to resolve by next iteration
 
 - Does the team always end on time?
 
   - Identify (team discussion) occurrences and reasons why sprint might not be
-  ending on time
+    ending on time
   - Upon findings, work with dev team towards aiding situation.
-
 
 - Is the Workflow controlled in a Kanban Board?
 
   - Ask the agile master to coach the team in implementing a work visualization
-  board (such as a Kanban/Scrum board); this fosters transparency and ownership
-  amongst team members
-
+    board (such as a Kanban/Scrum board); this fosters transparency and ownership
+    amongst team members
 
 - Does the board's workflow match the team's actual process?
 
   - Ask your agile master to help the team map their actual process workflow
-  to make sure it's appropriately outlined in the visual work-board; techniques
-  such as Value-stream mapping can help fulfill this task
-
+    to make sure it's appropriately outlined in the visual work-board; techniques
+    such as Value-stream mapping can help fulfill this task
 
 - Does the team identify idle times and know its lead time?
 
   - Ask your agile master to help the team determine how much time does the
-  time take from the moment a requirement is received until it is fulfilled
-  (lead time). Also, determine where the idle times lay (moments when parts of
-  the team do nothing because of dependencies)
+    time take from the moment a requirement is received until it is fulfilled
+    (lead time). Also, determine where the idle times lay (moments when parts of
+    the team do nothing because of dependencies)
   - Techniques such as developing a Value-stream map can also help teams
-  determine these factors and help take advantage of them
-
+    determine these factors and help take advantage of them
 
 - Are bottlenecks recognized & WIP limits in place to address them?
 
   - Aid dev team in analyzing Kanban Board and focusing on work items that are
-  blocked or have been opened for longer than normal time. Identify workflow
-  phases where there's too much work clutter.
+    blocked or have been opened for longer than normal time. Identify workflow
+    phases where there's too much work clutter.
   - Suggest to a dev team already recognizing bottlenecks and blockage, means
-  to aid them: implement WIP limits.
-
+    to aid them: implement WIP limits.
 
 - Is the work progress updated daily?
 
   - Teams should strive to inspect and adapt as frequently as possible to make
-  sure they're delivering value; so team members should commit to actively
-  managing work through the workflow during their workday.
-
+    sure they're delivering value; so team members should commit to actively
+    managing work through the workflow during their workday.
 
 - Does the team deliver on an agreed deadline?
 
   - Retrospect with the dev team about it. Focus dynamics on isolating reasons
-   for the team not delivering to commitment. Work out action plans to resolve
-   by next iteration.
-
+    for the team not delivering to commitment. Work out action plans to resolve
+    by next iteration.
 
 - Has the team planning sessions?
 
   - Urge team members to conduct planning sessions, even if this means small and
-  informal ones. Teams must frequently align amongst themselves to check
-  dependencies, brainstorm over impediments and work together towards their
-  common goal.
+    informal ones. Teams must frequently align amongst themselves to check
+    dependencies, brainstorm over impediments and work together towards their
+    common goal.
 
 
 - Are the planning sessions weekly?
 
   - It's a good practice to have many levels of planning: successful teams
-  usually have one big/formal planning session that's followed up by
-  smaller/informal ad-hoc sessions, or make use of daily stand-ups or such to
-  make sure plans are in check.
-
+    usually have one big/formal planning session that's followed up by
+    smaller/informal ad-hoc sessions, or make use of daily stand-ups or such to
+    make sure plans are in check.
 
 - Is there a formal planning session with the PO once per iteration?
 
   - Urge the team to at least have one big/formal planning session that makes
-  sense for a fair amount of work during a specified timeframe.
+    sense for a fair amount of work during a specified timeframe.
   - Remind them that successful teams meet of then to inspect and adapt,
-  which is, in other words, conducting some sort of planning.
+    which is, in other words, conducting some sort of planning.
   - Engage PO over the importance of partaking in planning sessions: PO's
-  ability to prioritize, clear up doubts and provide direction is paramount
-  while planning. Urge him to participate at least of the most
-  top-level/strategic planning sessions. Failure to do so might result in the
-  delivery of work not required or not valuable to the client.
+    ability to prioritize, clear up doubts and provide direction is paramount
+    while planning. Urge him to participate at least of the most
+    top-level/strategic planning sessions. Failure to do so might result in the
+    delivery of work not required or not valuable to the client.
   - It's also a good practice to include the PO in as many planning instances
-  as it makes sense and time/responsibilities constraints permit.
-
+    as it makes sense and time/responsibilities constraints permit.
 
 - Does the PO maintain the PBL up-to-date?
 
   - Always touch base with PO about how a properly groomed PBL eases planning
-  sessions.
+    sessions.
   - If needed, work dynamics to help the PO groom the PBL appropriately.
-
 
 - Does the whole dev team participate in planning sessions?
 
   - Engage dev team members and make sure they understand how planning
-  sessions ease their work. Encourage them to always participate and make the
-  most out of it.
-
+    sessions ease their work. Encourage them to always participate and make the
+    most out of it.
 
 - Is the PO satisfied with priorities and scope of work?
 
   - Ask PO/delegates about their individual impressions of disconformity with
-  the plan, then help them achieve an agreement.
-
+    the plan, then help them achieve an agreement.
 
 - Is the whole team satisfied with agreed work plan?
 
   - Ask the dev team about their individual impressions of disconformity with
-  the plan, then help them achieve an agreement.
-
+    the plan, then help them achieve an agreement.
 
 - Has each iteration a goal?
 
   - Make sure an appropriate goal was set for the sprint or milestone; all
-  work items within should be aligned with it and completely clear to the dev
-  team; otherwise, the team should meet to realign these points.
+    work items within should be aligned with it and completely clear to the dev
+    team; otherwise, the team should meet to realign these points.
   - In case of different opinions about setting goals and their acceptance
-  (either from the business side or the dev team), ask your agile coach to
-  mediate to try and reach a consensus.
-
+    (either from the business side or the dev team), ask your agile coach to
+    mediate to try and reach a consensus.
 
 - Is the work plan highly visible?
 
   - Make the work plan visible to all: either by a physical board (including
-  burndown chart and/or any other useful artifact), and/or with work tracking
-  systems (such as Jira).
-
+    burndown chart and/or any other useful artifact), and/or with work tracking
+    systems (such as Jira).
 
 - Is the work progress updated daily?
 
   - Discuss the importance of work progress tracking with the dev team,
-  encourage them to always reflect their progress (or lack thereof).
-
+    encourage them to always reflect their progress (or lack thereof).
 
 - Is the work plan owned exclusively by dev team?
 
   - Make it visible to all that the work plan belongs to the dev team: any
-  tampering with it requires dev team's acknowledgement & approval.
+    tampering with it requires dev team's acknowledgement & approval.
   - Engage all other roles and stakeholders to acknowledge the work plan's
-  ownership condition: suggest focus on PBL for future work alignment.
-
+    ownership condition: suggest focus on PBL for future work alignment.
 
 - Does the "Stand-ups" occur at least once a day?
 
   - Suggest dev team to set aside some minutes each day to inspect as a group
-  what they've worked on and what they plan to work in.
+    what they've worked on and what they plan to work in.
   - Successful teams conduct stand-ups at least once a day, at the same place
-  and time, urge your team to adopt this practice.
+    and time, urge your team to adopt this practice.
   - Suggest the dev team to make good use of their stand-ups: a good starting
-  point is to review the team's due goal and inspect the work they're doing
-  towards achieving it.
+    point is to review the team's due goal and inspect the work they're doing
+    towards achieving it.
   - Ask team members to try and save problems/impediments analysis for a
-  separate session with other involved parties. To keep stand-ups lean, urge them to focus on collectively reviewing  their current work and yielding short-term plans from it
-
+    separate session with other involved parties. To keep stand-ups lean, urge them to focus on collectively reviewing  their current work and yielding short-term plans from it
 
 - Has the Dev team the ability to organize to solve problems/impediments?
 
   - Encourage the dev team to swarm towards solutions as a unit, keeping in
-  mind proper distribution.
+    mind proper distribution.
   - Encourage the dev team to bring up impediments on daily stand-ups, this
-  inspection will foster team solutions
+    inspection will foster team solutions
   - Ask the  dev team how they usually organize their daily work, ask dev team
-  if they are aware of what their peers are working in (and if their work doesn't collide)
-
+    if they are aware of what their peers are working in (and if their work doesn't collide)
 
 - Has the team demo/review sessions with the PO?
 
   - Discuss with PO and dev team reasons behind not having frequent product
-  increment demos.
+    increment demos.
   - Urge your PO to participate in demos. PO role is central to this instance
-  and helps the team keep track and realign with business strategic goals, as
-  well receiving feedback helpful for that purpose.
+    and helps the team keep track and realign with business strategic goals, as
+    well receiving feedback helpful for that purpose.
   - Retrospect with the dev team about it. Focus dynamics on isolating reasons
-  for the team not delivering the required quality.
+    for the team not delivering the required quality.
   - Ask the PO: How would you rate this iteration's result, on a scale from 1
-  to 10?- In your opinion, what's missing to obtain a perfect score?
-
+    to 10?- In your opinion, what's missing to obtain a perfect score?
 
 - Has the team retrospectives frequently?
 
   - Encourage dev team to partake in a session dedicated to reflect on
-  performance and lessons learned, aiming to yield small, incremental
-  improvements.
+    performance and lessons learned, aiming to yield small, incremental
+    improvements.
   - Successful teams have a retrospective session at the very end of every work
-  cycle. This guarantees teams don't lose grasp of valuable happenings, good or
-  bad (and their learning of it); allowing collective inspection and
-  implementing improvements before the next work cycle.
+    cycle. This guarantees teams don't lose grasp of valuable happenings, good or
+    bad (and their learning of it); allowing collective inspection and
+    implementing improvements before the next work cycle.
   - Tweak retrospective dynamics used with the dev team to obtain appropriate
-  feedback, and coach them on defining SMART goals for short-term increments of
-  improvement.
+    feedback, and coach them on defining SMART goals for short-term increments of
+    improvement.
   - Remind teams to always review past action plans at the beginning of each
-  Retrospective and to track their completion to guarantee improvement.
+    Retrospective and to track their completion to guarantee improvement.
