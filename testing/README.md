@@ -290,4 +290,71 @@ acceptance tests, whatever it takes to ensure the functionality
 works. Acceptance tests are black-box system tests. Each
 acceptance test represents some expected result from the system.
 
+Some guidelines on Acceptance Testing and functional testing in general taken
+from this [guide](http://www.softwaretestinghelp.com/practical-software-testing-tips-to-test-any-application/)
+
+* Learn to analyze your test results thoroughly. Do not ignore any test result.
+  The final test result may be ‘pass’ or ‘fail’, but troubleshooting the root
+  cause of ‘fail’ will give you the solution of the problem. Testers will be
+  respected if they not only log the bugs but also provide solutions.
+* Learn to maximize the test coverage each time you test any application. 100%
+  test coverage might not be possible but still, you can always try to reach
+  near it.
+* In order to ensure maximum test coverage, break your application under test
+  (AUT), into smaller functional modules. Write test cases on such individual
+  unit modules. Also if possible break these modules into smaller parts.
+* While writing test cases, write test cases for intended functionality first
+  i.e. for valid conditions according to requirements. Then write test cases
+  for invalid conditions. This will cover expected as well unexpected behavior
+  of the application under test.
+* Think positive. Start testing the application with the intend of finding
+  bugs/errors. Don’t think beforehand that there will not be any bugs in the
+  application. If you test the application with an intention of finding bugs
+  you will definitely succeed to find those subtle bugs also.
+* Write your test cases in the requirement analysis and design phase itself.
+  This way you can ensure that all the requirements are testable.
+* Make your test cases available to the developers prior to coding. Don’t keep
+  your test cases with you waiting to get final application release for testing,
+  thinking that you can log more bugs. Let the developers analyze your test
+  cases thoroughly to develop a quality application. This will also save the
+  re-work time.
+* If possible identify and group your test cases for regression testing. This
+  will ensure quick and effective manual regression testing.
+* Applications requiring critical response time should be thoroughly tested for
+  performance.
+* Go beyond requirement testing. Test the application for what it is not
+  supposed to do.
+* While doing regression testing use the previous bug graph (Bug graph – number
+  of bugs found against time for different modules). This module-wise bug graph
+  can be useful to predict the most probable bug part of the application.
+* Note down the new terms, concepts you learn while testing. Keep a text file
+  open while testing any application. Note down the testing progress and
+  observations in it. Use these notepad observations while preparing final test
+  release report. This good habit will help you to provide the complete
+  unambiguous test report and release details.
+* Many times testers or developers make changes in the code base for
+  application under test. This is a required step in development or testing
+  environment to avoid execution of the live transaction processing like in
+  banking projects. Note down all such code changes done for testing purpose
+  and at the time of final release make sure you have removed all these changes
+  from the final client-side deployment file resources.
+* It’s a good practice to involve testers right from the software requirement
+  and design phase itself. These way testers can get knowledge of application
+  dependability resulting in detailed test coverage. If you are not being asked
+  to be a part of this development cycle then you can make a request to your
+  lead or manager to involve your testing team in all the decision making
+  processes or meetings.
+* Increase your conversation with the developers to know more about the
+  product. Whenever possible make face-to-face communication for resolving
+  disputes quickly and to avoid any misunderstandings. But also when you
+  understand the requirement or resolve any dispute – make sure to communicate
+  the same over written communication ways like emails. Do not keep anything
+  verbal.
+* Don’t run out of time to do high priority testing tasks. Prioritize your
+  testing work from high to low priority and plan your work accordingly.
+  Analyze all associated risks to prioritize your work.
+* Write clear, descriptive, unambiguous bug report. Do not only provide the bug
+  symptoms but also provide the effect of the bug and all the possible
+  solutions.
+
 [language specific testing guidelines]: languages/README.md
