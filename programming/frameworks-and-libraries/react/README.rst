@@ -1,6 +1,15 @@
 React guidelines
 ----------------
 
+
+Resources
+=========
+
+#. `Tutorial <https://reactjs.org/tutorial/tutorial.html>`__
+#. `Udemy's "Modern React with Redux" <https://www.udemy.com/react-redux/>`__
+#. Check the monthly Beginner's Thread at `/r/reactjs <https://www.reddit.com/r/reactjs/>`__
+
+
 Project structure
 =================
 

@@ -1,6 +1,15 @@
 HTML guidelines
 ---------------
 
+
+Resources
+=========
+
+#. `"Practical HTML5" <https://app.pluralsight.com/library/courses/practical-html5/>`__ on Pluralsight
+#. `Mozilla HTML 5 reference <https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5>`__
+#. `HTML5 Semantics guide <https://codepen.io/mi-lee/post/an-overview-of-html5-semantics>`__
+
+
 Rules
 =====
 
@@ -11,8 +20,3 @@ Rules
 - Don't use tables for layout design purposes
 - Use Flexbox extensively
 - Run a HTML linter using commit hooks
-
-References
-==========
-
-- `Mozilla HTML 5 reference <https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5>`__

@@ -51,6 +51,7 @@ Project's life cycle
     - `Frameworks and libraries <./programming/frameworks-and-libraries/README.rst>`__
         - `Django <./programming/frameworks-and-libraries/django/README.rst>`__
         - `React <./programming/frameworks-and-libraries/react/README.rst>`__
+        - `Angular <./programming/frameworks-and-libraries/angular/README.rst>`__
     - `Code reviews <./programming/code-reviews.rst>`__
 
 - `Testing <./testing/README.rst>`__
