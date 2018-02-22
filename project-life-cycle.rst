@@ -23,13 +23,13 @@ Project phases
 
 
 - `Software design <./software-design/README.rst>`__
-  - `Databases <./databases/README.rst>`__
+    - `Databases <./databases/README.rst>`__
 
 
 - `Methodologies <./methodologies/README.rst>`__
-  - `Scrum <#>`
-  - `Roles <#>`
-  - `Ceremonies <#>`
+    - `Scrum <#>`
+    - `Roles <#>`
+    - `Ceremonies <#>`
 
 
 - `Programming <./programming/README.rst>`__
