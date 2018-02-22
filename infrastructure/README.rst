@@ -8,6 +8,7 @@ infrastructure can bring problems in a production environment.
 Sophilabs recommends host your application in Amazon infrastructure and use
 containerization.
 
+
 Amazon Web Services
 ===================
 
@@ -20,17 +21,15 @@ Amazon provides solutions to:
 - Storage
 	- `Amazon S3 <https://aws.amazon.com/s3/?hp=tile&so-exp=below>`_
 - Database
-	-`Amazon RDS <https://aws.amazon.com/rds/?hp=tile&so-exp=below>`_
-	-`Amazon DynamoDB <https://aws.amazon.com/dynamodb/?hp=tile&so-exp=below>`_
-	-`Amazon Aurora <https://aws.amazon.com/rds/aurora/?hp=tile&so-exp=below>`_
+	- `Amazon RDS <https://aws.amazon.com/rds/?hp=tile&so-exp=below>`_
+	- `Amazon DynamoDB <https://aws.amazon.com/dynamodb/?hp=tile&so-exp=below>`_
+	- `Amazon Aurora <https://aws.amazon.com/rds/aurora/?hp=tile&so-exp=below>`_
 - Cache
-	-`Amazon ElasticCache <https://aws.amazon.com/elasticache/?hp=tile&so-exp=below>`_
+	- `Amazon ElasticCache <https://aws.amazon.com/elasticache/?hp=tile&so-exp=below>`_
 - Load Balancing
-	- `Amazon Load Balancers
-    <https://aws.amazon.com/elasticloadbalancing/?hp=tile&so-exp=below>`_
+	- `Amazon Load Balancers <https://aws.amazon.com/elasticloadbalancing/?hp=tile&so-exp=below>`_
 - Monitoring
-	-`Amazon CloudWatch
-  <https://aws.amazon.com/cloudwatch/?hp=tile&so-exp=below>`_
+	- `Amazon CloudWatch <https://aws.amazon.com/cloudwatch/?hp=tile&so-exp=below>`_
 
 Containerization
 ================
