@@ -114,5 +114,12 @@ We encourage you to write tests using [Quick](https://github.com/Quick/Quick) fo
 ## Continuous Integration
 We encourage to use [BuddyBuild](https://www.buddybuild.com/) to run the CI. Although if you don't have tests, using a CI can avoid merging unbuildable code to `master`.
 
+# Learning Resources
+- Swift Fundamentals by [Apple](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html).
+- Advanced Swift Book by [Objc.io](https://www.objc.io/books/advanced-swift/).
+- Learn Design + iOS Development at [DesignCode](https://designcode.io/).
+- iOS Fundamentals at [PluralSight](https://www.pluralsight.com/courses/ios-11-fundamentals).
+
+
 ## Attributions
-This document is heavily based on [ios-good-practices](https://github.com/futurice/ios-good-practices) and adapted to our needs.
+Some parts of this documents are heavily based on [ios-good-practices](https://github.com/futurice/ios-good-practices).
