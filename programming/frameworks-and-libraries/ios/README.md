@@ -108,6 +108,11 @@ If you want to store data as fast as possible while keeping reliability on that,
 ## Analytics and Crash Reports
 For Analytics we use [Fabric](https://fabric.io) and for crash analytics we use [Sentry](https://sentry.com/). Both have excellent guides about how to implement their SDKs into your project’s app.
 
+## Testing
+We encourage you to write tests using [Quick](https://github.com/Quick/Quick) for building test suites and [Nimble](https://github.com/Quick/Nimble) for assertions instead of the stock Xcode test tool.
 
+## Continuous Integration
+We encourage to use [BuddyBuild](https://www.buddybuild.com/) to run the CI. Although if you don't have tests, using a CI can avoid merging unbuildable code to `master`.
 
-
+## Attributions
+This document is heavily based on [ios-good-practices](https://github.com/futurice/ios-good-practices) and adapted to our needs.
