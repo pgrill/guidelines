@@ -1,5 +1,6 @@
 React guidelines
 ----------------
+TDB: Write React introduction
 
 Project structure
 =================

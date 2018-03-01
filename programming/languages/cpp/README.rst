@@ -1,11 +1,7 @@
 C++ guidelines
 --------------
 
-Books
-=====
-
-#. `The C++ Programming Language (4th Edition) <http://www.stroustrup.com/4th.html>`__
-
+TBD: Write C+++ introduction
 
 Documentation
 =============
@@ -132,3 +128,8 @@ Syntax
 
 
    The final ``/* sophi */`` comment is mandatory.
+
+References
+==========
+
+#. `The C++ Programming Language (4th Edition) <http://www.stroustrup.com/4th.html>`__

@@ -11,5 +11,4 @@ Principles
 
 Best practices
 ==============
-
-* `Reports <./reports/README.rst>`_
+TBD: Write this section
