@@ -25,5 +25,5 @@ During your first day you will be assigned a Trello board. If you need any help 
 
 If you want to learn more refer to the following links:
 
-* https://www.softwareadvice.com/resources/6-things-new-hires-first-30-days/
-* https://www.totaljobs.com/insidejob/what-to-expect-on-your-first-day-at-work/
+* [6 Things New Hires Should Do in the First 30 Days](https://www.softwareadvice.com/resources/6-things-new-hires-first-30-days/)
+* [What to expect on your first day](https://www.totaljobs.com/insidejob/what-to-expect-on-your-first-day-at-work/)

@@ -6,11 +6,9 @@
 
 We don't expect you to know everything about Software Development. In the following one or two months after your arrival to the company you will focus to learn the ropes. Your mentor will assist you during this process and give you feedback along the way. We understand every new hire has a unique skill set, so we will give you objectives to learn to get up to speed in the basics about anything we think you should learn.
 
-
 ## The plan
 
 In this process which takes from one up to two months, you will learn skills used in most of the projects, along with our common practices described in the [Playbook](https://sophilabs.co/playbook/). After you finish this process you will be more familiar with our style of work and be ready to start participating in a client project with more experienced Developers. We want you to get used to make Code Reviews, give and receive feedback, follow our guidelines on the different languages, and learn more about the technology stack we usually employ in our client projects.
-
 
 We divide the self learning in two parts: the technical skills, and the soft skills. The first are about the skills needed to be familiar with the tools used in almost all projects. We like to complement technical skills with soft skills, as software engineers should have a good balance between those two to reach their full potential. Software engineering is also a human activity, where communication is crucial, specially when dealing with people of other cultures, in an online environment where listening and expressing can be much different from communicating with a fellow teammate.
 
@@ -43,7 +41,7 @@ Be sure to ask your Development Manager (DM) for training accounts to start your
 
 ## Tips for self learning
 
-Taken from https://www.ivywise.com/ivywise-knowledgebase/newsletter/article/self-studying-whats-the-benefit-and-how-to-do-it/
+Taken from [Self-Studying: What’s the Benefit and How to Do It](https://www.ivywise.com/ivywise-knowledgebase/newsletter/article/self-studying-whats-the-benefit-and-how-to-do-it/).
 
 Self-learning does take significant discipline and can be difficult at first, but like any endeavor, with time it becomes easier. Self-study, when done correctly, is an effective learning tool, so it can be helpful when used to prepare for a test or learn an entirely new subject matter on your own. Here are some tips for practicing successful self-studying:
 
@@ -51,4 +49,3 @@ Self-learning does take significant discipline and can be difficult at first, bu
 * Find what works for you: There are many ways to learn, and it is important to adjust studying techniques to find what works for your brain. The sites we include are good start points. We encourage you to keep going and try different sites if you find them more useful.
 * Review material the same day you learn it. After taking notes in an online course, or reading the next chapter in your textbook, make sure you review all the new material, by typing up your notes, practicing your new skill using a [Breakable Toy](http://redsquirrel.com/dave/work/a2j/patterns/BreakableToys.html) Project.
 * Study in short, frequent sessions. Instead of treating your study session like a marathon, break up your material by topic into a series of short sessions, separated by short breaks.
-
