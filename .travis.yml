@@ -1,8 +1,24 @@
-language: python
-python:
-    - 3.4
-before_install:
-    - pip install restructuredtext_lint
-    - pip install Pygments==2.0.2
-script:
-    - find . -name \*.rst -exec rst-lint {} +
+matrix:
+  include:
+    # For linting RST files
+    language: python
+    cache: pip
+    python:
+      - 3.6
+    before_install:
+      - pip install restructuredtext_lint
+    script:
+      - find . -name \*.rst -exec rst-lint {} +
+  include:
+    # For linting Markdown files
+    language: ruby
+    rvm:
+      - 2.5
+    cache:
+      directories:
+        - /home/travis/.rvm/
+    before_install:
+      - gem install mdl
+    script:
+      - mdl .
+

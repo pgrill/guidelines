@@ -1,11 +1,7 @@
 C# guidelines
 -------------
 
-Books
-=====
-
-#. `C# in Depth  <http://csharpindepth.com/>`__
-#. `C# Programming Guide  <https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx/>`__
+TDB: Write C# introduction
 
 Coding Style
 ============
@@ -83,10 +79,11 @@ Syntax
         {
             Id = 1,
             Name = "Test",
-            Location = "sophilabs"
+            Location = "Sophilabs"
         };
 
-#. If you are defining an event handler that you do not need to remove later, use a lambda expression.
+#. If you are defining an event handler that you do not need to remove later,
+use a lambda expression.
 
     .. code-block:: c#
 
@@ -138,3 +135,5 @@ References
 3. `FxCop <http://msdn.microsoft.com/en-us/library/bb429476.aspx>`__
 4. `Microsoft Code Analysis <https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017>`__
 5. `Resharper <http://www.jetbrains.com/resharper/>`__
+6. `C# in Depth  <http://csharpindepth.com/>`__
+7. `C# Programming Guide  <https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx/>`__
