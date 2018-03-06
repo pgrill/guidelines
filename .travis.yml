@@ -21,4 +21,3 @@ matrix:
       - gem install mdl
     script:
       - mdl .
-
