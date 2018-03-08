@@ -15,7 +15,9 @@ There three ways of read these guidelines:
 * [Project's checklist](./checklist.md):
   You can use our summarized checklist of project´s musts if you want to check or
   include some best practice in your project.
-* [Training](./#)
+* [Training](./training.md):
+  If you are taking part of our [Apprenticeship Program](./apprenticeship-program/README.md) you
+  should read the training guidelines to know the best practices that we use and recommend.
 
 ## License
 

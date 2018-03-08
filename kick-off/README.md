@@ -1,6 +1,7 @@
 # Project Kick-off
 
-TBD: Write kick-off introduction
+Here you will find some useful resources that may help you and your team to
+kick-off your project.
 
 - [Projects manifesto](./manifesto/README.md)
 - [Software development workflow](./workflow.md)
