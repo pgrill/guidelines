@@ -20,6 +20,8 @@ the team's knowledge gaps and implement Agile awareness workshops"
 
 ## Security Checklist
 
+### Server Configuration
+
 - Are you actively applying security patches?
   - Apply security patch in your applications is important to reduce
     vulnerabilities. If you want to know more about security patches you
@@ -31,18 +33,21 @@ the team's knowledge gaps and implement Agile awareness workshops"
 - Are you using only version 2 of SSH protocol?
   - Use last version of SSH protocol is safer. For more information
     check [SSH section](./security/server.md#SSH).
-
 - Are you using HTTPS everywhere?
   - Use HTTPS protocol is import to build safe web apps. If you don't
     know how to configure it take a look at [HTTPS
     Guidelines](./security/server.md#https).
 - Are you using HSTS?
-  - TBD: Explain importance of HSTS If you don't know how to configure
-    it take a look at [HSTS Guidelines](./security/server.md#hsts).
+  - HSTS helps your site to enforce SSL/TLS usage for your users, so you can prevent
+    protocol downgrade attacks and cookie hijacking.
+    If you don't know how to configure it take a look at [HSTS Guidelines](./security/server.md#hsts).
 - Are you whitelisting database connections?
   - Whitelisting database connections is important to protect your data.
     You can learn how to do this reading [Database
     Guidelines](./security/server.md#database).
+
+### Identity and Access Management (IAM)
+
 - Are you limiting the login attempts in your app?
   - Limiting the login attempts in your apps is important. Take a look
     to [Login Section](./security/user-management.md#login)
@@ -64,6 +69,9 @@ the team's knowledge gaps and implement Agile awareness workshops"
 - Are you rejecting invalid data on every input?
   - Validate input data is important to prevent SQL injections attacks
     for example.
+
+### Security in Development
+
 - Does your team restrict development servers connection to be from localhost?
   - Ensure security in development environments is also important, you
     can take a look at [Security in development
@@ -77,6 +85,8 @@ the team's knowledge gaps and implement Agile awareness workshops"
 
 ## Testing Checklist
 
+### Unit Test
+
 - Are you actively writing and running unit tests in your project?
   - Write unit test in important to validate your programs and avoid introduce bugs in futur
     releases. Examples of how to write unit testes can be found in
@@ -86,6 +96,9 @@ the team's knowledge gaps and implement Agile awareness workshops"
   - Load tests are important to measure the performance of your
     application. A used tool to implement load tests is [Apache's
     JMeter](https://jmeter.apache.org/).
+
+### Coverage
+
 - Are you actively measuring your code coverage?
   - Measure your coverage let you check the parts of the code that are
     covered with tests. There are several options depending on your
@@ -95,6 +108,9 @@ the team's knowledge gaps and implement Agile awareness workshops"
   - Execute testing tasks in your continuous integration progress is a
     way to detect bugs previous make a release. To know more take a look
     at [Testing in CI](./testing/continuous-integration.md)
+
+### Testing in CI
+
 - Do you prevent merging pull requests (or building) if team-defined
   - criteria are not met? (For example, coverage percentage below 90%)
     See previous suggestion.
@@ -104,6 +120,8 @@ the team's knowledge gaps and implement Agile awareness workshops"
   - Have a testing section in your manifesto makes easier add new developers to the project.
 
 ## Deployment Checklist
+
+### General
 
 - Are you using a version control system?
   - Take a look to
@@ -125,6 +143,8 @@ the team's knowledge gaps and implement Agile awareness workshops"
 
 ## Software Design Checklist
 
+### General
+
 - Has the project documentation?
   - Each project should have documentation that helps to understand
     better the architecture. For example:
@@ -133,6 +153,8 @@ the team's knowledge gaps and implement Agile awareness workshops"
     - [Entity relationship model](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model)
 
 ## Code Analysis Checklist
+
+### Code Style
 
 - Does the authored code in the project comply with the respective code style guidelines? (This
   excludes third-party code).
@@ -152,6 +174,9 @@ the team's knowledge gaps and implement Agile awareness workshops"
     overriding the following files `.git/hooks/pre-commit` and `.git/hooks/commit-msg` respectively.
     Check out this [article](https://www.atlassian.com/git/tutorials/git-hooks) to learn more
     about Git hooks.
+
+### Branching Strategy
+
 - Does the project follow a clear branching/merging strategy?
   - You can follow [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/)  
     Recommended strategies:
@@ -164,6 +189,9 @@ the team's knowledge gaps and implement Agile awareness workshops"
     [guidelines][vinagecr]. As a rule of thumb:
     - Code reviews must be enforced before merging code to the master branch.
     - Code reviews should follow the [guidelines](./programming/code-reviews.md).
+
+### Documentation
+
 - Does your project have documentation for new hires explaining the Tools needed for work and
   processes involved in the everyday work?
   - You should consider having a [README](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
@@ -177,11 +205,16 @@ the team's knowledge gaps and implement Agile awareness workshops"
 
 ## Methodologies Checklist
 
+### Agile Framework
+
 - Does your project use a defined agile framework?
   - Work with management, client and an agile coach to determine the
     best fit for your project. Projects in need of an adaptive approach
     would benefit from selecting a defined framework for easy adoption
     that helps it fulfill its goals.
+
+### Development Team
+
 - Does the team self-organize to tackle work?
   - Identify knowledge gaps within team's members.
   - Aid less knowledgeable or new team members to get trained appropriately.
@@ -203,6 +236,9 @@ the team's knowledge gaps and implement Agile awareness workshops"
 - Have distributed teams clear communication rules?
   - When not possible (distributed teams), have all team members agree on a common working schedule
     and appropriate communication channels.
+
+### Agile Coach
+
 - Is there an Agile Master?
   - Work with management, PO & client/stakeholders to appoint an appropriate agile master
 - Does the team comply with agile practices & processes?
@@ -217,6 +253,9 @@ the team's knowledge gaps and implement Agile awareness workshops"
     agile master for feedback about commitment vs. capacity gaps management.
     - Ask the agile master for help assessing the team's delivery capacity vs. commitments and
       making suggestions about it.
+
+### Business/Customer Representative
+
 - Is there a clearly defined "Product Owner" (PO)?
   - Negotiate with management and clients/stakeholders to appoint a PO aligned with the required
     attributes to successfully fulfill the role.
@@ -268,6 +307,9 @@ the team's knowledge gaps and implement Agile awareness workshops"
     and the risks of not actively engaging its management
     - In any other case, ask your agile master to aid PBL delegates in
       actively and appropriately managing it
+
+### Product Feature List (i.e. PBL)
+
 - Does the PBL exist?
   - If there's no PBL, ask your agile master to aid PO in
     consolidating it (dev team can also participate if needed).
@@ -294,6 +336,9 @@ the team's knowledge gaps and implement Agile awareness workshops"
     clear to PO the value of doing so)
   - Discuss with PO the benefits of keeping a lean PBL: suggest
     constant grooming and removal of items no longer needed.
+
+### Time-Boxing
+
 - Has each iteration a max length of 2 weeks?
   - Identify (team discussion) reasons why dev team can't commit to
     a fixed sprint.
@@ -312,6 +357,9 @@ the team's knowledge gaps and implement Agile awareness workshops"
   - Identify (team discussion) occurrences and reasons why sprint
     might not be ending on time
   - Upon findings, work with dev team towards aiding situation.
+
+### Workflow Management
+
 - Is the Workflow controlled in a Kanban Board?
   - Ask the agile master to coach the team in implementing a work
     visualization board (such as a Kanban/Scrum board); this fosters
@@ -345,6 +393,9 @@ the team's knowledge gaps and implement Agile awareness workshops"
   - Retrospect with the dev team about it. Focus dynamics on
     isolating reasons for the team not delivering to commitment.
     Work out action plans to resolve by next iteration.
+
+### Planning
+
 - Has the team planning sessions?
   - Urge team members to conduct planning sessions, even if this
     means small and informal ones. Teams must frequently align
@@ -396,6 +447,9 @@ the team's knowledge gaps and implement Agile awareness workshops"
   - In case of different opinions about setting goals and their
     acceptance (either from the business side or the dev team), ask
     your agile coach to mediate to try and reach a consensus.
+
+### Milestones (e.g. Sprint BL , Work Plans)
+
 - Is the work plan highly visible?
   - Make the work plan visible to all: either by a physical board
     (including burndown chart and/or any other useful artifact),
@@ -411,6 +465,9 @@ the team's knowledge gaps and implement Agile awareness workshops"
   - Engage all other roles and stakeholders to acknowledge the work
     plan's ownership condition: suggest focus on PBL for future work
     alignment.
+
+### Stand-ups
+
 - Does the "Stand-ups" occur at least once a day?
   - Suggest dev team to set aside some minutes each day to inspect
     as a group what they've worked on and what they plan to work in.
@@ -432,6 +489,9 @@ the team's knowledge gaps and implement Agile awareness workshops"
   - Ask the dev team how they usually organize their daily work, ask
     dev team if they are aware of what their peers are working in
     (and if their work doesn't collide)
+
+### Demo/Reviews
+
 - Has the team demo/review sessions with the PO?
   - Discuss with PO and dev team reasons behind not having frequent
     product increment demos.
@@ -445,6 +505,9 @@ the team's knowledge gaps and implement Agile awareness workshops"
   - Ask the PO: How would you rate this iteration's result, on a
     scale from 1 to 10?- In your opinion, what's missing to obtain a
     perfect score?
+
+### Retrospecting
+
 - Has the team retrospectives frequently?
   - Encourage dev team to partake in a session dedicated to reflect
     on performance and lessons learned, aiming to yield small,

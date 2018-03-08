@@ -1,12 +1,10 @@
 # Project's Manifesto
 
-TBD: Write project manifesto introduction
-
-## What should I put in my project's manifesto
+Your project manifesto is a document targeted mostly to newcomers
+so they can start working without inconvenience.
 
 Your project's manifesto should include all necessary instructions in order to
-set up the project, run it, run tests, etc. It's targeted mostly to newcomers
-so they can start working without inconvenience.
+set up the project, run it, run tests, etc.
 
 ## How to implement a manifesto in my project
 
