@@ -2,7 +2,7 @@
 
 ## SSH
 
-SSH (Secure Shell) is an encrypted network protocol. 
+SSH (Secure Shell) is an encrypted network protocol.
 Commonly used for remote login to servers.
 
 SSH Guide: [SSH Server
