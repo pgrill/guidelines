@@ -1,6 +1,10 @@
 # Django Guidelines
 
-TBD: Write Django Introduction
+[Django](https://www.djangoproject.com/) is a high-level Python Web framework that
+encourages rapid development and clean, pragmatic design.
+
+We commonly use Django to build efficient web applications and REST APIs
+(using [Django Rest Framework](http://www.django-rest-framework.org/).
 
 ## Training
 
