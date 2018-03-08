@@ -9,6 +9,7 @@ naming conventions, etc.
 
 - [C++](./languages/cpp/README.md)
 - [C\#](./languages/csharp/README.md)
+- [Elixir](./languages/elixir/README.md)
 - [Javascript](./languages/javascript/README.md)
 - [Python](./languages/python/README.md)
 - [Restructured Text](./languages/restructuredtext/README.md)
