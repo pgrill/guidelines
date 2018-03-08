@@ -8,4 +8,4 @@ set up the project, run it, run tests, etc.
 
 ## How to implement a manifesto in my project
 
-Just download the [README.md](./README.md) file and adapt it to your project.
+Just download the following [template](./TEMPLATE.md) file and adapt it to your project.
