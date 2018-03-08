@@ -2,9 +2,10 @@
 
 ## SSH
 
-TBD: Description de SSH and importance of have version 2 of protocol
+SSH (Secure Shell) is an encrypted network protocol. 
+Commonly used for remote login to servers.
 
-SSH Guide [SSH Server
+SSH Guide: [SSH Server
 Configuration](https://wiki.archlinux.org/index.php/Secure_Shell#Configuration_2)
 
 ## HTTPS
