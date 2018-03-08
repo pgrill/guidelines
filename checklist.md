@@ -37,7 +37,8 @@ the team's knowledge gaps and implement Agile awareness workshops"
     know how to configure it take a look at [HTTPS
     Guidelines](./security/server.md#https).
 - Are you using HSTS?
-  - HSTS helps your site to enforce SSL/TLS usage for your users, so you can prevent protocol downgrade attacks and cookie hijacking.
+  - HSTS helps your site to enforce SSL/TLS usage for your users, so you can prevent
+    protocol downgrade attacks and cookie hijacking.
     If you don't know how to configure it take a look at [HSTS Guidelines](./security/server.md#hsts).
 - Are you whitelisting database connections?
   - Whitelisting database connections is important to protect your data.

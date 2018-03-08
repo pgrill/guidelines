@@ -1,6 +1,6 @@
 # Project Kick-off
 
-Here you will find some useful resources that may help you and your team to 
+Here you will find some useful resources that may help you and your team to
 kick-off your project.
 
 - [Projects manifesto](./manifesto/README.md)
