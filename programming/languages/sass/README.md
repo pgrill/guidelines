@@ -1,6 +1,13 @@
 # SASS Guidelines
 
-## Ruleset
+## Learning Resources
+
+- [sass guide](https://sass-lang.com/guide)
+- [CSS for every browser](https://hacks.mozilla.org/2018/03/how-to-write-css-that-works-in-every-browser-even-the-old-ones/)
+
+## Coding Style
+
+### Rules
 
 - Use single quotes.
 - Each selector on a new line.
@@ -34,7 +41,7 @@
 - Use the flag `!default` in public libraries to safely override.
 - Don't use the flag `!global` for root declarations.
 
-## Naming
+### Naming Conventions
 
 - Filenames: Use lowercase with dashes.
 - Classes: Use [BEM](http://getbem.com/naming/).
@@ -46,7 +53,7 @@
 - Namespace: Prefix variables, mixins, functions, etc. by an
   abbreviation of the project.
 
-## Declarations
+### Declarations
 
 ```scss
 .rule-formatting {
@@ -99,7 +106,7 @@
 }
 ```
 
-## Architecture
+### Architecture
 
 ```text
 ├── base
@@ -141,6 +148,10 @@ Modules, partials, and vendored stylesheets.
   I add those after the vendored files are included in my primary
   stylesheet. This should make it easy for me to update my third-party
   stylesheets to more current versions in the future.
+
+## Linters
+
+- [gulp sass lint](https://www.npmjs.com/package/gulp-scss-lint)
 
 ## References
 

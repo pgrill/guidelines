@@ -1,9 +1,8 @@
 # C++ Guidelines
 
-C++ is a general-purpose programming language. It has imperative, object-oriented and generic
-programming features, while also providing facilities for low-level memory manipulation.
+## Learning Resources
 
-Here you will find information that may help you to write better C++ code.
+- [The C++ Programming Language (4th Edition)](http://www.stroustrup.com/4th.html)
 
 ## Coding Style
 
@@ -109,7 +108,3 @@ Here you will find information that may help you to write better C++ code.
 
 Use [doxygen](http://www.stack.nl/~dimitri/doxygen/) for generating documentation from annotated
 source code.
-
-## References
-
-1. [The C++ Programming Language (4th Edition)](http://www.stroustrup.com/4th.html)

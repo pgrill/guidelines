@@ -1,17 +1,12 @@
 # C# guidelines
 
-C# is a multi-paradigm programming language encompassing strong typing, imperative, declarative,
-functional, generic and object-oriented (class-based) programming disciplines.
-It was developed by Microsoft within its .NET initiative and later approved as a standard by Ecma
-(ECMA-334) and ISO (ISO/IEC 23270:2006).
-
-Here you will find information that may help you to write better C# code.
-
 ## Learning Resources
+
+- [Microsoft C# Guide](https://docs.microsoft.com/en-us/dotnet/csharp/)
 
 ## Coding Style
 
-## Rules
+### Rules
 
 - Use four spaces identation.
 - Use the
@@ -43,7 +38,7 @@ Here you will find information that may help you to write better C# code.
 - Do not throw exceptions from exception filter blocks.
 - Throw exceptions from instance constructors, if appropriate.
 
-## Naming Conventions
+### Naming Conventions
 
 1. **Classes** must be in `CamelCase`.
    ```c#
@@ -78,7 +73,7 @@ Here you will find information that may help you to write better C# code.
    ```
 6. Do not prefix enums, classes, or delegates with any letter .
 
-## Syntax
+### Syntax
 
 1. Use object intilization.
    ```c#

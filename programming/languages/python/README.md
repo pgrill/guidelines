@@ -1,28 +1,20 @@
 # Python Guidelines
 
-## Resources
+## Learning Resources
 
-1.Test your [regular expressions](https://pythex.org)
-2.Stay up to date: [Python Weekly](https://www.pythonweekly.com/)
+- [Learn python](https://www.learnpython.org/)
 
-## Rules
+## Coding Style
+
+### Rules
 
 - Use 4 spaces for indentation.
-- Please conform to the indentation style dictated in the
-  .editorconfig file. We recommend using a text editor with
-  EditorConfig support to avoid indentation and whitespace issues.
-- Follow [PEP8](https://www.python.org/dev/peps/pep-0008/). Use
-  [flake8](https://pypi.python.org/pypi/flake8) to check for problems
-  in this area.
+- Please conform to the indentation style dictated in the `.editorconfig` file. We recommend using a
+  text editor with EditorConfig support to avoid indentation and whitespace issues.
+- Follow [PEP8](https://www.python.org/dev/peps/pep-0008/).
 - In docstrings, follow [PEP 257](https://www.python.org/dev/peps/pep-0257/).
-- Recommended `flake8` extensions:
-  - flake8-mutable (Mutable default parameters in function definitions)
-  - flake8-pep3101 (String formatting)
-  - flake8-print (`print` calls)
-  - flake8-quotes (Enforce single quotes)
-  - flake8-debugger (`pdb/ipdb` traces)
 
-## Naming
+### Naming Conventions
 
 |Type                               |Public                    |Internal
 |-----------------------------------|--------------------------|--------
@@ -38,11 +30,24 @@
 |Function/Method Parameters         |lower\_with\_under        |
 |Local Variables                    |lower\_with\_under        |
 
-## Testing
+## Linting
 
-Visit the [testing](./../../../testing/automated/python/README.md) page.
+- [flake8](https://pypi.python.org/pypi/flake8)
+
+  Recommended `flake8` extensions:
+  - flake8-mutable (Mutable default parameters in function definitions)
+  - flake8-pep3101 (String formatting)
+  - flake8-print (`print` calls)
+  - flake8-quotes (Enforce single quotes)
+  - flake8-debugger (`pdb/ipdb` traces)
+
+- [pylint](https://www.pylint.org/)
+
+## Resources
+
+- [Regular expressions](https://pythex.org)
+- [Python Weekly](https://www.pythonweekly.com/)
 
 ## References
 
-- <https://docs.djangoproject.com/en/1.9/internals/contributing/writing-code/coding-style/>
-- <https://google.github.io/styleguide/pyguide.html>
+- [PyGuide](https://google.github.io/styleguide/pyguide.html)
