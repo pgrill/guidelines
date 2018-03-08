@@ -1,6 +1,9 @@
 # C++ Guidelines
 
-TBD: Write C+++ introduction
+C++ is a general-purpose programming language. It has imperative, object-oriented and generic
+programming features, while also providing facilities for low-level memory manipulation.
+
+Here you will find information that may help you to write better C++ code.
 
 ## Documentation
 
