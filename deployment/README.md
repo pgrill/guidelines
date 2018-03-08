@@ -13,6 +13,13 @@ collaboration. [Git](https://git-scm.com) is our preferred VCS. We use
 [GitHub](https://github.com) for open-source projects and
 [GitLab](https://gitlab.com) for proprietary projects.
 
+### Git Flow
+
+GitFlow is a branching model for Git. It has attracted a lot
+of attention because it is very well suited to collaboration
+and scaling the development team.
+You can learn more about it [reading this blog post](https://nvie.com/posts/a-successful-git-branching-model/).
+
 ## Versioning
 
 Has a correct versioning system is important to has tracked the impact
