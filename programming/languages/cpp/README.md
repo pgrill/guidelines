@@ -1,6 +1,6 @@
 # C++ Guidelines
 
-TBD: Write C+++ introduction
+TBD: Write C++ introduction
 
 ## Documentation
 
