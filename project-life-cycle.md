@@ -6,7 +6,7 @@ A project's life cycle is composed of a number of clearly defined and distinct w
 used by engineers to plan for, design, build, test, and deliver applications. It aims to produce
 high-quality application that meet or exceed customer expectations, based on customer requirements,
 by delivering systems which move through each clearly defined phase,
-within scheduled time frames and cost estimates. (1)
+within scheduled time frames and cost estimates.<sup>1</sup>
 
 ## Project Phases
 
