@@ -44,11 +44,8 @@ Nginx setup:
 
 ## Database security
 
-- [AWS VPC Guide][apg]
-- [Azure Guide](./#)
-- [Self hosted Postgresql Guide](./#)
-
-[apg]: http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateVPC.html
+- [AWS RDS Guide][apg]
+- [Azure Guide](https://azure.microsoft.com/en-us/campaigns/developer-guide/)
 
 ## Security patches
 
@@ -103,3 +100,4 @@ security patches and fixes applied as soon as possible.
 
 [jwt]: (https://jwt.io/)
 [msts]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
+[apg]: http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateVPC.html
