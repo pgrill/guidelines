@@ -1,7 +1,6 @@
-Methodologies
--------------
+# Methodologies
 
 TBD: Write methodologies introduction
 
-- `Projects roles <./roles.rst>`__
-- `Projects ceremonies <./ceremonies.rst>`__
+- [Projects roles](./roles.md)
+- [Projects ceremonies](./ceremonies.md)

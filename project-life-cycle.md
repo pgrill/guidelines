@@ -1,58 +1,40 @@
+# Project's life cycle
 
-Project's life cycle
--------------------
-
-Purpose
-=======
+## Purpose
 
 TBD: Brief description of project life cycle
 
-Project phases
-==============
+## Project Phases
 
-- `Kick-off <./kick-off/README.rst>`__
-    - `Projects manifesto <./kick-off/manifesto/README.rst>`__
-    - `Software development workflow <./kick-off/workflow.rst>`__
-    - `Development environment <./kick-off/environment.rst>`__
-    - `Project bootstrapping <./kick-off/bootstrapping.rst>`__
-
-
-- `Visual design <./visual-design/README.rst>`__
-    - `User interface <./visual-design/user-interface.rst>`__
-    - `Interaction design <./visual-design/interaction-design.rst>`__
-
-
-- `Software design <./software-design/README.rst>`__
-    - `Databases <./databases/README.rst>`__
-
-
-- `Methodologies <./methodologies/README.rst>`__
-    - `Scrum <#>`_
-    - `Roles <#>`_
-    - `Ceremonies <#>`_
-
-
-- `Programming <./programming/README.rst>`__
-    - `Languages <./programming/languages/README.rst>`__
-        - `Python <./programming/languages/python/README.rst>`__
-        - `JavaScript <./programming/languages/javascript/README.rst>`__
-        - `SASS <./programming/languages/sass/README.rst>`__
-        - `HTML <./programming/languages/html/README.rst>`__
-    - `Frameworks and libraries <./programming/frameworks-and-libraries/README.rst>`__
-        - `Django <./programming/frameworks-and-libraries/django/README.rst>`__
-        - `React <./programming/frameworks-and-libraries/react/README.rst>`__
-
-
-- `Testing <./testing/README.rst>`__
-    - `Automated testing <./testing/automated/README.rst>`__
-    - `QA reviews <./testing/qa-reviews.rst>`__
-
-
-- `Deployment <./deployment/README.rst>`__
-    - `Versioning <./deployment/versioning.rst>`__
-    - `Continuous integrations <./deployment/continuous-integration.rst>`__
-
-
-- `Infrastructure <./Infrastructure/README.rst>`__
-    - `Amazon Web Services <./infrastructure/README.rst#Amazon Web Services>`__
-    - `Containerization <./infrastructure/README.rst#Containerization>`__
+- [Kick-off](./kick-off/README.md)
+  - [Projects manifesto](./kick-off/manifesto/README.md)
+  - [Software development workflow](./kick-off/workflow.md)
+  - [Development environment](./kick-off/environment.md)
+  - [Project bootstrapping](./kick-off/bootstrapping.md)
+- [Visual design](./visual-design/README.md)
+  - [User interface](./visual-design/user-interface.md)
+  - [Interaction design](./visual-design/interaction-design.md)
+- [Software design](./software-design/README.md)
+  - [Databases](./databases/README.md)
+- [Methodologies](./methodologies/README.md)
+  - [Scrum](./#)
+  - [Roles](./#)
+  - [Ceremonies](./#)
+- [Programming](./programming/README.md)
+  - [Languages](./programming/languages/README.md)
+    - [Python](./programming/languages/python/README.md)
+    - [JavaScript](./programming/languages/javascript/README.md)
+    - [SASS](./programming/languages/sass/README.md)
+    - [HTML](./programming/languages/html/README.md)
+  - [Frameworks and libraries](./programming/frameworks-and-libraries/README.md)
+    - [Django](./programming/frameworks-and-libraries/django/README.md)
+    - [React](./programming/frameworks-and-libraries/react/README.md)
+- [Testing](./testing/README.md)
+  - [Automated testing](./testing/automated/README.md)
+  - [QA reviews](./testing/qa-reviews.md)
+- [Deployment](./deployment/README.md)
+  - [Versioning](./deployment/versioning.md)
+  - [Continuous integrations](./deployment/continuous-integration.md)
+- [Infrastructure](./Infrastructure/README.md)
+  - [Amazon Web Services](./infrastructure/README.md#Amazon%20Web%20Services)
+  - [Containerization](./infrastructure/README.md#Containerization)

@@ -1,9 +1,7 @@
-Programming guidelines
-----------------------
+# Programming guidelines
 
-Frameworks and libraries
-========================
+## Frameworks and libraries
 
-* `Django <./django/README.rst>`_
-* `React <./react/README.rst>`_
-* `Angular <./angular/README.rst>`_
+- [Django](./django/README.md)
+- [React](./react/README.md)
+- [Angular](./angular/README.md)

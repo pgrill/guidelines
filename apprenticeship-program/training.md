@@ -29,7 +29,7 @@ Your mentor will meet with you to present the project, explain the scope, set th
 project. We will create a gitlab repository for the project to commit your code. Make sure you have
 access to the private company's [gitlab](https://git.sophilabs.io/). Please set up
 [gilp](https://sophilabs.co/blog/gulp-and-commit-hooks-gilp) commit hooks for Python, and Javascript
-languages to check your code complies to the [language guidelines](/programming/README.rst). You can
+languages to check your code complies to the [language guidelines](/programming/README.md). You can
 download a sample gilp ready `gulpfile.js`
 [here](https://github.com/sophilabs/gilp/blob/master/examples/full.js) and adapt it to your needs.
 

@@ -1,13 +1,11 @@
-Programming guidelines
-----------------------
+# Programming guidelines
 
-Languages
-=========
+## Languages
 
-* `C++ <./cpp/README.rst>`_
-* `C# <./csharp/README.rst>`_
-* `Javascript <./javascript/README.rst>`_
-* `Python <./python/README.rst>`_
-* `Restructured Text <./restructuredtext/README.rst>`_
-* `Sass <./sass/README.rst>`_
-* `HTML <./html/README.rst>`_
+- [C++](./cpp/README.md)
+- [C\#](./csharp/README.md)
+- [Javascript](./javascript/README.md)
+- [Python](./python/README.md)
+- [Restructured Text](./restructuredtext/README.md)
+- [Sass](./sass/README.md)
+- [HTML](./html/README.md)

@@ -1,15 +1,11 @@
-User management guidelines
---------------------------
+# User management guidelines
 
-Login
-=====
+## Login
 
-Password
-========
+## Password
 
-  - Password Storage
-  - Password Reset mechanism
-  - Password creation
+- Password Storage
+- Password Reset mechanism
+- Password creation
 
-Session
-=======
+## Session

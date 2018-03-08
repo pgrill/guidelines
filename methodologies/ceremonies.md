@@ -1,4 +1,3 @@
-Project Ceremonies
-----------------
+# Project Ceremonies
 
 TBD

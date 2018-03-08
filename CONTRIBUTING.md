@@ -1,43 +1,49 @@
-Contributing
-------------
+# Contributing
 
 Feel free to contribute to this guidelines within the scope of the following
 best practices.
 
-Styling Rules
-=============
+## Styling Rules
 
 - Introduce changes by creating pull requests and assigning them to the
   squad's members.
-- Avoid copying content from other sources, just link it
+- Avoid copying content from other sources, just link it.
 - If you are going to upload code snippets, make sure that they respect the PEP8
-  standard by running linters on it
-- Be concise
-- Use bullet-lists extensively
+  standard by running linters on it.
+- Be concise.
+- Use bullet-lists extensively.
 
-Some useful tools for contributing are:
+## File and folder names
 
-- `restview <https://github.com/mgedmin/restview>`__
+Lowercase, hyphenated file and folder names, i.e. `code-reviews.md`.
 
-  A viewer for ReStructuredText documents that renders them on the fly.
+## Editor
 
-  .. code-block:: bash
+We recommend [Visual Studio Code](https://code.visualstudio.com/Download) with the following
+configuration:
 
-      pip install restview
-      restview .
+### Extensions
 
-File and folder names
-=====================
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 
-Lowercase, hyphenated file and folder names, i.e. `code-reviews.rst`.
+### Workspace settings
 
-rST guidelines
-==============
+Open VSC's preferences and replace the `Workpsace Settings` with the following content:
 
-Headings
-^^^^^^^^
+```json
+{
+    "workbench.colorTheme": "Visual Studio Light",
+    "[markdown]": {
+        "editor.wordWrap": "off",
+        "editor.rulers": [100],
+    },
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "boundary",
+}
+```
 
-* Use ``------`` for level 1 headings.
-* Use ``======`` for level 2 headings.
-* Use ``^^^^^^`` for level 3 headings.
-* Use ``++++++`` for level 4 headings.
+## Linter
+
+```bash
+yarn mdl **/*.md 2>&1 >/dev/null | grep -v node_modules
+```

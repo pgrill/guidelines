@@ -1,27 +1,21 @@
-Development workflow guidelines
--------------------------------
+# Development workflow guidelines
 
-GIT
-===
+## GIT
 
-GitFlow
-^^^^^^^
+### GitFlow
 
-We follow Gitflow's branching model for our projects. You can read about it
-`here <http://nvie.com/posts/a-successful-git-branching-model/>`__.
+We follow Gitflow's branching model for our projects. You can read about
+it [here](http://nvie.com/posts/a-successful-git-branching-model/).
 
-Continuous Delivery
-===================
+## Continuous Delivery
 
 Link to deployment scripts repo.
 
-Docker
-======
+## Docker
 
 Link to DockerFile and docker compose templates.
 
-References
-==========
+## References
 
-#. `Try Git <https://try.github.io/>`__
-#. `Pro Git <https://git-scm.com/book/>`__
+1. [Try Git](https://try.github.io/)
+2. [Pro Git](https://git-scm.com/book/)

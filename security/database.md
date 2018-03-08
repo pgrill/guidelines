@@ -1,6 +1,7 @@
-Database security Guidelines
-----------------------------
+# Database security Guidelines
 
-- `AWS VPC Guide <http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateVPC.html>`_
-- `Azure Guide <#>`_
-- `Self hosted Postgresql Guide <#>`_
+- [AWS VPC Guide][apg]
+- [Azure Guide](./#)
+- [Self hosted Postgresql Guide](./#)
+
+[apg]: http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateVPC.html

@@ -131,7 +131,7 @@ information on how to write tests for specific languages.
 
 ## Integration testing
 
-An excerpt from [Software Testing fundamentals]()
+An excerpt from [Software Testing fundamentals](./#)
 
 ![Integration testing diagram](http://softwaretestingfundamentals.com/wp-content/uploads/2010/12/integrationtesting.jpg)
 

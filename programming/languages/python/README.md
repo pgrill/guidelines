@@ -1,69 +1,48 @@
-Python guidelines
------------------
+# Python Guidelines
 
+## Resources
 
-Resources
-=========
+1.Test your [regular expressions](https://pythex.org)
+2.Stay up to date: [Python Weekly](https://www.pythonweekly.com/)
 
-#. Test your `regular expressions <https://pythex.org>`__
-#. Stay up to date: `Python Weekly <https://www.pythonweekly.com/>`__
-
-Rules
-=====
+## Rules
 
 - Use 4 spaces for indentation.
-- Please conform to the indentation style dictated in the .editorconfig file.
-  We recommend using a text editor with EditorConfig support to avoid indentation
-  and whitespace issues. Use the following `.editorconfig file <./files/.editorconfig>`__
-  as a base configuration.
-- Follow `PEP8 <https://www.python.org/dev/peps/pep-0008/>`__.
-  Use `flake8 <https://pypi.python.org/pypi/flake8>`__ to check for problems in this area.
-- In docstrings, follow `PEP 257 <https://www.python.org/dev/peps/pep-0257/>`__.
--  Recommended ``flake8`` extensions:
+- Please conform to the indentation style dictated in the
+  .editorconfig file. We recommend using a text editor with
+  EditorConfig support to avoid indentation and whitespace issues.
+- Follow [PEP8](https://www.python.org/dev/peps/pep-0008/). Use
+  [flake8](https://pypi.python.org/pypi/flake8) to check for problems
+  in this area.
+- In docstrings, follow [PEP 257](https://www.python.org/dev/peps/pep-0257/).
+- Recommended `flake8` extensions:
+  - flake8-mutable (Mutable default parameters in function definitions)
+  - flake8-pep3101 (String formatting)
+  - flake8-print (`print` calls)
+  - flake8-quotes (Enforce single quotes)
+  - flake8-debugger (`pdb/ipdb` traces)
 
-   - flake8-mutable (Mutable default parameters in function definitions)
-   - flake8-pep3101 (String formatting)
-   - flake8-print (``print`` calls)
-   - flake8-quotes (Enforce single quotes)
-   - flake8-debugger (``pdb/ipdb`` traces)
+## Naming
 
-Naming
-======
+|Type                               |Public                    |Internal
+|-----------------------------------|--------------------------|--------
+|Packages                           |lower\_with\_under        |
+|Modules                            |lower\_with\_under        |\_lower\_with\_under
+|Classes                            |CapWords                  |\_CapWords
+|Exceptions                         |CapWords                  |
+|Functions                          |lower\_with\_under()      |\_lower\_with\_under()
+|Global/Class Constants             |CAPS\_WITH\_UNDER         |\_CAPS\_WITH\_UNDER
+|Global/Class Variables             |lower\_with\_under        |\_lower\_with\_under
+|Instance Variables                 |lower\_with\_under        |\_lower\_with\_under (protected) or \_\_lower\_with\_under (private)
+|Method Names                       |lower\_with\_under()      |\_lower\_with\_under() (protected) or \_\_lower\_with\_under() (private)
+|Function/Method Parameters         |lower\_with\_under        |
+|Local Variables                    |lower\_with\_under        |
 
-+----------------------------+--------------------+-------------------------------------------------------------------+
-| Type                       | Public             | Internal                                                          |
-+============================+====================+===================================================================+
-| Packages                   | lower_with_under   |                                                                   |
-+----------------------------+--------------------+-------------------------------------------------------------------+
-| Modules                    | lower_with_under   | _lower_with_under                                                 |
-+----------------------------+--------------------+-------------------------------------------------------------------+
-| Classes                    | CapWords           | _CapWords                                                         |
-+----------------------------+--------------------+-------------------------------------------------------------------+
-| Exceptions                 | CapWords           |                                                                   |
-+----------------------------+--------------------+-------------------------------------------------------------------+
-| Functions                  | lower_with_under() | _lower_with_under()                                               |
-+----------------------------+--------------------+-------------------------------------------------------------------+
-| Global/Class Constants     | CAPS_WITH_UNDER    | _CAPS_WITH_UNDER                                                  |
-+----------------------------+--------------------+-------------------------------------------------------------------+
-| Global/Class Variables     | lower_with_under   | _lower_with_under                                                 |
-+----------------------------+--------------------+-------------------------------------------------------------------+
-| Instance Variables         | lower_with_under   | _lower_with_under (protected) or __lower_with_under (private)     |
-+----------------------------+--------------------+-------------------------------------------------------------------+
-| Method Names               | lower_with_under() | _lower_with_under() (protected) or __lower_with_under() (private) |
-+----------------------------+--------------------+-------------------------------------------------------------------+
-| Function/Method Parameters | lower_with_under   |                                                                   |
-+----------------------------+--------------------+-------------------------------------------------------------------+
-| Local Variables            | lower_with_under   |                                                                   |
-+----------------------------+--------------------+-------------------------------------------------------------------+
+## Testing
 
+Visit the [testing](./../../../testing/automated/python/README.md) page.
 
-Testing
-=======
+## References
 
-Visit the `testing </testing/automated/python/README.rst>`__ page.
-
-References
-==========
-
-- https://docs.djangoproject.com/en/1.9/internals/contributing/writing-code/coding-style/
-- https://google.github.io/styleguide/pyguide.html
+- <https://docs.djangoproject.com/en/1.9/internals/contributing/writing-code/coding-style/>
+- <https://google.github.io/styleguide/pyguide.html>

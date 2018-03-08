@@ -1,9 +1,8 @@
-Security
---------
+# Security
 
 TBD: Write introduction of Security
 
-- `Server Security <./server.rst>`__
-- `Database Security <./database.rst>`__
-- `Security patches <./patches.rst>`__
-- `User management <./.user-management.rst>`__
+- [Server Security](./server.md)
+- [Database Security](./database.md)
+- [Security patches](./patches.md)
+- [User management](./.user-management.md)
