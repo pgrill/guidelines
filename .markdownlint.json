@@ -1,0 +1,7 @@
+{
+    "default": true,
+    "MD024": false,
+    "MD033": false,
+    "MD009": { "br_spaces": 2 },
+    "MD013": { "line_length": 100, "tables": false }
+}
