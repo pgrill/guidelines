@@ -2,7 +2,11 @@
 
 ## Purpose
 
-TBD: Brief description of project life cycle
+A project's life cycle is composed of a number of clearly defined and distinct work phases which are
+used by engineers to plan for, design, build, test, and deliver applications. It aims to produce
+high-quality application that meet or exceed customer expectations, based on customer requirements,
+by delivering systems which move through each clearly defined phase,
+within scheduled time frames and cost estimates. (1)
 
 ## Project Phases
 
@@ -38,3 +42,5 @@ TBD: Brief description of project life cycle
 - [Infrastructure](./Infrastructure/README.md)
   - [Amazon Web Services](./infrastructure/README.md#Amazon%20Web%20Services)
   - [Containerization](./infrastructure/README.md#Containerization)
+
+1. Based on [this article](https://en.wikipedia.org/wiki/Systems_development_life_cycle#Overview).
