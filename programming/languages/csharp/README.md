@@ -1,6 +1,13 @@
 # C# guidelines
 
-TDB: Write C\# introduction
+C# is a multi-paradigm programming language encompassing strong typing, imperative, declarative,
+functional, generic and object-oriented (class-based) programming disciplines.
+It was developed by Microsoft within its .NET initiative and later approved as a standard by Ecma
+(ECMA-334) and ISO (ISO/IEC 23270:2006).
+
+Here you will find information that may help you to write better C# code.
+
+## Learning Resources
 
 ## Coding Style
 
@@ -35,14 +42,8 @@ TDB: Write C\# introduction
 - Use StringBuilder for Fast String Creation.
 - Do not throw exceptions from exception filter blocks.
 - Throw exceptions from instance constructors, if appropriate.
-- Use one of the following linting tools
-  - [FxCop](http://msdn.microsoft.com/en-us/library/bb429476.aspx)
-  - [Microsoft Code Analysis][mca]
-  - [Resharper](http://www.jetbrains.com/resharper/)
 
-[mca]: https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017
-
-## Naming
+## Naming Conventions
 
 1. **Classes** must be in `CamelCase`.
    ```c#
@@ -125,6 +126,14 @@ TDB: Write C\# introduction
                     where score > 90
                     select new { Last = student.LastName, score };
    ```
+
+## Linting
+
+- [FxCop](http://msdn.microsoft.com/en-us/library/bb429476.aspx)
+- [Microsoft Code Analysis][mca]
+- [Resharper](http://www.jetbrains.com/resharper/)
+
+[mca]: https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017
 
 ## References
 

@@ -5,21 +5,7 @@ programming features, while also providing facilities for low-level memory manip
 
 Here you will find information that may help you to write better C++ code.
 
-## Documentation
-
-Use [doxygen](http://www.stack.nl/~dimitri/doxygen/) for generating documentation from annotated
-source code.
-
 ## Coding Style
-
-### File Names
-
-1. **Headers**  
-   Header files should be named with `snake_case` and use the `.hpp`
-   extension for C++ headers, and `.h` for plain C headers.
-   - `file_system.hpp`
-   - `array_view.hpp`
-   - `unused.hpp`
 
 ### Naming Conventions
 
@@ -47,6 +33,15 @@ source code.
    namespace io { };
    namespace math { };
    ```
+
+### File Names
+
+1. **Headers**  
+   Header files should be named with `snake_case` and use the `.hpp`
+   extension for C++ headers, and `.h` for plain C headers.
+   - `file_system.hpp`
+   - `array_view.hpp`
+   - `unused.hpp`
 
 ### Syntax
 
@@ -109,6 +104,11 @@ source code.
     ```
 
     The final `/* sophi */` comment is mandatory.
+
+## Documentation
+
+Use [doxygen](http://www.stack.nl/~dimitri/doxygen/) for generating documentation from annotated
+source code.
 
 ## References
 
