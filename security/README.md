@@ -87,14 +87,19 @@ security patches and fixes applied as soon as possible.
 
 ### Passwords
 
+#### Password creation
+
+- Avoid auto-generating passwords. Instead, ask the user to define one
+  during signup.
+- Create a minimum password complexity policy and ask the user to choose
+  a password that he/she does not use anywhere else.
+
 #### Password reset
 
 - Avoid using "personal questions" to reset the users' passwords.
-- Always ask for the user's current password if the user is logged in.
+- Ask for the user's current password if the user is logged in.
 - Send a password reset link to the user if he/she claims to have
   forgotten its current one.
-
-### Session
 
 [jwt]: (https://jwt.io/)
 [msts]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
