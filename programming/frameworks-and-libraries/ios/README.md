@@ -1,6 +1,17 @@
-# iOS
+# iOS Guidelines
 
-## Human Interface Guidelines
+## Learning Resources
+
+- Swift Fundamentals by [Apple][atb].
+- Advanced Swift Book by [Objc.io](https://www.objc.io/books/advanced-swift/).
+- Learn Design + iOS Development at [DesignCode](https://designcode.io/).
+- iOS Fundamentals at [PluralSight](https://www.pluralsight.com/courses/ios-11-fundamentals).
+
+[atb]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html
+
+## Code Style
+
+### Human Interface Guidelines
 
 If you are new to mobile development or to iOS itself, take some time to take a look at the
 [Human Interface Guidelines](https://developer.apple.com/ios/human-interface-guidelines/)
@@ -9,7 +20,58 @@ to the Human Interface Guidelines (commonly referenced as *HIG*) is not optional
 comes a lot of benefits for both the development team and the users. Those guidelines also provide
 a really good overview of native UI components and capabilities such as 3D Touch, Face/Touch ID or Wallet.
 
-## Xcode
+### Project Structure
+
+In order to keep all your source code in order, you may want to follow some folder structure
+depending on your architecture. For instance, you can use the following:
+
+```text
+├── Project
+│   ├── AppDelegate.swift
+│   ├── Assets.xcassets
+│   ├── Colors.swift
+│   ├── Constants.swift
+│   ├── Models
+│   │   ├── Model1.swift
+│   │   ├── Model2.swift
+│   │   ├── Model3.swift
+│   │   └── ModelN.swift
+│   ├── Modules
+│   │   ├── External Services
+│   │   ├── Project
+│   │   └── Helpers
+│   ├── Networking
+│   │   ├── APIConstants.swift
+│   │   ├── Services
+│   │   │   ├── Service1.swift
+│   │   │   ├── Service2.swift
+│   │   │   ├── Service3.swift
+│   │   │   └── ServiceN.swift
+│   │   └── Utils.swift
+│   ├── Persistence
+│   ├── Resources
+│   ├── Info.plist
+│   └── User Interface
+│       ├── Feature1
+│       ├── Feature2
+│       ├── Feature3
+│       └── FeatureN
+├── Project.xcodeproj
+├── Project.xcworkspace
+├── ProjectTests
+├── ProjectUITests
+├── Bridging-Header.h
+├── Podfile
+├── Podfile.lock
+├── Pods
+├── README.md
+├── env.secrets
+└── scripts
+```
+
+## IDEs
+
+### Xcode
 
 [Xcode](https://developer.apple.com/xcode/) is the IDE of choice for iOS and macOS, and the only one
 officially supported by Apple. You’re encouraged but not restricted to use it, and you can use some
@@ -66,61 +128,6 @@ Then, run a `pod install` , that will create an `.xcworkspace` file that you’l
 of the `.xcproject` you had used before. If you keep using the project file, Xcode won’t find the
 external dependencies as they are kept in the `Pods` project inside the workspace.
 
-### Common Libraries
-
-- For networking, use [AlamoFire](https://github.com/Alamofire/Alamofire).
-- For date formatting, use [DateTools](https://github.com/MatthewYork/DateTools).
-- If you choose to write UI code, do it using [SnapKit](https://github.com/SnapKit/).
-
-## Project Structure
-
-In order to keep all your source code in order, you may want to follow some folder structure
-depending on your architecture. For instance, you can use the following:
-
-```text
-├── Project
-│   ├── AppDelegate.swift
-│   ├── Assets.xcassets
-│   ├── Colors.swift
-│   ├── Constants.swift
-│   ├── Models
-│   │   ├── Model1.swift
-│   │   ├── Model2.swift
-│   │   ├── Model3.swift
-│   │   └── ModelN.swift
-│   ├── Modules
-│   │   ├── External Services
-│   │   ├── Project
-│   │   └── Helpers
-│   ├── Networking
-│   │   ├── APIConstants.swift
-│   │   ├── Services
-│   │   │   ├── Service1.swift
-│   │   │   ├── Service2.swift
-│   │   │   ├── Service3.swift
-│   │   │   └── ServiceN.swift
-│   │   └── Utils.swift
-│   ├── Persistence
-│   ├── Resources
-│   ├── Info.plist
-│   └── User Interface
-│       ├── Feature1
-│       ├── Feature2
-│       ├── Feature3
-│       └── FeatureN
-├── Project.xcodeproj
-├── Project.xcworkspace
-├── ProjectTests
-├── ProjectUITests
-├── Bridging-Header.h
-├── Podfile
-├── Podfile.lock
-├── Pods
-├── README.md
-├── env.secrets
-└── scripts
-```
-
 ## Minimum iOS version requirement
 
 Unless specified by the client or specific OS-level feature requirements, use the second most-used
@@ -130,10 +137,6 @@ iOS version. That information can be found at the
 ## Minimum Swift version requirement
 
 Please use Swift 4 or higher.
-
-## Branching model
-
-Use [Git Flow](https://sophilabs.co/blog/git-flow).
 
 ## Data Serialization
 
@@ -147,9 +150,9 @@ In case you’re not using it, please use [SwiftyJSON](https://github.com/Swifty
 (information about using it along _Alamofire_ can be found
 [here](https://github.com/SwiftyJSON/SwiftyJSON#work-with-alamofire)).
 
-## Code Linting
+## Linting
 
-Use [SwiftLint](https://github.com/realm/SwiftLint).
+- [SwiftLint](https://github.com/realm/SwiftLint).
 
 ## Local database
 
@@ -174,16 +177,13 @@ tool.
 We encourage to use [BuddyBuild](https://www.buddybuild.com/) to run the CI. Although if you don't
 have tests, using a CI can avoid merging unbuildable code to `master`.
 
-## Learning Resources
+## Resources
 
-- Swift Fundamentals by [Apple][atb].
-- Advanced Swift Book by [Objc.io](https://www.objc.io/books/advanced-swift/).
-- Learn Design + iOS Development at [DesignCode](https://designcode.io/).
-- iOS Fundamentals at [PluralSight](https://www.pluralsight.com/courses/ios-11-fundamentals).
+- Common Libraries
+  - For networking, use [AlamoFire](https://github.com/Alamofire/Alamofire).
+  - For date formatting, use [DateTools](https://github.com/MatthewYork/DateTools).
+  - If you choose to write UI code, do it using [SnapKit](https://github.com/SnapKit/).
 
-[atb]: https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html
+## References
 
-## Attributions
-
-Some parts of this documents are heavily based on
-[ios-good-practices](https://github.com/futurice/ios-good-practices).
+- [ios-good-practices](https://github.com/futurice/ios-good-practices).
