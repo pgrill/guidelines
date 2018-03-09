@@ -1,5 +1,9 @@
 # Databases
 
+![A stack of disks](https://i.stack.imgur.com/DZc0e.png)
+
+## Introduction
+
 For data that must be saved and stored correctly, we use
 [PostgreSQL](https://www.postgresql.org/) (we usually refer to it as
 "Postgres"). It's a thirty-year-old open source database that is highly
@@ -24,3 +28,11 @@ When we need to do full-text search on documents, we use
 [Solr](http://lucene.apache.org/solr/). Its major features include hit
 highlighting, faceted search, real-time indexing, dynamic clustering,
 database integration, and rich text documents handling.
+
+## Resources
+
+* [Awesome Databases](https://github.com/dhamaniasad/awesome-databases) contains
+  a list of databases, categorized by type and language.
+* [W3Schools SQL Tutorial](http://www.w3schools.com/sql/default.asp)
+* [Codecademy – "Learn SQL"](https://www.codecademy.com/learn/learn-sql)
+* [Khan Academy – "Intro to SQL"](https://www.khanacademy.org/computing/computer-programming/sql)
