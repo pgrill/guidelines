@@ -1,21 +1,16 @@
-JavaScript guidelines
-=====================
+# JavaScript Guidelines
 
-Styleguide
-----------
+## Learning Resources
+
+- [Eloquent JavaScript](http://eloquentjavascript.net/)
+- [HTML/JS: Making webpages interactive](https://www.khanacademy.org/computing/computer-programming/html-css-js)
+
+## Coding Style
 
 We strongly recommend following the [Airbnb's JavaScript
 Styleguide](https://github.com/airbnb/javascript).
 
-Linting
--------
+## Linting
 
-We recommed using `ESLint`{.sourceCode} along with the
-[eslint-config-airbnb](https://yarnpkg.com/en/package/eslint-config-airbnb)
-package.
-
-React
------
-
-We've written our React guidelines
-[here](https://guidelines.sophilabs.io/frameworks/react/).
+- [EsLint](https://eslint.org/)
+- [eslint-config-airbnb](https://yarnpkg.com/en/package/eslint-config-airbnb)

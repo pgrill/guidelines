@@ -1,16 +1,13 @@
 # Django Guidelines
 
-[Django](https://www.djangoproject.com/) is a high-level Python Web framework that
-encourages rapid development and clean, pragmatic design.
+## Learning Resources
 
-We commonly use Django to build efficient web applications and REST APIs
-(using [Django Rest Framework](http://www.django-rest-framework.org/).
+- [Ticketing system](./ticketing-system.md)
+- [Writing your first Django app](https://docs.djangoproject.com/en/stable/intro/tutorial01/)
 
-## Training
+## Code Style
 
-1. [Ticketing system](./ticketing-system.md)
-
-## Files
+### Files Names
 
 ```yaml
 py: lowercase_with_underscores.py
@@ -21,7 +18,7 @@ css: lowercase-with-dashes.*
 scss (partials): _lowercase-with-dashes.*
 ```
 
-## Templates
+### Templates
 
 - Name blocks with lowercase and underscores.
   ```html
@@ -49,7 +46,7 @@ scss (partials): _lowercase-with-dashes.*
   {% endblock foo_bar %}
   ```
 
-## Signals
+### Signals
 
 ```bash
 app/signals/__init__.py # Define new signals
@@ -68,14 +65,14 @@ class AppConfig(BaseAppConfig):
         import myapp.signals.handlers  # noqa
 ```
 
-## Testing
+## Resources
 
-Visit the [testing](./testing.md) page.
+- [django-debug-toolbar](https://github.com/jazzband/django-debug-toolbar)
 
 ## References
 
-1. [Django Two Scoops](http://twoscoopspress.org/) (book)
-2. [Writing your first Django
-   app](https://docs.djangoproject.com/en/stable/intro/tutorial01/)
-3. [Awesome Django](https://gitlab.com/rosarior/awesome-django)
-4. [Django packages](https://djangopackages.org/)
+- [Django Two Scoops](http://twoscoopspress.org/) (book)
+- [Awesome Django](https://gitlab.com/rosarior/awesome-django)
+- [Django packages](https://djangopackages.org/)
+
+- [Django Code Style](https://docs.djangoproject.com/en/1.9/internals/contributing/writing-code/coding-style/)
