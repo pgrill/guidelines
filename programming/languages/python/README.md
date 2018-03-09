@@ -16,19 +16,19 @@
 
 ### Naming Conventions
 
-|Type                               |Public                    |Internal
-|-----------------------------------|--------------------------|--------
-|Packages                           |lower\_with\_under        |
-|Modules                            |lower\_with\_under        |\_lower\_with\_under
-|Classes                            |CapWords                  |\_CapWords
-|Exceptions                         |CapWords                  |
-|Functions                          |lower\_with\_under()      |\_lower\_with\_under()
-|Global/Class Constants             |CAPS\_WITH\_UNDER         |\_CAPS\_WITH\_UNDER
-|Global/Class Variables             |lower\_with\_under        |\_lower\_with\_under
-|Instance Variables                 |lower\_with\_under        |\_lower\_with\_under (protected) or \_\_lower\_with\_under (private)
-|Method Names                       |lower\_with\_under()      |\_lower\_with\_under() (protected) or \_\_lower\_with\_under() (private)
-|Function/Method Parameters         |lower\_with\_under        |
-|Local Variables                    |lower\_with\_under        |
+|Type                               |Public                    |Internal|
+|-----------------------------------|--------------------------|--------|
+|Packages                           |lower\_with\_under        ||
+|Modules                            |lower\_with\_under        |\_lower\_with\_under|
+|Classes                            |CapWords                  |\_CapWords|
+|Exceptions                         |CapWords                  ||
+|Functions                          |lower\_with\_under()      |\_lower\_with\_under()|
+|Global/Class Constants             |CAPS\_WITH\_UNDER         |\_CAPS\_WITH\_UNDER|
+|Global/Class Variables             |lower\_with\_under        |\_lower\_with\_under|
+|Instance Variables                 |lower\_with\_under        |\_lower\_with\_under (protected) or \_\_lower\_with\_under (private)|
+|Method Names                       |lower\_with\_under()      |\_lower\_with\_under() (protected) or \_\_lower\_with\_under() (private)|
+|Function/Method Parameters         |lower\_with\_under        ||
+|Local Variables                    |lower\_with\_under        ||
 
 ## Linting
 
