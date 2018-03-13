@@ -1,7 +1,6 @@
 # Testing
 
-![A cubelike figure with poligonal holes and two smaller objects
-that fit on those holes](https://d2wlcd8my7k9h4.cloudfront.net/static/figures/testing.jpg)
+![A cubelike figure with poligonal holes and two smaller objects that fit on those holes](https://d2wlcd8my7k9h4.cloudfront.net/static/figures/testing.jpg)
 
 Testing is very important. Not only to prevent and debug annoying
 bugs but it also helps project newcomers to better understand the
