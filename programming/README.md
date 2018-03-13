@@ -18,10 +18,10 @@ naming conventions, etc.
 
 ## Frameworks and libraries
 
-- [Django](./django/README.md)
-- [React](./react/README.md)
-- [Angular](./angular/README.md)
-- [ios](./ios/README.md)
+- [Django](./frameworks-and-libraries/django/README.md)
+- [React](./frameworks-and-libraries/react/README.md)
+- [Angular](./frameworks-and-libraries/angular/README.md)
+- [ios](./frameworks-and-libraries/ios/README.md)
 
 ## Code Review
 
