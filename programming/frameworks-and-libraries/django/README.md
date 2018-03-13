@@ -2,7 +2,7 @@
 
 ## Learning Resources
 
-- [Ticketing system](./ticketing-system.md)
+- [Ticketing system](https://github.com/sophilabs/training)
 - [Writing your first Django app](https://docs.djangoproject.com/en/stable/intro/tutorial01/)
 
 ## Code Style
