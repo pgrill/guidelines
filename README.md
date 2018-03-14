@@ -2,7 +2,7 @@
 
 ## Purpose
 
-These are [the guidelines that lead us to create beautiful software.
+These are the guidelines that lead us to create beautiful software.
 Please contribute to it following this [contribution guidelines](./CONTRIBUTING.md).
 
 ## How to read these guidelines
