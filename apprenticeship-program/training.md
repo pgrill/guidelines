@@ -62,7 +62,7 @@ make your demo as effective as possible.
   so deadlines and requirements. Hitting deadlines are negotiating scope is common software projects
   with a fixed timeline.
 * *Ask* around if you get stuck. In sophilabs we have several ways to get help if needed.
-  * Use `/guru` slack command to find expert people in certain your question. Try it in any channel
+  * Use `/guru` slack command to find expert people in a certain area. Try it in any channel
     ![Animation showing how to type a /guru query](./guru.gif)
   * The appropriate Slack channels like [#developers](https://sophilabs.slack.com/messages/developers),
     [#python](https://sophilabs.slack.com/messages/python), or
