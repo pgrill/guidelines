@@ -10,18 +10,20 @@ naming conventions, etc.
 - [C++](./languages/cpp/README.md)
 - [C\#](./languages/csharp/README.md)
 - [Elixir](./languages/elixir/README.md)
+- [Go](./languages/go/README.md)
 - [Javascript](./languages/javascript/README.md)
 - [Python](./languages/python/README.md)
 - [Restructured Text](./languages/restructuredtext/README.md)
+- [Rust](./languages/rust/README.md)
 - [Sass](./languages/sass/README.md)
 - [HTML](./languages/html/README.md)
 
 ## Frameworks and libraries
 
-- [Django](./frameworks-and-libraries/django/README.md)
-- [React](./frameworks-and-libraries/react/README.md)
 - [Angular](./frameworks-and-libraries/angular/README.md)
-- [ios](./frameworks-and-libraries/ios/README.md)
+- [Django](./frameworks-and-libraries/django/README.md)
+- [iOS](./frameworks-and-libraries/ios/README.md)
+- [React](./frameworks-and-libraries/react/README.md)
 
 ## Code Review
 
