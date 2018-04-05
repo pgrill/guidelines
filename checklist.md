@@ -18,6 +18,13 @@ E.g.: "Does every team (and team member) subscribe to Agile management
 practices? - Assistance can be requested from the Agile Master to assess
 the team's knowledge gaps and implement Agile awareness workshops"
 
+## Kick-off
+
+- Do you have a project Manifesto or README?
+  - Include a file in your project to help newcomers  to newcomers so they can
+    start working without inconvenience. Take a look at a sample
+    [Manifesto](./kick-off/manifesto/TEMPLATE.md) file for a reference.
+
 ## Security Checklist
 
 ### Server Configuration
