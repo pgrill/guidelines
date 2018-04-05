@@ -1,14 +1,33 @@
 # Contributing
 
+Introduce changes by creating pull requests and assigning them to the
+  sophilabs squad's members. You can reach them in the
+  [#squad](https://sophilabs.slack.com/messages/G8N6C487P) channel.
+  We welcome all contributions from sophilabs members: You can contribute to
+  this guidelines as part of your personal
+  [OKRs](https://smallimprovements.sophilabs.com/).
+
+## How to contribute
+
+There are three ways of read and therefore contribute to the guidelines
+
+* [Project's life cycle](./project-life-cycle.md)
+* [Project's checklist](./checklist.md)
+* [Training](./training.md)
+
+So if you edit content in one particular area of the
+[Project's life cycle](./project-life-cycle.md) cycle you should check if the
+[Project's checklist](./checklist.md) is updated accordingly with the new
+content you contributed and the other way around. The [training](./training.md)
+area is smaller, but must be kept up to date respect to the other guidelines.
+
+## Content
+
 Feel free to contribute to this guidelines within the scope of the following
 best practices.
 
 ## Styling Rules
 
-* Introduce changes by creating pull requests and assigning them to the
-  sophilabs squad's members. You can reach them in the
-  [#squad](https://sophilabs.slack.com/messages/G8N6C487P)
-  channel.
 * Avoid copying content from other sources, just link it.
 * If you are going to upload code snippets, make sure that they respect the
   standards by running linters on it.
@@ -32,7 +51,9 @@ best practices.
 
 ## File and folder names
 
-Lowercase, hyphenated file and folder names, i.e. `code-reviews.md`.
+* The `README.md` must always be uppercase.
+* All other files Lowercase, hyphenated file and folder names,
+  e.g. `code-reviews.md`.
 
 ## Editor
 
