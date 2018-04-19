@@ -35,10 +35,3 @@ Mentor, DM, or the Office Manager.
 * We are a friendly bunch and we'd like to get to know you better! That being said, it's easy to
   feel intimidated or uncomfortable in a new environment. In sophilabs we often host meetups, and
   have after office events. So feel free to join into any of them to help meet new people.
-
-## Links
-
-If you want to learn more refer to the following links:
-
-* [6 Things New Hires Should Do in the First 30 Days](https://www.softwareadvice.com/resources/6-things-new-hires-first-30-days/)
-* [What to expect on your first day](https://www.totaljobs.com/insidejob/what-to-expect-on-your-first-day-at-work/)

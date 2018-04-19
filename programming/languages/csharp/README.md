@@ -1,10 +1,12 @@
 # C# guidelines
 
-TDB: Write C\# introduction
+## Learning Resources
+
+- [Microsoft C# Guide](https://docs.microsoft.com/en-us/dotnet/csharp/)
 
 ## Coding Style
 
-## Rules
+### Rules
 
 - Use four spaces identation.
 - Use the
@@ -35,14 +37,8 @@ TDB: Write C\# introduction
 - Use StringBuilder for Fast String Creation.
 - Do not throw exceptions from exception filter blocks.
 - Throw exceptions from instance constructors, if appropriate.
-- Use one of the following linting tools
-  - [FxCop](http://msdn.microsoft.com/en-us/library/bb429476.aspx)
-  - [Microsoft Code Analysis][mca]
-  - [Resharper](http://www.jetbrains.com/resharper/)
 
-[mca]: https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017
-
-## Naming
+### Naming Conventions
 
 1. **Classes** must be in `CamelCase`.
    ```c#
@@ -77,7 +73,7 @@ TDB: Write C\# introduction
    ```
 6. Do not prefix enums, classes, or delegates with any letter .
 
-## Syntax
+### Syntax
 
 1. Use object intilization.
    ```c#
@@ -125,6 +121,14 @@ TDB: Write C\# introduction
                     where score > 90
                     select new { Last = student.LastName, score };
    ```
+
+## Linting
+
+- [FxCop](http://msdn.microsoft.com/en-us/library/bb429476.aspx)
+- [Microsoft Code Analysis][mca]
+- [Resharper](http://www.jetbrains.com/resharper/)
+
+[mca]: https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017
 
 ## References
 
