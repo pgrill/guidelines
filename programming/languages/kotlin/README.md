@@ -10,8 +10,7 @@ We like to use [ktlint](https://github.com/shyiko/ktlint) for this task.
 
 ## Android
 
-[//]: # TBD: Make a linked reference to the Android guidelines.
-Please refer to the Android guidelines to learn more.
+Please refer to the [Android guidelines](../../frameworks-and-libraries/android) to learn more.
 
 # Learning Resources
 
