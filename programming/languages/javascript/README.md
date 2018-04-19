@@ -7,8 +7,9 @@
 
 ## Coding Style
 
-We strongly recommend following the [Airbnb's JavaScript
-Styleguide](https://github.com/airbnb/javascript).
+We recommend using `ESLint`{.sourceCode} along with the
+[eslint-config-airbnb](https://yarnpkg.com/en/package/eslint-config-airbnb)
+package.
 
 ## Linting
 

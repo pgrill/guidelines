@@ -186,4 +186,6 @@ have tests, using a CI can avoid merging unbuildable code to `master`.
 
 ## References
 
-- [ios-good-practices](https://github.com/futurice/ios-good-practices).
+Some parts of this documents are heavily based on
+[ios-good-practices](https://github.com/futurice/ios-good-practices).
+
