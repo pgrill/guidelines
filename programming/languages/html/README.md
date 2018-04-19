@@ -1,13 +1,15 @@
 # HTML Guidelines
 
-## Resources
+## Learning Resources
 
-1. ["Practical HTML5"](https://app.pluralsight.com/library/courses/practical-html5/)
+- ["Practical HTML5"](https://app.pluralsight.com/library/courses/practical-html5/)
    on Pluralsight
-2. [Mozilla HTML 5 reference](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
-3. [HTML5 Semantics guide](https://codepen.io/mi-lee/post/an-overview-of-html5-semantics)
+- [Mozilla HTML 5 reference](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+- [Intro to HTML/CSS](https://www.khanacademy.org/computing/computer-programming/html-css#concept-intro)
 
-## Rules
+## Coding Style
+
+### Rules
 
 - Use 2 spaces for indentation
 - Use double quotes for tag attribute values
@@ -17,3 +19,7 @@
 - Don't use tables for layout design purposes
 - Use Flexbox extensively
 - Run a HTML linter using commit hooks
+
+## Linting
+
+- [HTMLHint](http://htmlhint.com/)

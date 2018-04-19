@@ -18,6 +18,13 @@ E.g.: "Does every team (and team member) subscribe to Agile management
 practices? - Assistance can be requested from the Agile Master to assess
 the team's knowledge gaps and implement Agile awareness workshops"
 
+## Kick-off
+
+- Do you have a project Manifesto or README?
+  - Include a file in your project to help newcomers  to newcomers so they can
+    start working without inconvenience. Take a look at a sample
+    [Manifesto](./kick-off/manifesto/TEMPLATE.md) file for a reference.
+
 ## Security Checklist
 
 ### Server Configuration
@@ -158,50 +165,28 @@ the team's knowledge gaps and implement Agile awareness workshops"
 
 - Does the authored code in the project comply with the respective code style guidelines? (This
   excludes third-party code).
-  - You can use linters tool to verify code style guidelines. If you are
-    in doubt about which tool you should use, refer to each language
-    guidelines page. e.g:
-    - [Javascript](./programming/languages/javascript/README.md)
-    - [Python](./programming/languages/python/README.md)
-    - [Sass](./programming/languages/sass/README.md)
+  - You can take a look at our [Code Analysis Guidelines](./code-analysis/README.md) to find ways of
+  verify the code style in your project.
 - Do commit messages follow a defined format respected by all team members?
-  - You could define Commit Message guidelines. For example `/#\d+: [A-Z](\w|\s)*/` (i.e. \#555:
-    Fix typo in guideline). You may find this [article](https://chris.beams.io/posts/git-commit/)
-    useful.
+  - You can take a look at our [commit hooks section](./code-analysis/README.md#commit-hooks) to learn
+  how to verify yours commit messages.
 - Does the project have an automatic way to verify the compliance of code guidelines and commit
   messages?
-  - You can use commit hooks to verify the code style guidelines and the commit message by
-    overriding the following files `.git/hooks/pre-commit` and `.git/hooks/commit-msg` respectively.
-    Check out this [article](https://www.atlassian.com/git/tutorials/git-hooks) to learn more
-    about Git hooks.
+  - You can take a look at our [commit hooks section](./code-analysis/README.md#commit-hooks) to learn
+  how to execute automatically these validations.
 
 ### Branching Strategy
 
 - Does the project follow a clear branching/merging strategy?
-  - You can follow [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/)  
-    Recommended strategies:
-    - Having the master branch (or the equivalent) protected, meaning all commits must be merged
-      from feature branches.
-    - Ensuring every commit must be made inside a particular branch that encapsulate that particular
-      task.
+  - Take a look to our [Branching Strategy section](./code-analysis/README.md#branching-strategy)
 - Is the submitted code in the master branch reviewed by other team members before committing?
-  - You can implement Code Reviews, which is a practice to ensure code quality and attachment to the
-    [guidelines][vinagecr]. As a rule of thumb:
-    - Code reviews must be enforced before merging code to the master branch.
-    - Code reviews should follow the [guidelines](./programming/code-reviews.md).
+  - Take a look to our [Branching Strategy section](./code-analysis/README.md#branching-strategy)
 
 ### Documentation
 
 - Does your project have documentation for new hires explaining the Tools needed for work and
   processes involved in the everyday work?
-  - You should consider having a [README](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-    and a [Contributing](https://gist.github.com/PurpleBooth/b24679402957c63ec426) guidelines file
-    in the root of your project. Those files can include:
-    - Development tools: Text editors, IDEs, Plugins.
-    - Required environment files.
-    - Procedures for installing Hooks.
-    - Naming conventions.
-    - Common design patterns used in the code.
+  - Take a look to our [Documentation section](./code-analysis/README.md#documentation)
 
 ## Methodologies Checklist
 

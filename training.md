@@ -3,15 +3,15 @@
 ## Purpose
 
 In your first steps in Sophilabs you will be requested to implement a training project
-([Ticket System](https://github.com/sophilabs/training).) in the context of our
+([Ticket System](https://github.com/sophilabs/training)) in the context of our
 [Apprenticeship Program](./apprenticeship-program/README.md).
 
-The next guidelines will provide you best practices that we recommend.
+The next guidelines will provide you the best practices that we recommend.
 
 ## Languages
 
-We recommend developing the ticket system using Python/Django in the backend and React in the front
-end.
+We recommend developing the ticket system using [Python](https://www.python.org/)/[Django](https://www.djangoproject.com/)
+for the backend and [React](https://reactjs.org/) for the front end.
 
 You should read and apply the following guidelines:
 
@@ -22,10 +22,8 @@ You should read and apply the following guidelines:
 
 ## Databases
 
-Our recommendation is to use [PostgreSQL](https://www.postgresql.org/) to store the system data. A guide
-to installing Postgres can be found in [Postgres Installation Tutorial](https://www.postgresql.org/docs/9.3/static/tutorial-install.html).
-
-You can also read more recommendations in our [Databases Guidelines](./databases/README.md).
+Our recommendation is to use [PostgreSQL](https://www.postgresql.org/) to store the system data.
+You can find information about how to install Postgres in our [Postgres Guidelines](./databases/README.md#postgresql)
 
 ## Testing
 
@@ -33,7 +31,7 @@ In Sophilabs we take care of testing in each project we develop. We think that h
 tests is important to prevent and debug annoying bugs.
 
 For your training project we suggest you include some unit test in backend and frontend. Before
-implementing the test you should read the [Unit test guidelines](./testing/README.md#Unit-testing) and
+implementing the test you should read the [Unit test guidelines](./testing/README.md#unit-testing) and
 the [Testing guidelines by language](./testing/languages/README.md).
 
 ## Docker

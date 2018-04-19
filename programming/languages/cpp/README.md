@@ -1,25 +1,10 @@
 # C++ Guidelines
 
-C++ is a general-purpose programming language. It has imperative, object-oriented and generic
-programming features, while also providing facilities for low-level memory manipulation.
+## Learning Resources
 
-Here you will find information that may help you to write better C++ code.
-
-## Documentation
-
-Use [doxygen](http://www.stack.nl/~dimitri/doxygen/) for generating documentation from annotated
-source code.
+- [The C++ Programming Language (4th Edition)](http://www.stroustrup.com/4th.html)
 
 ## Coding Style
-
-### File Names
-
-1. **Headers**  
-   Header files should be named with `snake_case` and use the `.hpp`
-   extension for C++ headers, and `.h` for plain C headers.
-   - `file_system.hpp`
-   - `array_view.hpp`
-   - `unused.hpp`
 
 ### Naming Conventions
 
@@ -47,6 +32,15 @@ source code.
    namespace io { };
    namespace math { };
    ```
+
+### File Names
+
+1. **Headers**  
+   Header files should be named with `snake_case` and use the `.hpp`
+   extension for C++ headers, and `.h` for plain C headers.
+   - `file_system.hpp`
+   - `array_view.hpp`
+   - `unused.hpp`
 
 ### Syntax
 
@@ -110,6 +104,7 @@ source code.
 
     The final `/* sophi */` comment is mandatory.
 
-## References
+## Documentation
 
-1. [The C++ Programming Language (4th Edition)](http://www.stroustrup.com/4th.html)
+Use [doxygen](http://www.stack.nl/~dimitri/doxygen/) for generating documentation from annotated
+source code.

@@ -1,11 +1,20 @@
 # Testing
 
-![A cubelike figure with poligonal holes and two smaller objects
-that fit on those holes](https://d2wlcd8my7k9h4.cloudfront.net/static/figures/testing.jpg)
+![A cubelike figure with poligonal holes and two smaller objects that fit on those holes](https://d2wlcd8my7k9h4.cloudfront.net/static/figures/testing.jpg)
 
 Testing is very important. Not only to prevent and debug annoying
 bugs but it also helps project newcomers to better understand the
 expected functionality of your functions and classes.
+
+## Resources
+
+* We recommend taking a look at this [page](https://mfranc.com/unit-testing/tdd-unit-testing-big-list-of-learning-resources-from-basics-to-advanced-topics/),
+  which contains several resources for unit testing, from basic to advanced.
+* [Awesome Testing](https://github.com/TheJambo/awesome-testing) has a list of
+  a good number of testing resources and books.
+* [Awesome-test-automation](https://github.com/atinfo/awesome-test-automation):
+  A curated list of awesome test automation frameworks, tools, libraries, and
+  software for different programming languages.
 
 ## Unit testing
 

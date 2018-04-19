@@ -1,6 +1,39 @@
-# Code reviews
+# Code Analysis
 
-## Introduction
+## Code Style
+
+To mantain a code style in the project we define guidelines for each programming language involved.
+These rules defines best practice and methods for each aspect of a program written in that language.
+For example, the guidelines cover file organization, indentation, comments, declarations, statements,
+white space, naming conventions, programming practices, programming principles, etc.
+
+Some examples of these guidelines can be found in [Programming](./../programming/README.md).
+
+We suggest two ways of check the code style in a project, [Linters](#linters) and [Code Reviews](#code-reviews)
+
+## Linters
+
+You can use linters tool to verify code style guidelines. If you are in doubt about which tool you should
+use, refer to each language guidelines page. e.g:
+
+- [Javascript](./programming/languages/javascript/README.md)
+- [Python](./programming/languages/python/README.md)
+- [Sass](./programming/languages/sass/README.md)
+
+## Commit Hooks
+
+You can use commit hooks to verify the code style guidelines and the commit message by overriding the
+following files `.git/hooks/pre-commit` and `.git/hooks/commit-msg` respectively.
+Have a *Commit Message guidelines* is important to track the changes in your repository. For example,
+you can define the following regular expresion to validate your messages: `/#\d+: [A-Z](\w|\s)*/` (i.e
+\#555: Fix typo in guideline). You may find this [article](https://chris.beams.io/posts/git-commit/)
+useful.
+You can check out this [article](https://www.atlassian.com/git/tutorials/git-hooks) to learn more about
+Git hooks.
+
+In Sophilabs, we recommend configure the linters execution with git hooks using [gilp](https://www.npmjs.com/package/gilp).
+
+## Code Review
 
 A code review is the process of manually inspecting source code written
 by another person. It allows us to find errors that might have been
@@ -8,9 +41,9 @@ overlooked by the original author, and it does so at an early stage.
 Code reviews are not only for finding errors though; reading code
 written by someone else can improve our own skills and knowledge.
 
-## Process
+### Process
 
-### As the developer[^1]
+#### As the developer[^1]
 
 We use [Gitlab](https://git.sophilabs.io/) or
 [Github](https://github.com/sophilabs) to manage our code reviews. We'll
@@ -32,7 +65,7 @@ to your code and push your branch again; Gitlab will automatically
 update the code review so the reviewer sees the latest version of your
 code.
 
-### Tips
+##### Tips
 
 1. Don't check only your code: also make sure your branch is correctly
    named (naming conventions will depend on the project) and that
@@ -92,7 +125,7 @@ code.
     the concept into your mind so that you’re less likely to miss
     opportunities to use the feedback.
 
-### As the reviewer
+#### As the reviewer
 
 When someone assigns you a code review, you will get a notification from
 Gitlab by email. Simply visit the link in it and Gitlab will show you a
@@ -101,7 +134,7 @@ able to add comments to individual lines of each file. If you do so, the
 author will update their code and push their branch again, then you will
 see an updated view of the merge request under the same url.
 
-**Tips**[^2]
+##### Tips[^2]
 
 1. Don't check only the code: also make sure the branch is correctly
    named (naming conventions will depend on the project) and that the
@@ -158,8 +191,33 @@ see an updated view of the merge request under the same url.
     it promptly. Your coworkers are waiting for you.
 12. Review fewer than 200-400 lines of code at a time.
 
-## References
-
 [^1]: <https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/coding-style/>
 
 [^2]: <https://www.codeproject.com/Articles/524235/Codeplusreviewplusguidelines>
+
+## Branching Strategy
+
+We reccomend follow [Git Flow](https://danielkummer.github.io/git-flow-cheatsheet/)  
+Recommended strategies:
+
+- Having the master branch (or the equivalent) protected, meaning all commits must be merged
+  from feature branches.
+- Ensuring every commit must be made inside a particular branch that encapsulate that particular
+  task.
+
+We also recomend implement Code Review, which is a practice to ensure code quality
+and attachment to the [guidelines][vinagecr]. As a rule of thumb:
+
+- Code reviews must be enforced before merging code to the master branch.
+- Code reviews should follow the [guidelines](#code-reviews).
+
+## Documentation
+
+We recommend having a [README](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) and a [Contributing](https://gist.github.com/PurpleBooth/b24679402957c63ec426)
+guidelines file in the root of your project. Those files can include:
+
+- Development tools: Text editors, IDEs, Plugins.
+- Required environment files.
+- Procedures for installing Hooks.
+- Naming conventions.
+- Common design patterns used in the code.
