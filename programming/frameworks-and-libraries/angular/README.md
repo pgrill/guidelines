@@ -1,77 +1,47 @@
 # Angular guidelines
 
-## Learning Resources
+## How to Start
+
+### Learning Resources
 
 - [Shaping up with Angular 1.5](https://www.codeschool.com/courses/shaping-up-with-angularjs)
-- [Angular 1.5 at Pluralsight](https://app.pluralsight.com/paths/skills/an/angular-js)
+  - Recommended for first steps in Angular 1.x.
+- [Angular at Pluralsight](https://app.pluralsight.com/paths/skills/an/angular-js)
+  - In this site you will find angular courses for different levels (beginner, intermediate,
+  advanced).
+- [Angular official tutorial](https://angular.io/tutorial)
+  - Recommended for people with experience in JavaScripts that want to learn Angular.
+
+### Set Up
+
+- [Angular QuickStart](https://angular.io/guide/quickstart)
+  - Recommended for first steps in Angular.
+
+## Tools
+
+- [VS Code](https://code.visualstudio.com/)
+  - One of the recommended IDE to work in JavaScript.
+- [WebStorm](https://www.jetbrains.com/webstorm/)
+  - Other recommende IDE to work in JavaScript.
+- [Jasmine](https://jasmine.github.io/)
+  - Useful development framework for testing JavaScript code.
 
 ## Coding Style
 
-### Rules
-
-#### Modules
-
-- Your main application module should be in your root client directory.
-- Modules should reference other modules using the Angular Module's "name" property
-
-```js
-// file submodulea.js:
-  goog.provide('my.submoduleA');
-  my.submoduleA = angular.module('my.submoduleA', []);
-// ...
-// file app.js
-  goog.require('my.submoduleA');
-  my.application.module = angular.module('hello', [my.submoduleA.name]);
-// ...
-```
-
-#### Controllers and Scopes
-
-- Controllers are classes. Methods should be defined on MyCtrl.prototype.
-
-```js
-/**
- * Home controller.
- *
- * @constructor
- * @ngInject
- * @export
- */
-hello.mainpage.HomeCtrl = function() {
-  /**
-   * @type {string}
-   * @export
-   */
-  this.myColor = 'blue';
-};
-
-
-/**
- * @param {number} a
- * @param {number} b
- * @export
- */
-hello.mainpage.HomeCtrl.prototype.add = function(a, b) {
-  return a + b;
-};
-```
-
-```html
-<div ng-controller="hello.mainpage.HomeCtrl as homeCtrl"/>
-  <span ng-class="homeCtrl.myColor">I'm in a color!</span>
-  <span>{{homeCtrl.add(5, 6)}}</span>
-</div>
-```
-
-#### Directives
-
-- All DOM manipulation should be done inside directives. Directives should be kept small and use composition.
-
-### Naming Conventions
-
-We recommend follow the naming conventions proposed by [Angular Naming Guidelines](https://angular.io/guide/styleguide#general-naming-guidelines)
-
-## References
-
 - [Google AngularJS Style Guideline](https://google.github.io/styleguide/angularjs-google-style.html)
 - [Angular Styleguide](https://angular.io/guide/styleguide)
+- [Angular Naming Guidelines](https://angular.io/guide/styleguide#general-naming-guidelines)
+
+### Linters
+
+We don't recommend any specific angular linter. Take a look at
+[Javascripts linters](./../../languages/javascript/README.md#linters).
+
+## Stay Updated
+
+- [Awesome Angular](https://github.com/gianarb/awesome-angularjs)
+
+## Recommendations
+
+- [Angular Documentation](https://angular.io/docs)
+- [Angular Material](https://material.angular.io/)
