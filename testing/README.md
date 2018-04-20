@@ -294,4 +294,14 @@ from this [guide](http://www.softwaretestinghelp.com/practical-software-testing-
   symptoms but also provide the effect of the bug and all the possible
   solutions.
 
+## Load and Performance Testing
+
+Load tests are important to measure the performance of your application. You can emulate scenarios
+with many users accessing the application at the same time and evaluate if the application responds
+according.
+
+Another approach is test specific endpoints and detects if the performance decrease with some changes
+
+A used tool to implement this tests is [Apache's JMeter](https://jmeter.apache.org/).
+
 [language specific testing guidelines]: languages/README.md

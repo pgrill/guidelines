@@ -98,6 +98,12 @@ security patches and fixes applied as soon as possible.
 - Send a password reset link to the user if he/she claims to have
   forgotten its current one.
 
+#### Store and share passwords
+
+- Store and share passwords in a secure way in very important.
+- Don't send password by email, use a secure password manager. We recommend use 
+  [1password](https://1password.com/).
+
 [jwt]: (https://jwt.io/)
 [msts]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
 [apg]: http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateVPC.html
