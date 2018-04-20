@@ -101,7 +101,7 @@ security patches and fixes applied as soon as possible.
 #### Store and share passwords
 
 - Store and share passwords in a secure way in very important.
-- Don't send password by email, use a secure password manager. We recommend use 
+- Don't send password by email, use a secure password manager. We recommend use
   [1password](https://1password.com/).
 
 [jwt]: (https://jwt.io/)
