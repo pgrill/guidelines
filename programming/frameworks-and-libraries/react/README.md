@@ -1,152 +1,40 @@
 # React guidelines
 
-## Learning Resources
+## How to Start
+
+### Learning Resources
 
 - [React Tutorial](https://reactjs.org/tutorial/tutorial.html)
+  - Official React Tutorial.
+- [React for begginers](https://reactforbeginners.com/)
+  - An useful course for learn React.js in just a couple of afternoons.
+- [Learn React Redux](https://learnredux.com/)
+  - A course to learn how to use Redux, React Router and React together.
 - [Udemy's "Modern React with Redux"](https://www.udemy.com/react-redux/)
+  - Tutorial to learn how to build apps with React Router, Webpack, and ES6.
 
-## Code Style
+### Set Up
 
-### Project structure
+- [Install React](https://www.codecademy.com/articles/react-setup-i)
+  - Recommended for first steps in React.
 
-Our usual structure is built around the Flux pattern, so we have
-specific folders for our actions, components, reducers and stores. Redux
-is the Flux implementation we normally use, so our `stores`{.sourceCode}
-directory is called `store`{.sourceCode} instead.
+## Tools
 
-```text
-project
-├── config
-│   ├── env.js
-│   ├── jest
-│   │   ├── cssTransform.js
-│   │   └── fileTransform.js
-│   ├── paths.js
-│   ├── polyfills.js
-│   ├── webpack.config.dev.js
-│   ├── webpack.config.prod.js
-│   └── webpackDevServer.config.js
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── manifest.json
-├── scripts
-│   ├── build.js
-│   ├── start.js
-│   └── test.js
-├── src
-│   ├── actions
-│   │    └── example.js
-│   ├── components
-│   │   └── SomeComponent
-│   │       ├── SomeComponent.css
-│   │       ├── SomeComponent.js
-│   │       └── SomeComponent.test.js
-│   ├── containers
-│   │   └── SomeContainer
-│   │       ├── SomeContainer.css
-│   │       └── SomeContainer.js
-│   ├── store
-│   ├── reducers
-│   │    ├── index.js
-│   │    └── example.js
-│   ├── registerServiceWorker.js
-│   ├── constants.js
-│   └── index.js
-├── package.json
-├── yarn.lock
-└── README.md
-```
+- [VS Code](https://code.visualstudio.com/)
+  - One of the recommended IDE to work in JavaScript.
+- [WebStorm](https://www.jetbrains.com/webstorm/)
+  - Other recommende IDE to work in JavaScript.
 
-### Naming
+## Coding Style
 
-- **Extensions:** Use `.js`{.sourceCode} extensions even for React
-  components.
-- **Reference naming:**: Use PascalCase for React components and
-  camelCase for their instances:
+- [Airbnb React/JSX Style Guide](https://github.com/airbnb/javascript/tree/master/react)
 
-```javascript
-import WorkbenchItem from './WorkbenchItem';
-const workbenchItem = <WorkbenchItem />;
-```
+### Linters
 
-### Components
+We don't recommend any specific angular linter. Take a look at
+[Javascripts linters](./../../languages/javascript/README.md#linters).
 
-#### Presentational and Container Components
+## Stay Updated
 
-We follow the "Presentational and Container Components" pattern, where
-all our components fall in one of those two categories. Files inside the
-`components`{.sourceCode} directory can be organized within
-sub-directories using the structure you see more fit, but each component
-must live in a file of its own and container components' files must be
-in the `containers`{.sourceCode} directory.
-
-#### The render method
-
-The `render`{.sourceCode} method of your React components must not
-include arrow functions or bindings. Doing so causes new objects to be
-created every time the component re-renders which results in more work
-for the garbage collector.
-
-Instead, write your arrow functions as members of your component and use
-references to these members inside the `render`{.sourceCode} method.
-
-### State
-
-#### Slices' Names
-
-Every slice of the state that you manage in a separate reducer should
-have a name defined in the reducer's file and exported as a constant.
-Use this constant everywhere you need to access the state as a whole to
-avoid hard-coding the slice name.
-
-For example, in your home page reducer you have:
-
-```javascript
-export const sliceName = 'homePage';
-
-export const homePageReducer = (state = initialState, action) => {
-    switch (action.type) {
-    ...
-```
-
-And then use this constant when you need to access specific slices of
-your state outside the reducer. For example, in the home page actions
-file:
-
-```javascript
-import { sliceName } from '../reducers/home-page';
-
-function fetchData () {
-    return function (dispatch, getState) {
-        currentData = getState()[sliceName].data
-        ...
-```
-
-#### Initial state
-
-The initial state of each slice should be defined as a constant as well.
-Every state reduction that somehow sets a member of the state to its
-initial value can benefit from this approach, especially when the number
-of action types in your app starts to grow.
-
-If you sync your state to a storage or do server-side rendering, having
-the initial state in a constant will turn out to be particularly
-helpful.
-
-### Styles
-
-Be consistent with your styles: either use CSS or inline styles in
-Javascript, but not both. Third party stylesheets (like
-`normalize.css`{.sourceCode}) are an exception to this rule.
-
-#### Inline styles
-
-Your inline styles must live in their own files or in the component's
-file. If you're going with the second approach, put all the rules in an
-easily identifiable `styles`{.sourceCode} constant at the top of your
-component.
-
-## Resources
-
+- [Awesome React](https://github.com/enaqx/awesome-react)
 - [React in reddit](https://www.reddit.com/r/reactjs/)
