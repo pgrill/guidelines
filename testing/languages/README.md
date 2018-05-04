@@ -30,5 +30,17 @@
 * We use [shallow rendering](http://airbnb.io/enzyme/docs/api/shallow.html)
   in order to test React components in an efficient way.
 
+## Angular
+
+* We suggest use the following libraries:
+  * [Jasmine](https://jasmine.github.io/):
+   Useful development framework for testing JavaScript code.
+  * [Sinon](http://sinonjs.org/):
+    Standalone test spies, stubs and mocks for JavaScript.
+* Each test should live in each component directory and should have the name of
+  the component plus `.test.js`.
+* We use the `expect` module from [chai](http://chaijs.com/) in order to compare
+  values.
+
 [shallow rendering]:  http://airbnb.io/enzyme/docs/api/shallow.html
 [FactoryBoy]: http://factoryboy.readthedocs.io/en/latest/orms.html

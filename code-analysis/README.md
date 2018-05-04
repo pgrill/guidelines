@@ -16,9 +16,9 @@ We suggest two ways of check the code style in a project, [Linters](#linters) an
 You can use linters tool to verify code style guidelines. If you are in doubt about which tool you should
 use, refer to each language guidelines page. e.g:
 
-- [Javascript](./programming/languages/javascript/README.md)
-- [Python](./programming/languages/python/README.md)
-- [Sass](./programming/languages/sass/README.md)
+- [Javascript](./../programming/languages/javascript/README.md#linters)
+- [Python](./../programming/languages/python/README.md#linters)
+- [Sass](./../programming/languages/sass/README.md#linters)
 
 ## Commit Hooks
 
