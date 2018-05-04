@@ -2,16 +2,16 @@
 
 ## Purpose
 
-In your first steps in Sophilabs you will be requested to implement a training project
-([Ticket System](https://github.com/sophilabs/training)) in the context of our
+In your first steps in Sophilabs you will be requested to implement a
+([Training Project](https://github.com/sophilabs/training)) in the context of our
 [Apprenticeship Program](./apprenticeship-program/README.md).
 
 The next guidelines will provide you the best practices that we recommend.
 
 ## Languages
 
-We recommend developing the ticket system using [Python](https://www.python.org/)/[Django](https://www.djangoproject.com/)
-for the backend and [React](https://reactjs.org/) for the front end.
+We recommend developing the training project using [Python](./programming/languages/python/README.md)/[Django](./programming/frameworks-and-libraries/django/README.md)
+for the backend and [React](./programming/frameworks-and-libraries/react/README.md) for the frontend.
 
 You should read and apply the following guidelines:
 
@@ -22,8 +22,8 @@ You should read and apply the following guidelines:
 
 ## Databases
 
-Our recommendation is to use [PostgreSQL](https://www.postgresql.org/) to store the system data.
-You can find information about how to install Postgres in our [Postgres Guidelines](./databases/README.md#postgresql)
+Our recommendation is to use some of the databases we suggest in our [Databases guidelines](./databases/README.md).
+For this project we strongly recommend using [Postgres](./databases/README.md#postgresql).
 
 ## Testing
 
@@ -36,17 +36,14 @@ the [Testing guidelines by language](./testing/languages/README.md).
 
 ## Docker
 
-Most of the projects developed in Sophilabs are hosted using containers through [Docker](https://www.docker.com/).
+Most of the projects developed in Sophilabs are hosted using containers through Docker.
 You should read our [Containerization Guidelines](./infrastructure/README.md#containerization) if you
 want include containers in your training project.
 
 ## Linters
 
 If you have time and you want to improve the quality of the code you write you can include in your
-project some linters.
+project some [linters](./code-analysis/README.md#linters) to ensure the quality of your code.
 
-We recommend include the linters as pre-commit [Git Hooks](https://git-scm.com/book/gr/v2/Customizing-Git-Git-Hooks)
+We recommend include the linters as  [pre-commit git hooks](./code-analysis/README.md#commit-hooks)
 using [gilp](https://www.npmjs.com/package/gilp).
-
-Some of the linter we use in Sophilabs are [EsLint](https://eslint.org/) for javascript and [flake8](https://pypi.python.org/pypi/flake8)
-for python.
