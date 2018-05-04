@@ -16,14 +16,14 @@
 ### Set Up
 
 - [Install React](https://www.codecademy.com/articles/react-setup-i)
-  - Recommended for first steps in React.
+  - Recommended for first steps with React.
 
 ## Tools
 
 - [VS Code](https://code.visualstudio.com/)
   - One of the recommended IDE to work in JavaScript.
 - [WebStorm](https://www.jetbrains.com/webstorm/)
-  - Other recommende IDE to work in JavaScript.
+  - Other recommended IDE to work in JavaScript.
 
 ## Coding Style
 
@@ -38,3 +38,7 @@ We don't recommend any specific angular linter. Take a look at
 
 - [Awesome React](https://github.com/enaqx/awesome-react)
 - [React in reddit](https://www.reddit.com/r/reactjs/)
+
+## Recommendations
+
+- [React GitHub](https://github.com/facebook/react)

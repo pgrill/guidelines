@@ -22,7 +22,7 @@
 - [VS Code](https://code.visualstudio.com/)
   - One of the recommended IDE to work in JavaScript.
 - [WebStorm](https://www.jetbrains.com/webstorm/)
-  - Other recommende IDE to work in JavaScript.
+  - Other recommended IDE to work in JavaScript.
 - [Jasmine](https://jasmine.github.io/)
   - Useful development framework for testing JavaScript code.
 

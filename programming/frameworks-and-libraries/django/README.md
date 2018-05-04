@@ -26,9 +26,9 @@
 - [django-debug-toolbar](https://github.com/jazzband/django-debug-toolbar)
   - Recommended tool to debug endpoint performance.
 - [django-grappelli](http://grappelliproject.com/)
-  - A jazzy skin for the Django Admin-Interface
+  - A jazzy skin for the Django Admin-Interface.
 - [Celery](http://docs.celeryproject.org/en/latest/)
-  - Recommend to execute background task
+  - Recommend to execute background task.
 - [drf-yasg](https://github.com/axnsan12/drf-yasg/)
   - A useful tool for documenting your Rest Framework endpoints.
 
