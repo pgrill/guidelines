@@ -20,6 +20,53 @@ of attention because it is very well suited to collaboration
 and scaling the development team.
 You can learn more about it [reading this blog post](https://nvie.com/posts/a-successful-git-branching-model/).
 
+## Environments
+
+When you are developing a new application commonly you will have many environments with differents
+versions. Each environment has a specific propouse and a owner. We recommend the definition of 5 enviroments.
+
+- **Development:**
+
+  The development environment is local to each developer and usually are deployed locally in a developer
+  machine, instead of in the cloud.
+  
+  A development instance exists in each developer machine, which contains in development code of the
+  features being worked.
+
+- **Staging:**
+  
+  The stage `Staging` is based on the dev branch. It has the latest developed features as soon as they
+  are finished and tested by the Development team. It is used for demos about features before they
+  are rolled into the `Release Candidate`.
+  
+  The owner of this environment is the Development Team. They are able to upgrade it whenever they
+  consider necesary.
+
+  We recommend host this application with the same technology that uses production in order to prevent
+  problems.
+
+- **Release Candidate (RC):**
+
+  The `RC` environment has stable features and it is generally updated when a development cycle (for
+  example a sprint) ends.
+
+  This environment is meant to be used by the product owner during the development to test and validate
+  features released.
+
+  The owner of this environment is the product owner, so it should be updated after he/her approves the
+  features included in a version.
+
+- **UAT:**
+
+  The UAT environment is used for testing features by the QA team before pushing them into production.
+  The ownership of this environment belongs to the product owner.
+  The bugs found in this environment that must be solved should be treated as `hotfix`.
+
+- **Production:**
+
+  The production environment hosts the client data, meant to be used by Customers.
+  It should not be used by developers.
+
 ## Versioning
 
 Has a correct versioning system is important to has tracked the impact

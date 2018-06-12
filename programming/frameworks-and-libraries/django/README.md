@@ -50,3 +50,5 @@ We don't recommend any specific django linter. Take a look at
 
 - [Django Two Scoops](http://twoscoopspress.org/) (book)
 - [Rest Framework](http://www.django-rest-framework.org/)
+- [Virtualenv guide](https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments/)
+- [DigitalOcean's deployment guide](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-local-django-app-to-a-vps)
