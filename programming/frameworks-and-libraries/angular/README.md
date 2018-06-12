@@ -4,8 +4,6 @@
 
 ### Learning Resources
 
-- [Shaping up with Angular 1.5](https://www.codeschool.com/courses/shaping-up-with-angularjs)
-  - Recommended for first steps in Angular 1.x.
 - [Angular at Pluralsight](https://app.pluralsight.com/paths/skills/an/angular-js)
   - In this site you will find angular courses for different levels (beginner, intermediate,
   advanced).
